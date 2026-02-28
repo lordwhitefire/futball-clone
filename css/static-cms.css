@@ -1,0 +1,144 @@
+body.cms-page-view { font-family: 'Open Sans', sans-serif; padding-right: 0px !important;font-size: 14px;}
+body.cms-page-view .wrapper{ background:#FFF !important;}
+body.cms-page-view:not(.cms-homekids) .main-container .col-main-menu,
+body.contacts-index-index .main-container .col-main-menu{ max-width: 70%; width: 100%; display:block; margin: 0 auto;}
+
+/* ============================================ *
+ * CONTENIDO
+ * ============================================ */
+body.cms-page-view .left-menu {position: fixed; font-size: 14px;margin-left:3%;width:350px;}
+body.cms-page-view .left-menu ul { padding:0;}
+body.cms-page-view .lista-numeros{list-style-type: decimal;}
+body.cms-page-view .right-content{ float: right;  margin-left: 480px; font-size: 14px; margin-right:3%; overflow: hidden;}
+body.cms-page-view .centrado {text-align: center;}
+body.cms-page-view table {font-size:12px;}
+body.cms-page-view .no-list { list-style-type: none;}
+body.cms-page-view ul.lista-numeros{list-style-type: decimal;}
+body.cms-page-view ul.lista-disc{list-style-type: disc;}
+body.cms-page-view ul.lista-numeros> li:before { content:none !important;}
+body.cms-page-view ul.lista-disc> li:before { content:none !important;}
+body.cms-page-view .caja{ border: 1px solid #6C6C6C; margin:0 auto; margin-bottom: 10px;}
+body.cms-page-view li.caja2{ margin: 10px 30px 10px 0 ;}
+body.cms-page-view li.caja3{ margin: 10px 30px 10px 0 ;}
+body.cms-page-view .direccion{margin:0px; margin-left: 30px;}
+body.cms-page-view .direccion1{margin:0px; margin-left: 30px;margin-bottom: 10px;}
+body.cms-page-view a{ color:#333;}
+body.cms-page-view a:hover{color:#333;}
+body.cms-page-view a{ color:#333;}
+body.cms-page-view a:hover { color:#333;}
+body.cms-page-view .nav>li>a {position: relative;display: block;padding: 5px 15px; }
+body.cms-page-view .nav>li>a:hover{text-decoration: initial;}
+body.cms-page-view table tr{ text-align: center;}
+body.cms-page-view table {border-collapse: collapse;}
+body.cms-page-view table,body.cms-page-view  th,body.cms-page-view  td {border: 1px solid black; padding: 8px;}
+
+
+body.cms-page-view.is-responsive .page-title { margin-top: 15px; }
+
+/* ============================================ *
+ * MENU:  ;
+ * ============================================ */
+body.cms-page-view *,body.cms-page-view *:before,body.cms-page-view *:after { -webkit-border-sizing: border-box;-moz-border-sizing: border-box; border-sizing: border-box;}
+body.cms-page-viewul {list-style-type: none;}
+body.cms-page-view .container { width: 350px; margin: 50px auto;}
+body.cms-page-view .login-menu .container { width: 100%; margin: auto; }
+body.cms-page-view .container > ul {list-style: none;  padding: 0; margin: 0 0 20px 0;}
+body.cms-page-view .title {font-family: 'Pacifico';font-weight: norma;font-size: 40px;text-align: center;line-height: 1.4;color: #C0392B;}
+body.cms-page-view .dropdown {position: relative;}
+body.cms-page-view .dropdown a { text-decoration: none;}
+body.cms-page-view .dropdown [data-toggle="dropdown"] {display: block;color: black;padding: 2px;}
+body.cms-page-view .dropdown > .dropdown-menu {max-height: 0;overflow: hidden;list-style: none;padding: 0;margin: 0;-moz-transform: scaleY(0);-ms-transform: scaleY(0);-webkit-transform: scaleY(0);transform: scaleY(0);-moz-transform-origin: 50% 0%;-ms-transform-origin: 50% 0%;-webkit-transform-origin: 50% 0%;transform-origin: 50% 0%;-moz-transition: max-height 0.2s ease-out;-o-transition: max-height 0.4s ease-out;-webkit-transition: max-height 0.4s ease-out;transition: max-height 0.4s ease-out; animation: hideAnimation 0.4s ease-out;-moz-animation: hideAnimation 0.4s ease-out;-webkit-animation: hideAnimation 0.4s ease-out;}
+body.cms-page-view .dropdown > .dropdown-menu li {padding: 0;}
+body.cms-page-view .dropdown > .dropdown-menu li a {display: block;font-size: 12px; padding: 2px; margin-left: 15px;}
+body.cms-page-view .dropdown > input[type="checkbox"] { opacity: 0; display: block;position: absolute;top: 0;width: 100%;height: 100%;cursor: pointer;}
+body.cms-page-view .dropdown > input[type="checkbox"]:checked ~ .dropdown-menu { max-height: 9999px; display: block; -moz-transform: scaleY(1); -ms-transform: scaleY(1); -webkit-transform: scaleY(1); transform: scaleY(1);animation: showAnimation 0.5s ease-in-out;-moz-animation: showAnimation 0.5s ease-in-out;-webkit-animation: showAnimation 0.5s ease-in-out;-moz-transition: max-height 2s ease-in-out;-o-transition: max-height 2s ease-in-out;-webkit-transition: max-height 2s ease-in-out;transition: max-height 2s ease-in-out;}
+body.cms-page-view .dropdown > input[type="checkbox"]:checked + a[data-toggle="dropdown"]:before {-moz-transform: rotate(-180deg);-ms-transform: rotate(-180deg);-webkit-transform: rotate(-180deg);transform: rotate(-180deg);-moz-transition: -moz-transform 0.2s;-o-transition: -o-transform 0.2s;-webkit-transition: -webkit-transform 0.2s;transition: transform 0.2s;}
+body.cms-page-view li .menu-separacion { margin-left: 14px;}
+
+body.cms-page-view .std ul li a { text-decoration:none; font-family:'Open Sans', sans-serif; font-size:14px; }
+body.cms-page-view .std h3 { font-family:'Open Sans', sans-serif; font-weight:bold; font-size:16px; }
+body.cms-page-view:not(.cms-homekids) .std p { font-family:'Open Sans', sans-serif; font-size:14px; }
+
+/* ============================================ *
+ * NUESTRAS TIENDAS
+ * ============================================ */
+
+body.cms-page-view #wrapper {text-align: center; margin:0 10px 0 10px; }
+body.cms-page-view #tienda { width:425px ;padding: 5px 70px;float: left; text-align:left; margin:75px 0 30px 0;}
+body.cms-page-view #tienda-centro { width:425px ;padding: 5px 70px;float: left; text-align:left; border-right:2px solid #EFEFEF;border-left:2px solid #EFEFEF; margin:75px 0 30px 0;}
+body.cms-page-view #texto{ height:  400px;}
+body.cms-page-view .horario {float:left; margin:0 50px 0px 0;}
+body.cms-page-view .horario2{float:left;}
+body.cms-page-view .parking  {float:left; margin-top: 10px;}
+body.cms-page-view #pagewrap { margin-top: 50px; margin: 0 auto; display: inline-block;}
+body.cms-page-view b img {margin-right: 5px;}
+body.cms-page-view.cms-nuestras-tiendas .col-main-menu .std p, 
+body.cms-page-view.cms-nuestras-tiendas .col-main-menu .std b {
+    font-style: normal;
+}
+/* ============================================ *
+ * PLAZOS DE ENTREGA NAVIDAD Y REYES
+ * ============================================ */
+body.cms-page-view.cms-plazos-entrega-navidad-reyes .main-container .col-main-menu { max-width: 50%; }
+body.cms-page-view.cms-plazos-entrega-navidad-reyes .main-container .col-main-menu .page-title h1 { font-weight: 700; color: #000; text-transform: unset; }
+body.cms-page-view.cms-plazos-entrega-navidad-reyes .main-container .col-main-menu a { color: #3d51c8;}
+body.cms-page-view.cms-plazos-entrega-navidad-reyes .main-container .col-main-menu strong { margin-bottom:5px; }
+
+/* ============================================ *
+ * MEDIA QUERIES
+ * ============================================ */
+
+@media (max-width:1440px) {
+    body.cms-page-view #tienda { width:425px ;padding: 5px 20px;float: left; text-align:left; margin:75px 0 30px 0;}
+    body.cms-page-view #tienda-centro { width:425px ;padding: 5px 20px;float: left; text-align:left; border-right:2px solid #EFEFEF;border-left:2px solid #EFEFEF; margin:75px 0 30px 0;}
+    body.cms-page-view .parking  {float:left; margin-top: 0px;}
+
+}
+
+@media (max-width:1280px) {
+    body.cms-page-view .left-menu {position: inherit; font-size: 14px;margin-left:0%;width:100%;}
+    body.cms-page-view .left-menu ul { padding:0;}
+    body.cms-page-view .left-menu li { background-color: #595959; margin-left: 2%; margin-right: 2%; }
+    body.cms-page-view .dropdown [data-toggle="dropdown"]  { padding: 6.5px 9px 6.5px 9px; color: white;}
+    body.cms-page-view .left-menu ul li a { color: white; font-weight: 600; margin: 5px 0 5px 0;}
+    body.cms-page-view .left-menu ul li a span { margin-left: 0px;    margin-left: 14px;}
+    body.cms-page-view .right-content{ float: none;  margin-left: 0px; font-size: 14px; margin-right:2%; margin-left:2%; overflow: hidden;}
+    body.cms-page-view #parent{ display:flex;flex-flow: column;}
+    body.cms-page-view #a{order:2;}
+    body.cms-page-view #b{order:1;}
+    body.cms-page-view #c{order:3;}
+    body.cms-page-view li .menu-separacion  { margin-left: 0px;}
+
+
+    /*  NUESTRAS TIENDAS */
+    body.cms-page-view .mapa {width: 100%;height: 0;margin: 0 auto;padding-top: 80%;position: relative;float:left; }
+    body.cms-page-view .mapa iframe { width: 100%;height: 100%; position: absolute;top: 0;right: 0;left: 0;bottom: 0; }
+    body.cms-page-view #tienda { width:100% ;padding: 0px;float: left; text-align:left; margin: 0; margin-bottom: 30px;}
+    body.cms-page-view #tienda-centro { width:100% ;padding: 0px;float: left; text-align:left; border-right:2px solid #EFEFEF;border-left:2px solid #EFEFEF; margin: 0;   margin-bottom: 30px;}
+    body.cms-page-view #texto{ height:  auto;}
+    body.cms-page-view .parking  {float:left; margin-top: 0px;}
+    body.cms-page-view .horario2{float:left; margin-right: 50px;}
+    body.cms-page-view .mapa {width: 100%;height: 0;margin: 0 auto;padding-top: 35%;position: relative;float:left; }
+}
+
+@media (max-width:660px) {
+    body.cms-page-view:not(.cms-homekids) .main-container .col-main-menu,
+    body.contacts-index-index .main-container .col-main-menu{ max-width: 100%; width: 100%; display:block; margin: 0 auto;}
+}
+@media (max-width:425px) {
+
+    /* CONDICIONES DE USO
+    .left-menu ul li a span { margin-left: 14px;}*/
+
+
+    /*  NUESTRAS TIENDAS */
+    body.cms-page-view #tienda { width:100% ;padding: 0px;float: left; text-align:left; margin: 0; margin-bottom: 30px;}
+    body.cms-page-view #tienda-centro { width:100% ;padding: 0px;float: left; text-align:left; border-right:2px solid #EFEFEF;border-left:2px solid #EFEFEF; margin: 0;   margin-bottom: 30px;}
+    body.cms-page-view #texto{ height:  auto;}
+    body.cms-page-view .horario {float:inherit; margin-right: 50px;}
+    body.cms-page-view .horario2{float:left;}
+    body.cms-page-view .mapa {width: 100%;height: 0;margin: 0 auto;padding-top: 80%;position: relative;float:left; }
+    body.cms-page-view .mapa iframe { width: 100%;height: 100%; position: absolute;top: 0;right: 0;left: 0;bottom: 0; }
+
+}
+

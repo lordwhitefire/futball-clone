@@ -1,0 +1,79 @@
+.custom-select a {
+    height: 32px !important;
+    line-height: 32px !important;
+    background: #ffffff;
+    box-shadow: none;
+    border-radius: 2px !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 400;
+    font-size: 15px !important;
+    color: inherit !important;
+    border: 1px solid #c0c0c0;
+}
+.custom-select a:hover {
+    color: inherit !important;
+}
+.custom-select .chosen-single div b {
+    display: block;
+    background-image: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/select-box.png);
+    width: 13px;
+    height: 14px;
+    top: calc(32px /2);
+    position: relative;
+    right: 5px;
+    transform: translateY(-50%);
+}
+.chosen-container-active.chosen-with-drop .chosen-single div b {
+    background-position: inherit !important;
+    -webkit-transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-50%) rotate(180deg);
+}
+.chosen-container .chosen-results li.active-result.result-selected {
+        background-color: #3875d7;
+        background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #3875d7), color-stop(90%, #2a62bc));
+        background-image: -webkit-linear-gradient(#3875d7 20%, #2a62bc 90%);
+        background-image: -moz-linear-gradient(#3875d7 20%, #2a62bc 90%);
+        background-image: -o-linear-gradient(#3875d7 20%, #2a62bc 90%);
+        background-image: linear-gradient(#3875d7 20%, #2a62bc 90%);
+        color: #fff;
+}
+.chosen-container-single .chosen-search input[type="text"]{
+    width: 100% !important;
+}
+/*
+.chosen-container-single:focus, .chosen-container-single:active, .chosen-container-single:hover,
+input:focus, input:active, input:hover,
+label:focus::before, label:active::before, label:hover::before{
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(82,168,236,0.6);
+    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(82,168,236,0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(82,168,236,0.6);
+}*/
+[readonly]:focus, [readonly]:active, [readonly]:hover {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.chosen-container .chosen-results li{
+    padding: 10px 5px;
+}
+.chosen-container .chosen-results li.no-results {
+    color: #777;
+    display: list-item;
+    background: none !important;
+    border: 1px dashed red;
+    max-width: calc(100% - 16px);
+}
+.chosen-container .chosen-results li.no-results span{
+    font-weight: bold;
+}
+select.custom-select + div.validation-advice {
+    display: none;
+}
+
+select.validation-failed ~ div.custom-select a{
+    font-weight: bold;
+    color: rgb(223, 40, 10) !important;
+    background-color: rgb(234, 197, 197) !important;
+    font-size: 13px !important;
+}

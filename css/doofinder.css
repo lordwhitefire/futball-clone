@@ -1,0 +1,5055 @@
+/* ----------------------------------------------------------- */
+/* 			CSS GENERICO		 							   */
+/* ----------------------------------------------------------- */
+
+/* lupa header web */
+.btn.buscar:hover { background: #fffd8b; }
+.search-form .search-form-container #search_mini_form .input-box .input-search-container:hover { outline: 2px solid #ebe717;}
+
+/* lupa interna doofinder */
+.clear-or-category .buscar:hover { background: #fffd8b; }
+.clear-or-category .buscar.actived:active { background: #ccc; }
+.clear-or-category .buscar.actived:hover { background: linear-gradient(to bottom,#f2ed15,#d0cd04); }
+
+/* lupa menu mobile */
+.col-left-menu.sidebar #search_mini_form_responsive .search_r_wrapper:after {
+    margin-top: -4px;
+    right: 11px;
+}  
+
+/* lupa activada */
+.clear-or-category .buscar.actived {
+	background: linear-gradient(to bottom,#ebe717,#d2ce00); 
+}		
+
+.df-searchbox,
+.df-mobile__searchbox {
+	outline: 2px solid #ebe717;
+}
+
+.df-searchbox.unactived,
+.df-mobile__searchbox.unactived {
+	outline: none;
+}
+
+/* lupa activada */
+.clear-or-category .buscar.actived {
+	background: linear-gradient(to bottom,#ebe717,#ebe717); 
+}		
+
+.df-fullscreen .df-panel--collapse .clear-filter:hover:before,
+.df-mobile .df-panel--collapse .clear-filter:active:before{
+	 content: "borrar filtros";
+	 position: absolute;
+	 width: 80px;
+	 z-index: 2000000;
+	 right: 0;
+	 font-size: 11px;
+	 top: 30px;
+	 background-color: #efefef;
+	 box-shadow: -1px 1px 3px 0px #9b9b9b;
+	 border-radius: 3px;
+	 padding: 3px;
+	 padding-left: 5px;
+	 font-weight: 600;
+}
+
+.df-aside .df-panel--collapse[data-collapse=false] .df-panel__title:active:after, 
+.df-mobile__aside .df-panel--collapse[data-collapse=false] .df-panel__title:active:after,
+.df-aside .df-panel--collapse[data-collapse=true] .df-panel__title:active:after, 
+.df-mobile__aside .df-panel--collapse[data-collapse=true] .df-panel__title:active:after{
+   background-color: #ccc;
+}
+
+.df-aside .df-panel.active .clear-filter:active,
+.df-mobile__aside .df-panel.active .clear-filter:active,
+.df-mobile__aside .df-panel.active .clear-filter:focus{
+    background-color: #ccc;
+}
+
+.df-aside .df-panel.active .clear-filter, 
+.df-mobile__aside .df-panel.active .clear-filter{
+  right: 30px;
+  position: absolute;
+  font-size: 30px;
+  cursor: pointer;
+  background: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/doofinder/borrar-filtros-columna.svg) 2px 2px no-repeat;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-size: 21px;
+  border-radius: 20px;
+  z-index: 2;
+}
+
+.df-aside .df-term[data-facet="talla"][data-selected]:hover,
+.df-mobile__aside .df-term[data-facet="talla"][data-selected]:hover{
+  /*background: unset !important;
+  border: unset !important;*/
+}
+
+/* Tipo Búsqueda */
+.df-aside .df-panel--collapse[data-facet=busqueda],
+.df-mobile__aside .df-panel--collapse[data-facet=busqueda],
+.df-aside .df-panel--collapse[data-facet=genero],
+.df-mobile__aside .df-panel--collapse[data-facet=genero]{
+  display: none !important;
+}
+/* END */
+
+.df-aside .df-term[data-facet="talla"]:hover,
+.df-mobile__aside .df-term[data-facet="talla"]:hover {
+  color: #FFF;
+  background-color: #000 !important;
+  /*font-weight: unset;*/
+}
+.df-aside .df-term[data-facet="talla"][data-selected],
+.df-mobile__aside .df-term[data-facet="talla"][data-selected]{
+    /* font-weight: bold; */
+    /* height: 30px !important; */
+    /* padding: 0px 2px 0px 2px !important; */
+    border-color: #9D9D9C !important;
+    border-radius: unset !important;
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+.df-aside .df-term[data-facet="talla"] .df-term__value,
+.df-mobile__aside .df-term[data-facet="talla"] .df-term__value {
+  text-align: center;
+  display: block !important;
+}
+.df-aside .df-term[data-facet="talla"][data-selected] .df-term__value,
+.df-mobile__aside .df-term[data-facet="talla"][data-selected] .df-term__value{
+  /*text-align: left;*/
+}
+
+.df-aside .df-term[data-facet="talla"]:nth-child(-1n+50),
+.df-mobile__aside .df-term[data-facet="talla"]:nth-child(-1n+50) {
+  border-top: none;
+  border-left: none;
+}
+
+/* orden de los colores */
+.df-aside .df-term[data-facet="color"][data-value="Transparente"], 
+.df-mobile__aside__content .df-term[data-facet="color"][data-value="Transparente"]{
+  order: 10;
+}
+.df-aside .df-term[data-facet="color"][data-value="Multicolor"], 
+.df-mobile__aside__content .df-term[data-facet="color"][data-value="Multicolor"]{
+  order: 20;
+}
+.df-aside .df-term[data-facet="color"][data-value="Amarillo"], 
+.df-mobile__aside__content .df-term[data-facet="color"][data-value="Amarillo"]{
+  order: 30;
+}
+.df-aside .df-term[data-facet="color"][data-value="Azul"], 
+.df-mobile__aside__content .df-term[data-facet="color"][data-value="Azul"]{
+  order: 40;
+}
+.df-aside .df-term[data-facet="color"][data-value="Azul celeste"], 
+.df-mobile__aside__content .df-term[data-facet="color"][data-value="Azul celeste"]{
+  order: 50;
+}
+.df-aside .df-term[data-facet="color"][data-value="Beige"], 
+.df-mobile__aside__content .df-term[data-facet="color"][data-value="Beige"]{
+  order: 60;
+}
+.df-aside .df-term[data-facet="color"][data-value="Blanco"], 
+.df-mobile__aside__content .df-term[data-facet="color"][data-value="Blanco"]{
+  order: 70;
+}
+.df-aside .df-term[data-facet="color"][data-value="Dorado"], 
+.df-mobile__aside__content .df-term[data-facet="color"][data-value="Dorado"],
+.df-aside .df-term[data-facet="color"][data-value="Oro"], 
+.df-mobile__aside__content .df-term[data-facet="color"][data-value="Oro"]{
+  order: 80;
+}
+.df-aside .df-term[data-facet="color"][data-value="Gris"], 
+.df-mobile__aside__content .df-term[data-facet="color"][data-value="Gris"]{
+  order: 90;
+}
+.df-aside .df-term[data-facet="color"][data-value="Marfil"], 
+.df-mobile__aside__content .df-term[data-facet="color"][data-value="Marfil"]{
+  order: 100;
+}
+.df-aside .df-term[data-facet="color"][data-value="Marrón"], 
+.df-mobile__aside__content .df-term[data-facet="color"][data-value="Marrón"]{
+  order: 110;
+}
+.df-aside .df-term[data-facet="color"][data-value="Metalizado"], 
+.df-mobile__aside__content .df-term[data-facet="color"][data-value="Metalizado"]{
+  order: 120;
+}
+.df-aside .df-term[data-facet="color"][data-value="Morado"], 
+.df-mobile__aside__content .df-term[data-facet="color"][data-value="Morado"]{
+  order: 130;
+}
+.df-aside .df-term[data-facet="color"][data-value="Naranja"], 
+.df-mobile__aside__content .df-term[data-facet="color"][data-value="Naranja"]{
+  order: 140;
+}
+.df-aside .df-term[data-facet="color"][data-value="Negro"], 
+.df-mobile__aside__content .df-term[data-facet="color"][data-value="Negro"]{
+  order: 150;
+}
+.df-aside .df-term[data-facet="color"][data-value="Plata"], 
+.df-mobile__aside__content .df-term[data-facet="color"][data-value="Plata"]{
+  order: 160;
+}
+.df-aside .df-term[data-facet="color"][data-value="Lila"], 
+.df-mobile__aside__content .df-term[data-facet="color"][data-value="Lila"],
+.df-aside .df-term[data-facet="color"][data-value="Morado"], 
+.df-mobile__aside__content .df-term[data-facet="color"][data-value="Morado"],
+.df-aside .df-term[data-facet="color"][data-value="Púrpura"], 
+.df-mobile__aside__content .df-term[data-facet="color"][data-value="Púrpura"]{
+  order: 165;
+}
+.df-aside .df-term[data-facet="color"][data-value="Rojo"], 
+.df-mobile__aside__content .df-term[data-facet="color"][data-value="Rojo"]{
+  order: 170;
+}
+.df-aside .df-term[data-facet="color"][data-value="Rosa"], 
+.df-mobile__aside__content .df-term[data-facet="color"][data-value="Rosa"]{
+  order: 180;
+}
+.df-aside .df-term[data-facet="color"][data-value="Turquesa"], 
+.df-mobile__aside__content .df-term[data-facet="color"][data-value="Turquesa"]{
+  order: 190;
+}
+.df-aside .df-term[data-facet="color"][data-value="Verde"], 
+.df-mobile__aside__content .df-term[data-facet="color"][data-value="Verde"]{
+  order: 200;
+}
+
+
+/* Otros colores al final */
+.df-aside .df-term[data-facet="color"], 
+.df-mobile__aside__content .df-term[data-facet="color"]{
+  order: 500;
+}
+/*End Orden colors*/
+.df-aside .df-term[data-facet="color"]:hover,
+.df-mobile__aside__content .df-term[data-facet="color"]:hover{
+  /*border: 1px solid #000 !important;*/
+}
+.df-aside .df-term[data-facet="color"] .df-term__value.active, 
+.df-mobile__aside__content .df-term[data-facet="color"] .df-term__value.active {
+    background: #000;
+    color: #FFF;
+}
+.df-aside .df-term[data-facet="color"] .df-term__value,
+.df-mobile__aside__content .df-term[data-facet="color"] .df-term__value{
+  display: block !important;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.2;
+}
+.df-aside .df-term[data-facet="color"][data-selected],
+.df-mobile__aside__content .df-term[data-facet="color"][data-selected]{
+  /*float: unset !important;
+  margin: 10px 0 10px 10px !important;*/
+  /*border: 1px solid;*/
+  height: auto !important;
+}
+.df-aside .df-term[data-facet="color"][data-selected] .color:after, 
+.df-mobile__aside__content .df-term[data-facet="color"][data-selected] .color:after {
+  content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/doofinder/check-filtro-negro.svg) no-repeat;
+    transform: translateX(-50%);
+    margin: 3px 0 0 0;
+}
+.df-aside .df-term[data-facet="color"][data-value="Negro"][data-selected] .color:after, 
+.df-mobile__aside__content .df-term[data-facet="color"][data-value="Negro"][data-selected] .color:after{
+    background: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/doofinder/check-filtro.svg) no-repeat;
+}
+
+.df-aside .df-term[data-facet="color"],
+.df-mobile__aside__content .df-term[data-facet="color"]{
+  border-radius: unset;
+  display: inline-block !important;
+  padding: 4px;
+  width: 70px;
+  text-align: center;
+  min-height: 60px !important;
+  vertical-align: top;
+}
+
+/*
+.df-aside .df-term[data-selected]:after,
+.df-mobile__aside .df-term[data-selected]:after{
+  content:"";
+  width: 8px;
+  height: 20px;
+  float: right;
+  margin-top: 3px;
+  margin-right: -7px;
+}
+.df-mobile__aside .df-term[data-selected]:after{
+  margin-right: -9px;
+}
+*/
+
+.df-aside .df-term[data-facet="genero"] .df-term__value:active:before,
+.df-aside .df-term[data-facet="genero"] .df-term__value:focus:before,
+.df-aside .df-term[data-facet="genero"] .df-term__value:hover:before,
+.df-aside .df-term[data-facet="age"] .df-term__value:active:before,
+.df-aside .df-term[data-facet="age"] .df-term__value:focus:before,
+.df-aside .df-term[data-facet="age"] .df-term__value:hover:before,
+.df-aside .df-term[data-facet="brand"] .df-term__value:active:before,
+.df-aside .df-term[data-facet="brand"] .df-term__value:focus:before,
+.df-aside .df-term[data-facet="brand"] .df-term__value:hover:before,
+.df-aside .df-term[data-facet="equipo"] .df-term__value:active:before,
+.df-aside .df-term[data-facet="equipo"] .df-term__value:focus:before,
+.df-aside .df-term[data-facet="equipo"] .df-term__value:hover:before,
+.df-aside .df-term[data-facet="promotion"] .df-term__value:active:before,
+.df-aside .df-term[data-facet="promotion"] .df-term__value:focus:before,
+.df-aside .df-term[data-facet="promotion"] .df-term__value:hover:before,
+.df-aside .df-term[data-facet="tipo"] .df-term__value:active:before,
+.df-aside .df-term[data-facet="tipo"] .df-term__value:focus:before,
+.df-aside .df-term[data-facet="tipo"] .df-term__value:hover:before,
+.df-aside .df-term[data-facet="outlet"] .df-term__value:active:before,
+.df-aside .df-term[data-facet="outlet"] .df-term__value:focus:before,
+.df-aside .df-term[data-facet="outlet"] .df-term__value:hover:before,
+.df-aside .df-term[data-facet="grupo_precio"] .df-term__value:active:before,
+.df-aside .df-term[data-facet="grupo_precio"] .df-term__value:focus:before,
+.df-aside .df-term[data-facet="grupo_precio"] .df-term__value:hover:before,
+.df-mobile__aside .df-term[data-facet="genero"] .df-term__value:active:before,
+.df-mobile__aside .df-term[data-facet="genero"] .df-term__value:focus:before,
+.df-mobile__aside .df-term[data-facet="genero"] .df-term__value:hover:before,
+.df-mobile__aside .df-term[data-facet="age"] .df-term__value:active:before,
+.df-mobile__aside .df-term[data-facet="age"] .df-term__value:focus:before,
+.df-mobile__aside .df-term[data-facet="age"] .df-term__value:hover:before,
+.df-mobile__aside .df-term[data-facet="brand"] .df-term__value:active:before,
+.df-mobile__aside .df-term[data-facet="brand"] .df-term__value:focus:before,
+.df-mobile__aside .df-term[data-facet="brand"] .df-term__value:hover:before,
+.df-mobile__aside .df-term[data-facet="equipo"] .df-term__value:active:before,
+.df-mobile__aside .df-term[data-facet="equipo"] .df-term__value:focus:before,
+.df-mobile__aside .df-term[data-facet="equipo"] .df-term__value:hover:before,
+.df-mobile__aside .df-term[data-facet="promotion"] .df-term__value:active:before,
+.df-mobile__aside .df-term[data-facet="promotion"] .df-term__value:focus:before,
+.df-mobile__aside .df-term[data-facet="promotion"] .df-term__value:hover:before,
+.df-mobile__aside .df-term[data-facet="tipo"] .df-term__value:active:before,
+.df-mobile__aside .df-term[data-facet="tipo"] .df-term__value:focus:before,
+.df-mobile__aside .df-term[data-facet="tipo"] .df-term__value:hover:before,
+.df-mobile__aside .df-term[data-facet="outlet"] .df-term__value:active:before,
+.df-mobile__aside .df-term[data-facet="outlet"] .df-term__value:focus:before,
+.df-mobile__aside .df-term[data-facet="outlet"] .df-term__value:hover:before,
+.df-mobile__aside .df-term[data-facet="grupo_precio"] .df-term__value:active:before,
+.df-mobile__aside .df-term[data-facet="grupo_precio"] .df-term__value:focus:before,
+.df-mobile__aside .df-term[data-facet="grupo_precio"] .df-term__value:hover:before{
+  background-color: #000;
+  /*color: #000;
+  font-weight:bold;*/
+  content: "✓";
+  color: #FFF;
+  padding: 0 3px;
+}
+.df-aside .df-panel--collapse[data-facet="genero"] .df-term[data-selected],
+.df-aside .df-panel--collapse[data-facet="age"] .df-term[data-selected],
+.df-aside .df-panel--collapse[data-facet="brand"] .df-term[data-selected],
+.df-aside .df-panel--collapse[data-facet="equipo"] .df-term[data-selected],
+.df-aside .df-panel--collapse[data-facet="promotion"] .df-term[data-selected],
+.df-aside .df-panel--collapse[data-facet="tipo"] .df-term[data-selected],
+.df-aside .df-panel--collapse[data-facet="outlet"] .df-term[data-selected],
+.df-aside .df-panel--collapse[data-facet="grupo_precio"] .df-term[data-selected],
+.df-mobile__aside .df-panel--collapse[data-facet="genero"] .df-term[data-selected],
+.df-mobile__aside .df-panel--collapse[data-facet="age"] .df-term[data-selected],
+.df-mobile__aside .df-panel--collapse[data-facet="brand"] .df-term[data-selected],
+.df-mobile__aside .df-panel--collapse[data-facet="equipo"] .df-term[data-selected],
+.df-mobile__aside .df-panel--collapse[data-facet="promotion"] .df-term[data-selected],
+.df-mobile__aside .df-panel--collapse[data-facet="tipo"] .df-term[data-selected],
+.df-mobile__aside .df-panel--collapse[data-facet="outlet"] .df-term[data-selected],
+.df-mobile__aside .df-panel--collapse[data-facet="grupo_precio"] .df-term[data-selected]{
+/*
+  font-weight:bold;
+*/
+}
+.df-aside .df-term[data-facet="genero"][data-selected] .df-term__value,
+.df-aside .df-term[data-facet="age"][data-selected] .df-term__value,
+.df-aside .df-term[data-facet="brand"][data-selected] .df-term__value,
+.df-aside .df-term[data-facet="equipo"][data-selected] .df-term__value,
+.df-aside .df-term[data-facet="promotion"][data-selected] .df-term__value,
+.df-aside .df-term[data-facet="tipo"][data-selected] .df-term__value,
+.df-aside .df-term[data-facet="talla"][data-selected] .df-term__value,
+.df-aside .df-term[data-facet="outlet"][data-selected] .df-term__value,
+.df-aside .df-term[data-facet="grupo_precio"][data-selected] .df-term__value,
+.df-mobile__aside .df-term[data-facet="genero"][data-selected] .df-term__value,
+.df-mobile__aside .df-term[data-facet="age"][data-selected] .df-term__value,
+.df-mobile__aside .df-term[data-facet="brand"][data-selected] .df-term__value,
+.df-mobile__aside .df-term[data-facet="equipo"][data-selected] .df-term__value,
+.df-mobile__aside .df-term[data-facet="promotion"][data-selected] .df-term__value,
+.df-mobile__aside .df-term[data-facet="tipo"][data-selected] .df-term__value,
+.df-mobile__aside .df-term[data-facet="talla"][data-selected] .df-term__value,
+.df-mobile__aside .df-term[data-facet="outlet"][data-selected] .df-term__value,
+.df-mobile__aside .df-term[data-facet="grupo_precio"][data-selected] .df-term__value{
+/*
+  font-weight: 700;
+  font-size: 18px;
+*/
+}
+.df-aside .df-panel--collapse[data-facet="genero"] .df-term[data-selected] .df-term__value:before,
+.df-aside .df-panel--collapse[data-facet="age"] .df-term[data-selected] .df-term__value:before,
+.df-aside .df-panel--collapse[data-facet="brand"] .df-term[data-selected] .df-term__value:before,
+.df-aside .df-panel--collapse[data-facet="equipo"] .df-term[data-selected] .df-term__value:before,
+.df-aside .df-panel--collapse[data-facet="promotion"] .df-term[data-selected] .df-term__value:before,
+.df-aside .df-panel--collapse[data-facet="tipo"] .df-term[data-selected] .df-term__value:before,
+.df-aside .df-panel--collapse[data-facet="outlet"] .df-term[data-selected] .df-term__value:before,
+.df-aside .df-panel--collapse[data-facet="grupo_precio"] .df-term[data-selected] .df-term__value:before,
+.df-mobile__aside .df-panel--collapse[data-facet="genero"] .df-term[data-selected] .df-term__value:before,
+.df-mobile__aside .df-panel--collapse[data-facet="age"] .df-term[data-selected] .df-term__value:before,
+.df-mobile__aside .df-panel--collapse[data-facet="brand"] .df-term[data-selected] .df-term__value:before,
+.df-mobile__aside .df-panel--collapse[data-facet="equipo"] .df-term[data-selected] .df-term__value:before,
+.df-mobile__aside .df-panel--collapse[data-facet="promotion"] .df-term[data-selected] .df-term__value:before,
+.df-mobile__aside .df-panel--collapse[data-facet="tipo"] .df-term[data-selected] .df-term__value:before,
+.df-mobile__aside .df-panel--collapse[data-facet="outlet"] .df-term[data-selected] .df-term__value:before,
+.df-mobile__aside .df-panel--collapse[data-facet="grupo_precio"] .df-term[data-selected] .df-term__value:before{
+  background-color: #000;
+  /*display: none;*/
+  content: "\02713";
+  color: #FFF;
+/*
+  padding: 0 3px;
+  margin-top: 1px;
+  margin-left: 1px;
+*/
+}
+
+.df-aside .df-term[data-facet="genero"] .df-term__value:before,
+.df-aside .df-term[data-facet="age"] .df-term__value:before,
+.df-aside .df-term[data-facet="brand"] .df-term__value:before,
+.df-aside .df-term[data-facet="equipo"] .df-term__value:before,
+.df-aside .df-term[data-facet="promotion"] .df-term__value:before,
+.df-aside .df-term[data-facet="tipo"] .df-term__value:before,
+.df-aside .df-term[data-facet="outlet"] .df-term__value:before,
+.df-aside .df-term[data-facet="grupo_precio"] .df-term__value:before,
+.df-mobile__aside .df-term[data-facet="genero"] .df-term__value:before,
+.df-mobile__aside .df-term[data-facet="age"] .df-term__value:before,
+.df-mobile__aside .df-term[data-facet="brand"] .df-term__value:before,
+.df-mobile__aside .df-term[data-facet="equipo"] .df-term__value:before,
+.df-mobile__aside .df-term[data-facet="promotion"] .df-term__value:before,
+.df-mobile__aside .df-term[data-facet="tipo"] .df-term__value:before,
+.df-mobile__aside .df-term[data-facet="outlet"] .df-term__value:before,
+.df-mobile__aside .df-term[data-facet="grupo_precio"] .df-term__value:before{
+  content: "" !important;
+  left: 0px;
+  display: inline-block;
+  min-height: 20px;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #000;
+  font-size: 15px;
+  vertical-align: middle;
+  margin-right: 10px;
+  flex: 0 0 20px;
+}
+.df-aside .df-panel--collapse[data-facet="genero"] .df-term[data-selected] .df-term__value:before,
+.df-aside .df-panel--collapse[data-facet="age"] .df-term[data-selected] .df-term__value:before,
+.df-aside .df-panel--collapse[data-facet="brand"] .df-term[data-selected] .df-term__value:before,
+.df-aside .df-panel--collapse[data-facet="equipo"] .df-term[data-selected] .df-term__value:before,
+.df-aside .df-panel--collapse[data-facet="promotion"] .df-term[data-selected] .df-term__value:before,
+.df-aside .df-panel--collapse[data-facet="tipo"] .df-term[data-selected] .df-term__value:before,
+.df-aside .df-panel--collapse[data-facet="outlet"] .df-term[data-selected] .df-term__value:before,
+.df-aside .df-panel--collapse[data-facet="grupo_precio"] .df-term[data-selected] .df-term__value:before,
+.df-mobile__aside .df-term[data-facet="genero"][data-selected] .df-term__value:before,
+.df-mobile__aside .df-term[data-facet="age"][data-selected] .df-term__value:before,
+.df-mobile__aside .df-term[data-facet="brand"][data-selected] .df-term__value:before,
+.df-mobile__aside .df-term[data-facet="equipo"][data-selected] .df-term__value:before,
+.df-mobile__aside .df-term[data-facet="promotion"][data-selected] .df-term__value:before,
+.df-mobile__aside .df-term[data-facet="tipo"][data-selected] .df-term__value:before,
+.df-mobile__aside .df-term[data-facet="outlet"][data-selected] .df-term__value:before,
+.df-mobile__aside .df-term[data-facet="grupo_precio"][data-selected] .df-term__value:before
+{
+	background: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/check-filtro-118.svg) 0 0 no-repeat #000000;
+	background-position: -3px -3px;
+	background-size: 24px; 
+}
+
+.df-panel[data-collapse=true] .df-panel__content,
+.df-mobile .df-panel[data-collapse=true] .df-panel__content {
+    display: none;
+}
+.noresultsfilter .df-panel[data-collapse=true] .df-panel__content,
+.df-mobile .noresultsfilter .df-panel[data-collapse=true] .df-panel__content {
+    display: block;
+}
+
+.df-fullscreen .df-panel--collapse[data-collapse=true] .df-selected-filters__title, 
+.df-mobile .df-panel--collapse[data-collapse=true] .df-selected-filters__title, 
+.df-panel--collapse[data-collapse=true] .df-fullscreen .df-selected-filters__title, 
+.df-panel--collapse[data-collapse=true] .df-mobile .df-selected-filters__title, 
+.df-panel--collapse[data-collapse=true] .df-panel__title,
+.df-fullscreen .df-panel--collapse .df-selected-filters__title, 
+.df-mobile .df-panel--collapse .df-selected-filters__title, 
+.df-panel--collapse .df-fullscreen .df-selected-filters__title, 
+.df-panel--collapse .df-mobile .df-selected-filters__title, 
+.df-panel--collapse .df-panel__title{
+	background: none !important;
+}
+
+.df-term[data-facet="color"] .df-term__count,
+.df-mobile__aside .df-term[data-facet="color"] .df-term__count,
+.df-term[data-facet="talla"] .df-term__count,
+.df-mobile__aside .df-term[data-facet="talla"] .df-term__count {
+    display: none !important;
+}
+
+.df-term .df-term__count,
+.df-mobile__aside .df-term__count{
+    color: #000 !important;
+    display: unset !important;
+}
+
+.df-aside .df-panel--collapse[data-facet=color][data-collapse=false],
+.df-mobile__aside .df-panel--collapse[data-facet=color][data-collapse=false]{
+  min-height: 200px;
+}
+.df-aside .df-panel--collapse[data-facet="talla"][data-collapse=false],
+.df-mobile__aside .df-panel--collapse[data-facet="talla"][data-collapse=false]{
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+.df-aside .df-panel--collapse[data-facet="talla"][data-collapse=false].closed, 
+.df-mobile__aside .df-panel--collapse[data-facet="talla"][data-collapse=false].closed{
+  padding-bottom: 0;
+}
+.df-aside .df-panel__title,
+.df-mobile__aside .df-panel__title{
+  cursor: pointer;
+  font-size: 16px !important;
+  font-weight: 400;
+  float: left;
+  font-family: 'Open Sans',sans-serif;
+  padding: 0px 4px 0px 9px;
+  width: 100%;
+  text-decoration: none;
+  color: #000;
+}
+.df-aside .df-panel--collapse,
+.df-mobile__aside .df-panel--collapse{
+  border-bottom: 1px solid #DADADA;
+}
+
+.df-fullscreen a.first .df-categories,
+.df-mobile a.first .df-categories{
+  background-color: #f4eb84;
+  opacity: 0.7;
+}
+.df-fullscreen a.first .df-categories:hover,
+.df-mobile a.first .df-categories:hover{
+  background-color: #f4eb84;
+}
+
+.df-fullscreen a div.df-suggestion[data-type=products],
+.df-fullscreen a div.df-categories[data-type=products],
+.df-mobile a div.df-suggestion[data-type=products],
+.df-mobile a div.df-categories[data-type=products]{
+  display: none;
+}
+
+.df-fullscreen a div.df-categories,.df-fullscreen a div.df-categories,
+.df-mobile a div.df-categories,.df-mobile a div.df-categories
+{
+  text-decoration: none;
+  width: 100%;
+}
+
+.df-fullscreen [data-role=panel-content] [data-toggle-extra-content],
+.df-mobile [data-role=panel-content] [data-toggle-extra-content]{
+  display: none;
+}
+
+.df-aside .df-panel--collapse,.df-mobile__aside .df-panel--collapse{
+  clear: both;
+  border-bottom: 1px solid #DADADA;
+}
+.df-aside .df-panel--collapse[data-collapse=true], 
+.df-aside .df-panel--collapse.closed,
+.df-mobile__aside .df-panel--collapse[data-collapse=true],
+.df-mobile__aside .df-panel--collapse.closed {
+  min-height: 35px !important;
+}
+
+
+.df-aside .df-panel--collapse[data-collapse=true].closed,
+.df-mobile__aside .df-panel--collapse[data-collapse=true].closed {
+  /*min-height: 0px !important;*/
+}
+.df-aside .df-panel--collapse[data-collapse=false],
+.df-mobile__aside .df-panel--collapse[data-collapse=false]{
+  /*min-height: 160px;*/
+}
+
+/* ----------------------------------------------------------- */
+/* 			CSS TABLET Y DESKTOP 							   */
+/* ----------------------------------------------------------- */
+#dfclassic {
+  width: 100% !important;
+  left: 0 !important;
+  margin-left: 0 !important;
+  top: 84px !important;
+}
+#dffullscreen {
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 300;
+}
+#df-topbar__dffullscreen {
+  background: #e5e5e5;
+  width: 100%;
+  padding: 10px 0 10px 0 !important;
+}
+.df-fullscreen[data-scrolling=true] .df-topbar{
+  box-shadow: unset !important;
+}
+.df-header-title{
+  display: none;
+}
+html.df-fix-layout, html.df-fix-layout body {
+  overflow: auto !important;
+}
+.doofinder-hidden-menu{
+  float: left;
+  cursor: pointer;
+  background: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/sprite-header.svg) -32px -54px no-repeat transparent;
+  width: 22px;
+  height: 22px;
+  margin-left: 10px;
+  background-size: 172px;
+}
+.doofinder-hidden-menu.active{
+  background: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/sprite-header.svg) -32px -79px no-repeat transparent;
+  background-size: 172px;
+}
+.doofinder-hidden-menu:hover{
+  opacity: 0.7;
+}
+.hideContent {
+  background-color: rgba(255, 255, 255, 0.88);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 99;
+  display: none;
+}
+.hideContent.active{
+  display: block !important;
+}
+
+.menuLogos{
+  width: 170px;
+  background: #000;
+  position: absolute;
+  z-index: 999;
+  height: auto;
+  padding: 5px;
+  margin-top: 37px;
+  display: none;
+}
+
+.menuLogos.active{
+  display: block !important;
+}
+.menuLogos:before{
+  content: '';
+  display: block;
+  margin: -12px 0 0 6px;
+  width: 0;
+  height: 0;
+  border-bottom: solid 10px #000;
+  border-left: solid 10px transparent;
+  border-right: solid 10px transparent;
+}
+.menuLogosIr{
+  color: #808080;
+  font-weight: 700;
+  font-size: 12px;
+  text-align: left;
+  margin-top: 5px;
+}
+.menuLogosIr span:hover{
+  color: #808080 !important;
+}
+.box-hidden-menu:hover span {
+  color: #808080;
+}
+.menuLogosLista a {
+    text-decoration: none;
+}
+.menuLogosOpt {
+  border-top: 1px solid #808080;
+  color: #eeeeee;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.menuLogosOpt:hover {
+  opacity: 0.7;
+}
+.menuLogosOpt span {
+  color: #fff !important;
+  font-weight: 600;
+  text-align: center;
+  font-size: 14px;
+}
+.menuLogosOpt .logo {
+    background: #000;
+}
+.menuLogosOpt img.logo.active {
+  width: 100%;
+}
+.df-fullscreen .df-topbar__logo {
+  margin: 0 !important;
+  height: auto !important;
+}
+.df-fullscreen .df-topbar__logo .logo{
+  height: 30px !important;
+}
+/* Logos header */
+img.logo.logo-futbolmania{
+  display: none;
+}
+img.logo.logo-women{
+  display: none;
+}
+img.logo.logo-kids{
+  display: none;
+}
+img.logo.logo-futsal{
+  display: none;
+}
+img.logo.active{
+  display: block;
+  width: 180px;
+  max-width: 180px;
+  cursor: pointer;
+}
+/* End */
+/* Logos menú desktop */
+.menuLogosOpt img.logo.logo-futbolmania,.menuLogosOpt img.logo.logo-women,.menuLogosOpt img.logo.logo-kids,.menuLogosOpt img.logo.logo-futsal{
+  display: block;
+}
+/* End */
+/* X close layer*/
+.df-icon--close svg {
+  fill: #000 !important;
+}
+.df-icon--close:active svg, .df-icon--close:focus svg, .df-icon--close:hover svg {
+  fill: #000 !important;
+}
+.df-fullscreen .df-icon {
+  width: 30px;
+  height: 30px !important;
+  line-height: 30px;
+}
+.df-fullscreen .df-icon:hover{
+  opacity: 0.7;
+}
+#to-top.df-in{
+ display: block;
+}
+#to-top,#to-top.df-out{
+ display:none;
+}
+.df-suggestion-text.last{
+ color: #1a73e8;
+}
+/* END */
+.search-form .search-form-container #search_mini_form .input-box .input-search-container:after{
+  /*content: "";*/
+  background: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/sprite-header.svg) -141px -53px / 172px no-repeat;
+  background-color: #ebe919;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: 0;
+}
+.search-form .search-form-container {
+	height: 30px !important; /* bug 7 sharen */
+	max-width: 750px;
+}
+.btn.buscar {
+	height: 30px;
+}
+
+@media (min-width: 768px){
+  .df-fullscreen nav.box-hidden-menu div{
+    visibility: hidden;
+  }
+  .df-fullscreen nav.box-hidden-menu{
+    position: relative;
+  }
+  .df-fullscreen nav.box-hidden-menu:after{
+    content: "";
+    background: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/doofinder/flechadf.svg) 4px 4px no-repeat;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-size: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+  }
+  .df-fullscreen nav.box-hidden-menu:hover:before{
+    content: "Salir";
+    position: absolute;
+    width: auto;
+    z-index: 2000000;
+    font-size: 11px;
+    top: 30px;
+    background-color: #efefef;
+    box-shadow: -1px 1px 3px 0px #9b9b9b;
+    border-radius: 3px;
+    padding: 3px;
+    padding-left: 5px;
+    font-weight: 600;
+  }
+
+  /* Scroll */
+  /* width */
+  #dffullscreen.df-fullscreen ::-webkit-scrollbar {
+    width: 5px;
+  }
+  /* Track */
+  #dffullscreen ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px rgba(0,0,0,.15);
+    border-radius: 10px;
+  }
+  /* Handle */
+  #dffullscreen ::-webkit-scrollbar-thumb {
+    background: #E5E5E5;
+    border-radius: 10px;
+    width: 5px;
+  }
+  /*
+  #dffullscreen .df-results::-webkit-scrollbar-thumb {
+    background: none !important;
+  }
+  #dffullscreen .df-aside__content::-webkit-scrollbar-thumb {
+    background: none !important;
+  }
+*/
+  #dffullscreen ::-webkit-scrollbar-thumb:hover {
+    background: #7F7F7F;
+  }
+  /* END */
+}
+/* Search input */
+.df-fullscreen .df-searchbox{
+  font-size:17px !important;
+  border-bottom: 1px solid #eee !important;
+  border: 1px solid #eee;
+  /*border-radius: 14px;*/
+}
+.df-fullscreen .df-searchbox .lupa {
+    margin: 1px;
+}
+img.lupa.lupa-gris{
+    width: 20px;
+
+    margin: 4px;
+
+}
+@media (min-width: 768px){
+  .df-fullscreen #df-categories__dffullscreen{
+    box-shadow: 0 4px 6px 0 rgba(32,33,36,0.28);
+  }
+  .df-searchbox  img.lupa.lupa-gris{
+    width: 30px;
+    position: absolute;
+    margin: 0px;
+    right: 0;
+    background-color: #ebe717;
+    padding: 3px;
+    display: none;
+  }
+}
+img.lupa.link-gris, .img.lupa.link-gris {
+    width: 15px;
+    margin: 7px 0 0 9px;
+}
+.df-fullscreen .df-searchbox.opened{
+  /*border-radius: 14px 14px 0 0;*/
+  box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+}
+.df-fullscreen .df-searchbox input{ /* bug 7.6 - sharen */
+  /*border-radius: 14px !important;*/
+	width: 100%;
+	margin: 0;
+	border-radius: 4px !important;
+	padding: 3px 3px 3px 10px !important;
+	vertical-align: middle;
+	height: 30px !important;
+	font-size: 17px !important;
+	font-weight: 400 !important;
+	outline: 0;
+	line-height: 1.5;
+}
+.df-topbar__content{
+  height: auto !important;
+}
+@media (min-width: 1025px){
+  .df-fullscreen .df-searchbox{
+  	max-width: 950px;
+  	/*position: relative;*/
+   	display: flex;
+  }
+  .df-fullscreen .df-searchbox {
+	max-width: 750px;
+  }
+}
+/* END */
+.df-sort-select{
+  margin-left: 0;
+  float: right;
+  margin-right: 1.5rem;
+}
+.df-sort-select label{
+  display:none;
+}
+.df-sort-select select{
+  cursor: pointer;
+  font-size: 14px;
+  float: left;
+  min-width: 245px;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 400;
+  padding: 5px;
+  border: 1px solid #000;
+  background-color: #fff;
+  color: #000;
+  line-height: 1;
+  text-align: center;
+  text-align-last: center;
+  height: 40px;
+}
+.df-sort-selected {
+  cursor: pointer;
+  font-size: 13px;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 400;
+  padding: 10px 10px 10px 10px;
+  /*border: 1px solid #000;*/
+  /*width: 300px;*/
+  color: #000;
+  /*text-align: center;*/
+  text-align: right;
+  line-height: 0.4;
+  float: right;
+  width: 110px;
+  height: 25px;
+}
+.df-sort-selected.opened {
+    background-color: #fff;
+    border-radius: unset;
+    height: 25px;
+    line-height: 0.4;
+    box-shadow: 0px 0px 5px 0px rgba(32,33,36,0.28);
+}
+.df-sort-selected.opened:hover{
+    background-color: #fff;
+    border-radius: unset;
+}
+.df-sort-selected .selected{
+  padding-right: 10px;
+  font-weight: 600;
+  font-size: 15px;
+}
+@media (max-width: 1024px){
+	.df-sort-selected .selected { font-size: 14px; }
+}
+.df-sort-selected:hover{
+  background-color: #ccc;
+  border-radius: 20px;
+  height: 25px;
+  line-height: 0.4;
+}
+ul.df-sort-select-options {
+  border-top: 0;
+  padding-top: 5px;
+  width: 298px;
+  z-index: 99;
+  background-color: #FFF;
+  position: absolute;
+  display: none;
+  border-top: 0 !important;
+  /*border: 1px solid #878787;*/
+  margin-left: 0px;
+}
+
+ul.df-sort-select-options.opened {
+  display: block;
+  box-shadow: 0px 2px 6px 0 rgba(32,33,36,0.28); 
+}
+
+ul.df-sort-select-options li {
+  cursor: pointer;
+  display: table;
+  width: 100%;
+  position: relative;
+  border: 2px solid transparent;
+  color: #000;
+  height: 35px;
+  text-align: center;
+  line-height: 2em;
+  font-weight: 300;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+ul.df-sort-select-options li:hover,ul.df-sort-select-options li:active,ul.df-sort-select-options li.active {
+  border: 2px solid #000;
+}
+
+.filter-arrow-container {
+  float: right;
+}
+.filter-arrow {
+  background: url(//www.futbolmania.com/skin/frontend/rwd/futbolmania/images/sprite.svg) -191px -250px no-repeat transparent;
+  width: 18px;
+  height: 10px;
+  float: right;
+  background-size: 286px 495px;
+  margin-top: 0px;
+}
+.filter-arrow:hover:before{
+   content: "mostrar filtros";
+}
+.filter-arrow.opened {
+   background-position: -213px -249px;
+}
+.filter-arrow.opened:hover:before{
+   content: "ocultar filtros";
+}
+.filter-arrow:hover:before, .filter-arrow.opened:hover:before{
+   position: absolute;
+   width: auto;
+   z-index: 2000000;
+   right: 0;
+   font-size: 11px;
+   font-weight: 400;
+   top: 30px;
+   background-color: #efefef;
+   box-shadow: -1px 1px 3px 0px #9b9b9b;
+   border-radius: 3px;
+   padding-left: 5px !important;
+   padding: 8px 3px;
+}
+.df-header span span[data-role=total]{
+   float:left;
+}
+#df-subheader {
+  width: 100%;
+  display: none;
+}
+
+#df-subheader.fixed{
+	position: fixed;
+	top: 55px;
+	margin-top: 0px;
+	z-index: 9;
+	/*box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);*/
+        box-shadow: 4px 1px 6px 0 rgba(32, 33,36, 0.28);
+	width: 100% !important;
+	padding-bottom: 10px;
+}
+  
+.df-subheader .df-sort-select {
+  /*margin: 50px 0px 10px 0px;*/
+  margin-left: 0px !important;
+  /*position: absolute;*/
+  z-index: 98;
+  display:none;
+  position: relative;
+  float: unset;
+}
+.df-subheader .df-sort-select.hide {
+    display: none !important;
+}
+/* Suggestions */
+div#dffullscreen-1 {
+  margin: 0;
+  position: initial;
+}
+#dffullscreen-1 .df-aside {
+  display: none;
+}
+.df-categories-list .df-fullscreen[data-wide=true] .df-layer__content {
+  margin: 0px;
+  padding: 0px;
+}
+[data-layout=grid][data-browser-support~=cssgrid] #df-results__wrapper__dffullscreen-1 {
+  grid-template-columns: repeat(auto-fill,minmax(100%,1fr)) !important;
+}
+#df-suggestions__dffullscreen,#df-categories__dffullscreen {
+  background: #FFF;
+  margin-top: -6px;
+  display: grid;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 760px;
+  top: 52px;
+  /*border-top: 1px solid #eee;*/
+  padding-top: 5px;
+  display: none;
+  z-index: 10;
+  /*border: 1px solid #EEE;*/
+  position: absolute;
+  /*border-radius:0 0 14px 14px;*/
+}
+@media only screen and (min-width: 1025px) {
+  /* bug sharen */
+  img.link-suggestions {
+    display: none;
+  }
+  /* end bug sharen */
+  .clear-or-category {
+    /*display: none !important;*/
+  }
+}
+.clear-or-category {
+    margin: 0px 0 0 0px;
+    position: absolute;
+    display:  flex;
+}
+.clear-or-category .clear {
+    margin: 6px 4px 4px 0;
+    width: 20px;
+    text-align: center;
+    display: none;
+}
+.clear-or-category .clear img {
+    width: 18px;
+    padding: 2px 0px 2px 2px;
+}
+.buscar {
+   /*background: #ebe717;*/
+    background: linear-gradient(to bottom,#f5ed89,#e4e013);
+    width: 130px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+    height: 30px;
+    padding: 2px 15px;
+	border-radius: 0px 4px 4px 0px;
+}
+.buscar.active:hover{
+    /*opacity: 0.7;*/
+    /*background-color: #f4eb84;*/
+    background: linear-gradient(to bottom,#ebe717,#d6d205);
+}
+.btn.buscar {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    height: 30px;
+    padding: 0px 15px;
+    cursor: pointer;
+    border: unset;
+}
+.lupa-negra{
+    width: 26px;
+    height: 26px;
+    background: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/sprite-header.svg) -142px -54px no-repeat;
+	background-size: 172px;
+    /*margin-top: 4px;*/
+    float: right;
+    /*background-color: #ebe717;*/
+  }
+.group-logo{
+  display: inline-flex;
+  height: 30px;
+    margin-right: 10px;
+}
+.group-logo{
+    margin-left: 10px;
+}
+.group-logo:hover {
+    background-color: #ccc;
+    border-radius: 20px;
+    height: 35px;
+}
+.desktop-logos{
+  display: none;
+  /*width: calc(15% + 20px);*/
+}
+.desktop-logos img.logo{
+  max-width: calc(100% - 10px);
+}
+#df-subheader.active{
+        display: block !important;
+        z-index:99;
+}
+	
+@media only screen and (max-width: 1365px){
+	.df-fullscreen .df-searchbox, .df-fullscreen .df-searchbox input, .search-form .search-form-container{
+		max-width: 650px !important;
+	}
+	
+}
+
+@media only screen and (min-width: 1024px) {
+  .clear:hover {
+ 	background-color: #ccc;
+ 	border-radius: 20px;
+  }
+  #df-sort-select.hide {
+    display: none !important;
+  }
+  .df-fullscreen .df-topbar__content {
+    display: -webkit-box !important;
+    -webkit-box-pack: initial !important;
+  }
+  .df-fullscreen nav.box-hidden-menu:hover:after,.df-fullscreen .df-icon:hover{
+    /*opacity: 0.5;*/
+  }
+  .flecha-doofinder{
+    display: none;
+  }
+  .clear-or-category {
+    /*display: none !important;*/
+    cursor: pointer;
+    position: initial;
+  }
+  a.df-categories.first{
+    display: block;
+  }
+  .df-topbar img.logo {
+    
+  }
+  .desktop-logos{
+    display: block;
+    /*width: calc(15% + 20px);*/
+    /*width: calc(10% + 20px);*/
+    margin-top: -3px;
+  }
+
+  .df-fullscreen a div.df-suggestion:hover,
+  .df-fullscreen a div.df-categories:hover
+  {
+    background-color: #ebe717;
+  }
+  .df-fullscreen nav.box-hid- den-menu {
+	 display: block;
+	 margin-left: 10px;
+	 /* width: 10%; */
+	 width: 20px;
+	 min-height: 40px;
+	 padding-top: 6px; 
+   }
+   #df-subheader.active{
+	position:absolute;
+   }
+}
+
+/*Ipad PRO*/
+@media only screen and (min-width: 1024px) and (max-height: 1366px)
+    and (-webkit-min-device-pixel-ratio: 1.5) and (hover: none) {
+  .clear-or-category {
+    display: contents !important;
+    margin: 3px 0 0 -20px;
+  }
+  .clear-or-category .category {
+    height: 25px;
+    font-size: 13px;
+    margin-top: 4px;
+    padding: 1px 3px;
+    background: #ebe717;
+    display: none;
+  }
+  .clear-or-category .category:active{
+    background-color: #ebe717;
+  }
+  .clear-or-category .clear {
+    margin: 4px 5px 0 0;
+	width: 25px;
+    text-align: center;
+  }    
+  .clear-or-category .clear:active{
+	background-color: #ccc;
+	border-radius: 10px;
+  }
+  .clear-or-category img.lupa-gris{
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 5px 0 0;
+  }
+  .clear-or-category .category span{
+    float: right;
+    color: #FFF;
+    font-weight: 600;
+  }
+  .doofinder-hidden-menu{
+     display: none;
+  }
+  .df-fullscreen .df-topbar__content{
+     display: flex !important;
+  }
+}
+@media only screen and (max-width: 1025px) {
+ .buscar {
+        width: unset;
+        text-align: unset !important;
+  }
+  .buscar span{
+        display: none;
+   }
+}
+
+/* BUG SHAREN */
+@media only screen and (max-width: 1024px){
+	img.link-suggestions {
+		width: 22px;
+		float: right;
+		margin-right: 15px;
+		padding: 5px;
+		position: absolute;
+		right: 0px;
+		margin: -24px 0px; 
+	}
+}
+/* END BUG SHAREN */
+
+@media only screen and (max-width: 1023px) {
+   .btn.buscar.active .buscar:active{ /* PUNT 7.2 SHAREN CSS  TABLET Y MOBILE */
+		background-color: #ccc;
+   }	  
+   .clear:active {
+		background-color: #ccc;
+		border-radius: 20px;
+    }
+  .df-topbar img.logo {
+    width: auto;
+    margin-left: 10px;
+    height: 25px;
+  }
+  .df-fullscreen .df-searchbox .lupa{
+	  display: none !important;
+  }
+  .df-fullscreen .flecha-doofinder{
+    display: block;
+    width: 20px;
+    margin: 8px 0 0 5px;
+  }
+  .df-fullscreen .flecha-doofinder:active{
+    background-color: #cccccc;
+  }
+  a.df-categories.first{
+    display: none;
+  }
+	/*
+	  .buscar {
+			width: unset;
+			text-align: unset !important;
+	  }
+	  .buscar span{
+		display: none;
+	   }
+	*/
+	@media screen and (orientation:portrait) {
+	  .clear-or-category {
+		/*display: none;
+		display: inline-flex;*/
+		margin: 3px 0 0 -20px;
+	  }
+	}
+	@media screen and (orientation:landscape) {
+	   .clear-or-category {
+			/*display: none; bug lupa */
+			margin: 3px 0 0 -20px;
+	   }
+	}
+  .clear-or-category .category {
+    height: 25px;
+    font-size: 13px;
+    margin-top: 4px;
+    padding: 1px 3px;
+    background: #ebe717;
+  }
+  .clear-or-category .category:active{
+    background-color: #cccccc;
+  }
+  
+   
+   .clear-or-category .clear{ /* PUNT 7.6 SHAREN CSS  TABLET Y MOBILE */
+		margin: 4px 0px 0 0;
+		width: 25px;
+		height: 22px;
+		text-align: center;	   
+   }  
+   
+	.clear-or-category .clear:active { /* PUNT 7.5 SHAREN CSS  TABLET Y MOBILE */
+		background-color: #cccccc;
+	}     
+	
+  .clear-or-category img.lupa-gris{
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 5px 0 0;
+  }
+  .clear-or-category .category span{
+    float: right;
+    color: #FFF;
+    font-weight: 600;
+  }
+  /*
+  .suggestion-all{
+    display: none;
+  }
+  */
+  img.logo.active {
+    display: block;
+  }
+  .df-categories span.extra.last .extra-url{
+    margin-top: 3px;
+    display: block;
+  }
+  .df-categories span.extra.last{
+    font-size: 12px !important;
+  }
+  img.link-suggestions {
+    width: 22px;
+    float: right;
+    margin-right: 15px;
+    padding: 5px;
+
+   /*nuevo flecha sugerencias*/
+   position: absolute;
+   right: 0px;
+    margin: -24px 0px;
+  }
+  img.link-suggestions:active{
+    background-color: #cccccc;
+  }
+  img.link-suggestions.last{
+      display: none;
+  }
+
+  .df-fullscreen a div.df-suggestion:hover,
+  .df-fullscreen a div.df-categories:hover
+  {
+    background-color: #e5e5e5;
+  }
+
+ .custom-category[data-category="Todo"]:active, 
+ .custom-category[data-category="Hombre"]:active,
+ .custom-category[data-category="Adultos"]:active,
+ .custom-category[data-category="Mujer"]:active,
+ .custom-category[data-category="Infantil"]:active,
+ .custom-category[data-category="Futsal"]:active{
+   background-color: #ccc;
+ }
+}
+
+.df-fullscreen[data-wide=true]>.df-layer__content {
+  padding-left: 1% !important;
+  padding-right: 1% !important;
+}
+
+/*
+@media screen and (max-width: 1024px){
+        .search-desktop{
+                display: none !important;
+        }
+}
+@media screen and (min-width: 1025px){
+        .search-mobile{
+                display: none !important;
+        }
+}
+*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .df-fullscreen[data-wide=true]>.df-layer__content {
+   	padding-left: 2% !important;
+    	padding-right: 2% !important;
+  }
+  .df-fullscreen .lupa-negra{
+   	margin-top: -1px !important;
+   	margin-right: -1px !important;
+   	padding: 10px;
+	width: 30px;
+    	height: 31px !important;
+    	background: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/sprite-header.svg)-140px -66px;
+		background-size: 180px 200px; ;
+    	float: right;
+    	background-color: #ebe717;
+  }
+  .df-fullscreen .df-searchbox input{
+    	/*max-width: 83%;
+    	width: 83% !important;*/
+	padding: 3px 0px 3px 30px !important;
+  }
+  .df-fullscreen .flecha-doofinder{
+    	position: absolute;
+    	margin: 8px 0 0 5px !important;
+	/*display: none;*/
+  }
+  .df-fullscreen .flecha-doofinder:active{
+    	background-color: #cccccc;
+  }
+  .desc-search-into {
+    	padding: 5px 10px;
+  }
+  .desc-search-text .desc-total{
+	font-size: 30px !important;
+  }
+  .desc-search-text{
+    	font-size: 20px !important;
+    	font-weight: 700 !important;
+  }
+  .desc-search-category{
+    	font-weight: 700;
+  }
+  .desc-search-word {
+    	font-weight: 700;
+    	font-size: 20px !important;
+  }
+  .clear-or-category {
+    	/*float: right;
+    	margin: 0px;*/
+	margin: 0 0 0 -25px;
+	float: right;
+    	display: contents;
+	/*position: absolute;*/
+  }
+  .df-categories .extra-url span.find{
+    	margin-top: 5px;
+  }
+  #search_mini_form .input-search-container:after{
+    	/*content: "";*/
+    	width: 22px;
+    	height: 22px;
+    	background: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/sprite-header.svg) -143px -55px no-repeat;
+    	background-size: 172px;
+    	margin-top: 0px;
+    	right: 8px;
+    	position: absolute;
+    	display: inline-block;
+  }
+  .menuLogos{
+    	width: auto;
+  }
+  img.link-suggestions{
+    	margin-right: 6px;
+  }
+  .df-list-categories img.link-suggestions {
+    	display: none;
+  }
+  .df-fullscreen nav.box-hidden-menu:active:after,.df-list-categories a.df-categoriessidebar:active{
+    	background-color: #ccc;
+  }
+}
+@media (min-width: 320px) and (max-width: 1024px){
+  .desc-search-into{
+    padding: 0 10px 5px 10px;
+  }
+}
+
+ /* PUNTO3 SHAREN
+ .lupa-negra{
+   margin-right: 0px;
+   margin-top: 0px;
+   width: 35px;
+   height: 30px !important;
+   background: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/sprite-header.svg) -152px -120px;
+   background-size: 200px 200px;
+   background-color: #ebe717;
+   display:none;
+ }*/
+ #df-subheader.fixed .desc-search-into {
+    max-height: 26px;
+ }
+ .desc-search-text{
+   font-size: 20px;
+   font-weight: 700;
+ }
+ .desc-search-category{
+   font-weight: 700;
+   color: #000;
+ }
+ .desc-search-word {
+   font-weight: 700;
+   /*font-size: 16px; bug */
+   color: #000;
+ }
+ .last .df-categories {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    max-height: 30px;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+
+  .extcategories, a.df-categories.last {
+    display: none !important;
+  }
+  .df-card__price-offer span.df-offer{
+    font-size: 12px !important;
+   }
+  .df-card__price-offer span.df-offer[data-value="black friday"],
+  .df-card__price-offer span.df-offer[data-value="cyber monday"]{
+    font-size: 13px;
+  }
+  
+	@media (max-width: 767px){
+		.df-card__price-offer span.df-offer[data-value="black friday"] { font-size: 11px !important; }	
+	}
+	@media (max-width: 799px){
+		.df-card__price-offer span.df-offer[data-value="black friday"] { font-size: 12px; }	
+	}  
+  
+  /* BUG25*/
+	#df-subheader.fixed .desc-search-into {
+		padding: 3px 0px 0px 10px; 
+	}  
+
+
+#df-suggestions__dffullscreen:before,#df-categories__dffullscreen:before {
+  /*content: '';*/
+  display: block;
+  margin: -8px auto;
+  width: 0;
+  height: 0;
+  border-bottom: solid 10px #ffffff;
+  border-left: solid 10px transparent;
+  border-right: solid 10px transparent;
+}
+#df-suggestions__dffullscreen.hidden:before,#df-categories__dffullscreen.hidden:before {
+  display:none;
+}
+span.suggestion-copy {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  color: #808080;
+  border-bottom: 1px solid #EEE;
+  margin-bottom: 5px;
+}
+.suggestions-filters {
+  border-top: none;
+  display: table;
+  margin: 5px auto 0 10px;
+  display: none;
+}
+.suggestions-filters div {
+  float: left;
+  padding: 8px 15px;
+  color: #FFFFFF;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 10px 15px 10px 0;
+  width: 125px;
+  height: 40px;
+}
+span.suggestion-lupa {
+  width: 22px;
+  height: 22px;
+  background: url(http://pre-futbolmania.bumon-web.com/skin/frontend/rwd/futbolmania/images/sprite-header.svg) -143px -55px no-repeat;
+  background-size: 172px;
+  display: inline-flex;
+  margin-right: 10px;
+  margin-bottom: -6px;
+}
+
+.suggestion-man span.suggestion-lupa, .suggestion-women span.suggestion-lupa, .suggestion-infantil span.suggestion-lupa, .suggestion-futsal span.suggestion-lupa {
+  filter: invert(100%) sepia(0%) brightness(100%) contrast(100%);
+}
+
+.suggestion-all{
+  font-size: 14px;
+  background-color: #ebe717;
+  color: #000000 !important;
+}
+.suggestion-man{
+  font-size: 14px;
+  background-color: #666666;
+}
+.suggestion-women{
+  font-size: 14px;
+  background-color: #c452b4;
+}
+.suggestion-infantil{
+  font-size: 14px;
+  background-color: #f18a00;
+}
+.suggestion-futsal{
+  font-size: 14px;
+  background-color: #0d78f9;
+}
+
+.suggestion-all:hover{
+  opacity: 0.7;
+}
+.suggestion-man:hover{
+  opacity: 0.7;
+}
+.suggestion-women:hover{
+  opacity: 0.7;
+}
+.suggestion-infantil:hover{
+  opacity: 0.7;
+}
+.suggestion-futsal:hover{
+  opacity: 0.7;
+}
+.df-categories span.find{
+  font-weight: 400;
+}
+.df-categories, .df-categories span.df-categories-first {
+  font-weight: 700;
+}
+.df-categories span {
+  font-weight: 100;
+}
+.df-categories span.extra{
+  display: none;
+}
+.df-categories span.extra.last{
+ display: none;
+ /*display: contents;*/
+ font-size: 15px;
+}
+.df-categories span.extra.last .extra-url{
+  color: #1a73e8;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  /*width: 300px;*/
+  overflow: hidden;
+}
+.df-categories.selected .df-categories{
+  background-color: #e5e5e5;
+}
+.df-fullscreen a div.df-suggestion,
+.df-fullscreen a div.df-categories
+{
+  display: inline-block;
+  padding: 3px 0 3px 30px;
+}
+.extcategories {
+    font-size: 13px;
+    color: #808080;
+    font-weight: 400;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    display: inline-block;
+    padding: 0px 10px;
+    margin: 5px 0;
+}
+.df-categories.last .df-categories {
+  display: inline-flex;
+}
+a.df-categories{
+  text-decoration: none;
+}
+a.df-categories .lupa{
+  position: absolute;
+  margin-top: 6px;
+  margin-left: 5px;
+}
+a.df-categories.into.hide {
+    display: none;
+}
+
+.df-categories img.lupa.link-gris, .df-categories .img.lupa.link-gris {
+    display: none;
+    margin-left: 9px;
+}
+a.df-categories.last .lupa{
+  display: none;
+}
+a.df-categories.last img.lupa.link-gris, a.df-categories.last .img.lupa.link-gris{
+  display: block !important;
+}
+.suggestion-first{
+  font-size: 12px;
+  font-weight: 400;
+}
+.suggestion-first-category{
+
+}
+/*Suggestions End*/
+
+/* Header custom categories */
+.df-fullscreen[data-facets=left] .df-header {
+  display: none !important;
+}
+.custom-categories {
+  color: #000;
+  margin: 0 auto;
+  /*margin-right: calc(10px - 10px);*/
+}
+.custom-categories a {
+  text-decoration: none;
+}
+.custom-categories a.noavai, a.noavai{
+    cursor: default;
+}
+.custom-category {
+  background: #e6e6e6;
+  float: left;
+  width: 130px;
+  margin-right: 10px;
+  text-align: center;
+  vertical-align: middle;
+  height: 35px;
+  padding: 5px;
+  font-size: 16px;
+  /*display:none;*/
+}
+.custom-category.avai {
+    /*display: block;*/
+}
+.custom-category.noavai,.custom-category.noavai:active {
+    color: #D4D4D4;
+}
+.custom-category:hover {
+  /*background: #f18a00;*/
+  /*color: #FFF;*/
+}
+.custom-category:active {
+  /*background: #ebe717;*/
+  color: #000;
+}
+.custom-category.active {
+  /*background: #ebe717;*/
+  color: #000;
+}
+.custom-category[data-category="Todo"]:hover,.custom-category:active[data-category="Todo"],.custom-category.active[data-category="Todo"]{
+  color: #000;
+  /*background: #ebe717;*/
+}
+.custom-category[data-category="Todo"]:hover,
+.custom-category:active[data-category="Todo"],
+.custom-category.active[data-category="Todo"] {
+  /*background: #ebe717;*/
+}
+.custom-category.active[data-category="Todo"]:after {
+  /*border-top: solid 10px #ebe717;*/
+}
+.custom-category[data-category="Hombre"]:hover,.custom-category:active[data-category="Hombre"],.custom-category.active[data-category="Hombre"],
+.custom-category[data-category="Adultos"]:hover,.custom-category:active[data-category="Adultos"],.custom-category.active[data-category="Adultos"]{
+  /*background: #666666;
+  color: #FFF;*/
+}
+.custom-category[data-category="Mujer"]:hover,.custom-category:active[data-category="Mujer"],.custom-category.active[data-category="Mujer"]{
+ /* background: #c452b4;*/
+}
+.custom-category[data-category="Infantil"]:hover,.custom-category:active[data-category="Infantil"],.custom-category.active[data-category="Infantil"]{
+  /*background: #f08900;*/
+}
+.custom-category[data-category="Futsal"]:hover,.custom-category:active[data-category="Futsal"],.custom-category.active[data-category="Futsal"]{
+  /*background: #0d78f8;*/
+}
+.custom-category[data-category="Todo"]:hover,
+.custom-category[data-category="Hombre"]:hover,
+.custom-category[data-category="Adultos"]:hover,
+.custom-category[data-category="Mujer"]:hover,
+.custom-category[data-category="Infantil"]:hover,
+.custom-category[data-category="Futsal"]:hover {
+  opacity: 0.5;
+}
+.custom-category.noavai:hover {
+    opacity: 1;
+}
+.custom-category.active:after {
+  content: '';
+  display: block;
+  margin: 2px auto;
+  width: 0;
+  height: 0;
+  /*border-top: solid 10px #ebe717;*/
+  border-left: solid 10px transparent;
+  border-right: solid 10px transparent;
+}
+.custom-category.noavai:hover, .custom-category.noavai:active, .custom-category.noavai:focus {
+    background: #e6e6e6;
+}
+.custom-category.active[data-category="Todo"]:after {
+  /*border-top: solid 10px #ebe717;*/
+  background-color: #000;
+    height: 5px;
+    width: 100%;
+}
+.custom-category.active[data-category="Hombre"]:after,
+.custom-category.active[data-category="Adultos"]:after {
+  /*border-top: solid 10px #666666;*/
+  background-color: #000;
+    height: 5px;
+    width: 100%;
+}
+.custom-category.active[data-category="Mujer"]:after {
+  /*border-top: solid 10px #c452b4;*/
+   background-color: #000;
+    height: 5px;
+    width: 100%;
+}
+.custom-category.active[data-category="Infantil"]:after {
+  /*border-top: solid 10px #f08900;*/
+  background-color: #000;
+    height: 5px;
+    width: 100%;
+}
+.custom-category.active[data-category="Futsal"]:after {
+  /*border-top: solid 10px #0d78f8;*/
+ background-color: #000;
+    height: 5px;
+    width: 100%;
+}
+/* END */
+
+/* Product */
+.df-fullscreen .df-layer__content {
+  display: none !important;
+}
+#df-results__wrapper__dffullscreen{
+  /*margin-top: 10px;*/
+  margin-top: 80px;
+  display: none;
+}
+[data-layout=grid][data-browser-support~=cssgrid] .df-card,[data-layout=grid][data-browser-support~=cssgrid] .df-cardc{
+  margin: 4px !important;
+  border-left: 10px transparent solid !important; /* CSS Change Doofinder 1 */
+  border-right: 10px transparent solid !important; /* CSS Change Doofinder 1 */
+  height: 450px;
+  /*width: 300px;*/
+  max-width: 300px;
+}
+[data-layout=grid][data-browser-support~=cssgrid] .df-card[data-type=categories],
+[data-layout=grid][data-browser-support~=cssgrid] .df-cardc[data-type=categories]{
+  display:none;
+}
+.df-card,.df-cardc{ /* CSS Change Doofinder 2 */
+  /*-webkit-box-shadow: 0px 0px 2px #ADAFB1;
+  box-shadow: 0px 0px 2px #ADAFB1;*/
+}
+.df-card:hover,.df-cardc:hover{
+  background: none !important;
+  -webkit-box-shadow: 0px 0px 8px #ADAFB1;
+  box-shadow: 0px 0px 8px #ADAFB1;
+}
+
+.df-card .df-card__main,.df-cardc .df-card__main {
+  display: flex;
+  padding: 0px 0px 10px 0px;
+  text-decoration: none;
+}
+[data-layout=grid] .df-card__content{
+  text-align: left !important;
+    border-top: 1px solid #ddd; /* CSS Change Doofinder 6 */
+    padding-top: 5px;			 /* CSS Change Doofinder 6 */
+	top: -32px;
+    position: relative;	
+}
+@media (min-width: 768px) and (max-width: 1023px){
+	.df-card__main .df-card__price-offer { top: -27px }
+	[data-layout=grid] .df-card__content { top: -22px }
+}																
+.df-card__content>*{
+  margin-bottom: 0 !important;
+}
+.df-canonizacion{
+  display: none;
+}
+.df-card-section{
+    text-decoration: none;
+}
+/* BUG8 - 2021-06-11
+.df-card-section:hover{
+    text-decoration: underline;
+    text-decoration-color: #9d9d9c;
+}*/
+.df-card-section.four:hover{
+    text-decoration: none !important;
+}
+.df-card-custom img {
+  /*float: right;*/
+  width: 20px;
+  right: 5px;
+  top: 5px;
+  position: absolute;
+  border: none;
+  z-index: 1;
+  height: auto;
+  margin: 0;
+  color: #000;
+}
+/*Iconos Marcas*/
+.df-card-brand,.df-card-custom {
+  position: relative;
+}
+.df-card-brand div{
+	position: absolute;
+	/*background: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/doofindermarcas.png) no-repeat; BUG 15 sharen quitamos png */
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	background-position: center;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+.df-card-brand div:active
+/*.df-card-brand div:hover bug 18 sin hover en desktop*/{
+	background-color: #ccc;
+	border-radius: 20px;
+}
+.df-card-brand div.no-clicable{
+	cursor: default;
+}
+.df-card-brand div.no-clicable:active{
+	background-color: #fff;
+}
+
+.df-card-brand img { height: 20px; width: 20px; margin: 5px; } /* icono marca */
+
+/* BEGIN iconos de Marcas */
+/*
+.df-brand-puma,.df-brand-Puma {
+  background-position: -125px -285px !important;
+}
+.df-brand-nike,.df-brand-Nike{
+  background-position: -285px -125px !important;
+}
+.df-brand-adidas,.df-brand-Adidas{
+  background-position: -165px -5px !important;
+}
+.df-brand-vivasport,.df-brand-Vivasport{
+  background-position: -195px -85px !important;
+}
+.df-brand-arquer,.df-brand-Arquer{
+  background-position: -205px -45px !important;
+}
+.df-brand-asics,.df-brand-Asics{
+  background-position: -285px -85px !important;
+}
+.df-brand-astore,.df-brand-Astore{
+  background-position: -195px -85px !important;
+}
+.df-brand-copa,.df-brand-Copa{
+  background-position: -165px -125px !important;
+}
+.df-brand-diadora,.df-brand-Diadora{
+  background-position: -5px -125px !important;
+}
+.df-brand-elite,.df-brand-Elite{
+  background-position: -235px -5px !important;
+}
+.df-brand-errea,.df-brand-Errea{
+  background-position: -45px -125px !important;
+}
+.df-brand-fox.40,.df-brand-Fox.40{
+  background-position: -275px -5px !important;
+}
+.df-brand-futbolmania,.df-brand-Futbolmania{
+  background-position: -85px -125px !important;
+}
+.df-brand-rucanor,.df-brand-Rucanor{
+  background-position: -125px -125px !important;
+}
+.df-brand-goalkeepers,.df-brand-Goalkeepers{
+  background-position: -5px -45px !important;
+}
+.df-brand-ho soccer,.df-brand-HO Soccer,.df-brand-HO.Soccer{
+  background-position: -85px -45px !important;
+}
+.df-brand-hummel,.df-brand-Hummel{
+  background-position: -205px -125px !important;
+}
+.df-brand-icons,.df-brand-Icons{
+  background-position: -195px -85px !important;
+}
+.df-brand-joma,.df-brand-Joma{
+  background-position: -85px -85px !important;
+}
+.df-brand-kappa,.df-brand-Kappa{
+  background-position: -165px -165px !important;
+}
+.df-brand-kelme,.df-brand-Kelme{
+  background-position: -205px -165px !important;
+}
+.df-brand-le coq sportif,.df-brand-Le.Coq.Sportif{
+  background-position: -245px -165px !important;
+}
+.df-brand-lotto,.df-brand-Lotto{
+  background-position: -125px -85px !important;
+}
+.df-brand-macron,.df-brand-Macron{
+  background-position: -125px -245px !important;
+}
+.df-brand-matt,.df-brand-Matt{
+  background-position: -205px -245px !important;
+}
+.df-brand-mercury,.df-brand-Mercury{
+  background-position: -245px -245px !important;
+}
+.df-brand-mitre,.df-brand-Mitre{
+  background-position: -285px -245px !important;
+}
+.df-brand-mizuno,.df-brand-Mizuno{
+  background-position: -5px -285px !important;
+}
+.df-brand-mrlacy,.df-brand-Mr\..Lacy{
+  background-position: -165px -85px !important;
+}
+.df-brand-munich,.df-brand-Munich{
+  background-position: -245px -125px !important;
+}
+.df-brand-new balance,.df-brand-New.Balance{
+  background-position: -45px -285px !important;
+}
+.df-brand-pedag,.df-brand-Pedag{
+  background-position: -165px -245px !important;
+}
+.df-brand-penalty,.df-brand-Penalty{
+  background-position: -85px -285px !important;
+}
+.df-brand-premiersocklicense,.df-brand-PremierSockLicense,.df-brand-Premier.Sock.License{
+  background-position: -195px -85px !important;
+}
+.df-brand-premiersocktape,.df-brand-PremierSockTape,.df-brand-Premier.Sock.Tape{
+  background-position: -205px -85px !important;
+}
+.df-brand-reusch,.df-brand-Reusch{
+  background-position: -165px -285px !important;
+}
+.df-brand-rg,.df-brand-RG{
+  background-position: -85px -165px !important;
+}
+.df-brand-rinat,.df-brand-Rinat{
+  background-position: -205px -285px !important;
+}
+.df-brand-storelli,.df-brand-Storelli{
+  background-position: -165px -45px !important;
+}
+.df-brand-sak,.df-brand-SAK{
+  background-position: -245px -85px !important;
+}
+.df-brand-spintso,.df-brand-Spintso{
+  background-position: -245px -285px !important;
+}
+.df-brand-trusox,.df-brand-Trusox{
+  background-position: -245px -45px !important;
+}
+.df-brand-uhlsport,.df-brand-Uhlsport{
+  background-position: -285px -45px !important;
+}
+.df-brand-umbro,.df-brand-Umbro{
+  background-position: -5px -165px !important;
+}
+.df-brand-underarmour,.df-brand-UnderArmour,.df-brand-Under.Armour{
+  background-position: -325px -85px !important;
+}
+.df-brand-spintso,.df-brand-Spintso{
+  background-position: -195px -85px !important;
+}
+.df-brand-PRODUCTO.OFICIAL.FC.BARCELONA{
+  background-position: -5px -85px !important;
+}
+.df-brand-PRODUCTO.OFICIAL.ALEMANIA{
+  background-position: -285px -285px !important;
+}
+.df-brand-PRODUCTO.OFICIAL.ARSENAL{
+  background-position: -195px -85px !important;
+}
+.df-brand-PROD.OFICIAL.AS.MONACO{
+  background-position: -85px -245px !important;
+}
+.df-brand-PRODUCTO.OFICIAL.AT.MADRID{
+  background-position: -85px -205px !important;
+}
+.df-brand-PRODUCTO.OFICIAL.BAYERN{
+  background-position: -195px -5px !important;
+}
+.df-brand-PRODUCTO.OFICIAL.CA.OSASUNA{
+  background-position: -125px -5px !important;
+}
+.df-brand-PRODUCTO.OFICIAL.CADIZ.CF{
+  background-position: -85px -5px !important;
+}
+.df-brand-PRODUCTO.OFICIAL.CD.LEGANES{
+  background-position: -285px -165px !important;
+}
+.df-brand-PROD\..OFICIAL.CHAMPIONS.LEAGUE {
+	background-position: 12;
+	background-position: -126px -45px;
+}
+.df-brand-PRODUCTO.OFICIAL.CHELSEA{
+  background-position: -195px -85px !important;
+}
+.df-brand-PRODUCTO.OFICIAL.RC.DEPORTIVO{
+  background-position: -5px -205px !important;
+}
+.df-brand-PRODUCTO.OFICIAL.ESPANYOL{
+  background-position: -165px -205px !important;
+}
+.df-brand-PRODUCTO.OFICIAL.ESPAÑA{
+  background-position: -315px -5px !important;
+}
+.df-brand-PROD.OFICIAL.EUROPA.LEAGUE{
+  background-position: -195px -85px !important;
+}
+.df-brand-PRODUCTO.OFICIAL.FRANCIA{
+  background-position: -325px -45px !important;
+}
+.df-brand-PRODUCTO.OFICIAL.GRANADA.CF{
+  background-position: -205px -205px !important;
+}
+.df-brand-PRODUCTO.OFICIAL.LEVANTE.UD{
+  background-position: -245px -205px !important;
+}
+.df-brand-PRODUCTO.OFICIAL.LIVERPOOL{
+  background-position: -45px -165px !important;
+}
+.df-brand-PRODUCTO.OFICIAL.MÁLAGA.CF{
+  background-position: -195px -85px !important;
+}
+.df-brand-PRODUCTO.OFICIAL.MAN.CITY{
+  background-position: -45px -45px !important;
+}
+.df-brand-PRODUCTO.OFICIAL.MAN.UNITED{
+  background-position: -195px -85px !important;
+}
+.df-brand-PROD.OFICIAL.PORTO{
+  background-position: -5px -5px !important;
+}
+.df-brand-PRODUCTO.OFICIAL.R.MADRID{
+  background-position: -45px -85px !important;
+}
+.df-brand-PRODUCTO.OFICIAL.RC.CELTA{
+  background-position: -125px -205px !important;
+}
+.df-brand-PRODUCTO.OFICIAL.REAL.BETIS{
+  background-position: -45px -5px !important;
+}
+.df-brand-PRODUCTO.OFICIAL.REAL.SOCIEDAD{
+  background-position: -45px -205px !important;
+}
+.df-brand-PRODUCTO.OFICIAL.SEVILLA.FC{
+  background-position: -285px -205px !important;
+}
+.df-brand-PRODUCTO.OFICIAL.SWANSEA{
+  background-position: -195px -85px !important;
+}
+.df-brand-PRODUCTO.OFICIAL.TOTTENHAM{
+  background-position: -195px -85px !important;
+}
+.df-brand-PRODUCTO.OFICIAL.UEFA{
+  background-position: -126px -45px !important;
+}
+.df-brand-PRODUCTO.OFICIAL.VALENCIA{
+  background-position: -5px -245px !important;
+}
+.df-brand-PRODUCTO.OFICIAL.VILLAREAL.CF{
+  background-position: -45px -245px !important;
+}
+*/
+/* END iconos de Marcas */
+
+.df-card .df-card__main .df-card__title,.df-cardc .df-card__main .df-card__title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  padding: 0px; /* Change CSS doofinder 3 */
+  display: block;
+  line-height: 1.4em;
+  text-align: left;
+  text-decoration: none;
+}
+
+.df-card .df-card__main .df-card__title, .df-cardc .df-card__main .df-card__title:hover { /* BUG 8 - 2021-06-11 */
+	color: #0066c0;
+}
+
+/*
+.df-card .df-card__main .df-card__title,.df-cardc .df-card__main .df-card__title:hover {
+	text-decoration: underline;
+}*/
+.df-card .df-card__main .df-card__description, .df-cardc .df-card__main .df-card__description{
+  padding: 0px; /* Change CSS doofinder 4 */
+  font-size: 11px;
+  font-weight: normal;
+  color: #9d9d9c;
+  line-height: 1.4;
+  text-align: left;
+  display: block !important;
+  text-decoration: none;
+}
+/*
+.df-card .df-card__main .df-card__description, .df-cardc .df-card__main .df-card__description:hover {
+	text-decoration: underline;
+}*/
+
+.df-fullscreen .df-card__description:hover {	/* BUG 8 - 2021-06-11 */
+    text-decoration: underline;
+}
+
+.df-fullscreen .df-card__image {
+  background-color: #fff;
+  width: auto;
+  height: 300px;
+  /*margin: 0px 0 12px !important;*/
+  margin: 0px 0 0px !important;
+}
+.df-card .df-card__main .df-card__image img,.df-cardc .df-card__main .df-card__image img{
+  /*width: 100%;*/
+}
+.df-card__image_default{
+
+}
+.df-card__image_default.image_hover{
+  display:none;
+}
+.manage-hover-container {
+  display:none;
+}
+.manage-hover-box{
+  padding: 0 5px;
+  cursor: default;
+  width: calc(100% / 2);
+  max-height: 75px;
+}
+.manage-hover-box img {
+  max-width: 50px;
+}
+.manage-hover-box img.active-image {
+  border: 1px solid #b7b9bb;
+}
+.manage-hover-box outline{
+  outline: 1px solid #ADAFB1;
+}
+.df-card__prices{
+  margin-top: 2px !important; /* bug ricard */
+}
+
+span.df-card__price{
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 40%;
+    text-align: left;
+    float: left;
+	font-size: 14px;
+}
+
+
+/* precio pvp */
+span.df-card__price .currency{ /* bug 1 - 2021-06-10 */ /* entero */
+	color: #000;		
+    font-weight: 600;	
+	font-size: 14px;
+}	
+span.df-card__price .currency span.decimal-part{ font-size: 13px; }		/* decimal */						
+
+/* precio socio */
+span.df-card__price.df-card__price--partner { font-size: 12px; }		/* texto */
+span.df-card__price.df-card__price--partner  .currency { font-size: 13px;	} /* entero */
+span.df-card__price.df-card__price--partner  .currency span.decimal-part { font-size: 12px;	} /* decimal */
+	
+/* precio tachado */
+span.df-card__price.df-card__price--old .currency { font-size: 13px; }
+span.df-card__price.df-card__price--old .currency  span.decimal-part { font-size: 12px; }	
+
+/* precio oferta */
+span.df-card__price.df-card__price--new .currency { font-size: 14px; }
+span.df-card__price.df-card__price--new .currency   span.decimal-part { font-size: 13px; }		
+
+/* SOLO Tablet */
+@media (min-width: 768px) and (max-width: 1024px){
+	/* precio pvp */
+	span.df-card__price { font-size: 14px; }
+	span.df-card__price .currency span.decimal-part { font-size: 13px; }
+	
+	/* precio socio */
+	span.df-card__price.df-card__price--partner { font-size: 12px; }
+	span.df-card__price.df-card__price--partner  .currency { font-size: 13px;	}
+	span.df-card__price.df-card__price--partner .currency span.decimal-part { font-size: 12px; }	
+	
+	/* precio tachado */
+	span.df-card__price.df-card__price--old .currency { font-size: 13px; }
+	span.df-card__price.df-card__price--old .currency  span.decimal-part { font-size: 12px; }	
+	
+	/* precio oferta */
+	span.df-card__price.df-card__price--new .currency { font-size: 14px; }
+	span.df-card__price.df-card__price--new .currency   span.decimal-part { font-size: 13px; }		
+}
+
+/* precio socio */
+span.df-card__price.df-card__price--partner,
+span.df-card__price.df-card__price--partner  .currency{
+	color: #999;
+	font-weight: 400;	
+}
+
+/* precio oferta */
+span.df-card__price.df-card__price--new,
+span.df-card__price.df-card__price--new  .currency{
+	color: #e6007e;
+}
+
+/* pvp tachado cuando oferta */
+span.df-card__price.df-card__price--old,
+span.df-card__price.df-card__price--old .currency{
+	color: #999;
+	font-weight: 400;
+}
+
+.df-card__price{
+  display: block !important;
+  font-size: 14px;
+  font-weight: normal !important;
+  color: #000 !important;
+}
+.df-card__price-offer {
+  display: table-cell;
+  vertical-align: top;
+  float: right;
+  top: -37px;
+  position: relative;    
+  line-height: 22px;
+  height: 22px;
+}
+.df-card__price-offer.presale {
+	float: left;
+    font-weight: 400;
+    font-size: 13px;
+    vertical-align: baseline;
+    opacity: 0.8;
+    background-color: #fff;
+    padding: 0 6px;	
+}
+.df-mobile .df-card__price-offer.presale{
+	font-size: 11px;
+}
+@media (max-width: 767px){
+	.df-mobile .df-card__price-offer.presale { font-size: 11px; }
+}
+@media (max-width: 799px){
+	.df-card__price-offer.presale { float: left; font-weight: 400; font-size: 12px; vertical-align: baseline; }
+}
+
+.df-card__price-offer span.df-offer {
+  color: #fff;
+  float: right;
+  line-height: 21px; 
+  padding: 0px 7px 0 8px; /* bug 10 sharen */
+  background: #e6007e;
+  height: 22px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.df-card__price-offer span.df-offer[data-value="FM"] {
+  background: url(//www.futbolmania.com/skin/frontend/rwd/futbolmania/images/etiqueta-precio-fm.svg) left no-repeat transparent;
+  width: 45px;
+  height: 22px;
+  float: right;
+  font-weight: bold;
+  font-size: 0;
+  line-height: 22px;
+  color: #000;
+}
+.df-card__price-offer span.df-offer[data-value="FM"] .df-offerextra{
+  display: none;
+}
+.df-card__price-offer span[data-value="-FM%"]{
+  display: none;
+}
+.df-card__price-offer span.df-offer[data-value="black friday"], .df-card__price-offer span.df-offer[data-value="cyber monday"], 
+.df-card__price-offer span.df-offer[data-value="Black friday"], .df-card__price-offer span.df-offer[data-value="Cyber monday"],
+.df-card__price-offer span.df-offer[data-value="Blackfriday"], .df-card__price-offer span.df-offer[data-value="Cybermonday"] { font-weight: 400; background-color: #000; font-size: 14px; padding: 0px 10px 0 5px; color: #ebe717; height: 21px; }
+@media (max-width: 1024px){
+	.df-card__price-offer span.df-offer[data-value="black friday"], .df-card__price-offer span.df-offer[data-value="cyber monday"],
+	.df-card__price-offer span.df-offer[data-value="Black friday"], .df-card__price-offer span.df-offer[data-value="Cyber monday"],
+	.df-card__price-offer span.df-offer[data-value="Blackfriday"], .df-card__price-offer span.df-offer[data-value="Cybermonday"] { font-weight: 400; }
+}
+
+.df-card__price-offer span.df-offer[data-value="black friday"] span.discount { font-weight: 400; color: #ebe717; padding-left: 3px;}
+@media (max-width: 1024px){
+	.df-card__price-offer span.df-offer[data-value="black friday"] span.discount { font-weight: 400; }
+}
+.df-card__price-offer span.df-offer[data-value="black friday"] .extra,
+.df-card__price-offer span.df-offer[data-value="Black friday"] .extra,
+.df-card__price-offer span.df-offer[data-value="Blackfriday"] .extra{
+   color: #fff;
+}
+.df-card__price-offer span.df-offer[data-value="cyber monday"] .extra,
+.df-card__price-offer span.df-offer[data-value="Cyber monday"] .extra,
+.df-card__price-offer span.df-offer[data-value="Cybermonday"] .extra{
+   color: #1ba0fc;
+}
+.df-card__price-offer span.df-offer span.discount{
+	font-weight: 600; 
+}
+span.df-card__price.df-card__price--partner{
+	width: 60%;
+    text-align: right;
+    float: right;
+}
+.df-card__price--partner {
+  color: #999 !important;
+}
+.df-card__pricing{
+  text-align: right;
+  padding-right: 5px;
+  display: contents;
+  widht: 45%;
+}
+.df-card__price--old{
+  color: #999 !important;
+  text-decoration: line-through !important;
+}
+span.df-card__price.df-card__price--new{
+	width: 60%;
+    text-align: right;
+    float: right;
+}
+.df-card__price--new{
+  color: #000 !important;
+}
+
+/* MOBILE Y TABLET */
+@media (max-width: 1024px){
+  .df-fullscreen .df-searchbox.opened,
+  .df-fullscreen #df-categories__dffullscreen{
+        box-shadow: unset;
+	border-top: 1px solid #eee;
+	border: 1px solid #EEE;
+  }
+  a.df-card-section, a.df-card-section:hover {
+    text-decoration: none !important;
+  }
+  
+  /* BUG 8 rev 3.0
+  a.df-card-section:active, a.df-card-section:focus, 
+  .df-cardc .df-card__main .df-card__title:active,.df-cardc .df-card__main .df-card__title:focus,
+  .df-cardc .df-card__main .df-card__description:active, .df-cardc .df-card__main .df-card__description:focus{
+    color: #0066c0;
+  }
+  */
+  .df-fullscreen .flecha-doofinder {
+	 display: block;
+	 width: 17px;
+	 margin: 8px 0 0 5px !important;
+   }
+   .btn.buscar {
+		height: 30px; /* bug 7 sharen */
+   }
+   .search-form .search-form-container {
+		height: 27px;
+    }
+  .df-fullscreen nav.box-hidden-menu{
+    display: none !important;
+    width: 15%;
+    margin-left: 20px;
+    min-height: 40px;
+    padding-top: 10px;
+  }
+}
+
+/*SOLO TABLET*/
+@media (min-width: 768px) and (max-width: 1024px){
+  .df-fullscreen{
+	background-color: #eee;	
+  }
+  .df-card .df-card__main .df-card__title,.df-cardc .df-card__main .df-card__title:active {
+        background-color: #ccc;
+   }
+  .df-fullscreen .clear-or-category .clear img { width: 18px; padding: 3px 0px 2px 3px; }
+  
+  #df-suggestions__dffullscreen, #df-categories__dffullscreen{
+	top: 48px;
+  }
+  .desktop-logos{
+	display: none !important;
+   }
+  .df-card .df-card__main .df-card__title, .df-cardc .df-card__main .df-card__title{
+	  font-size: 13px;
+  }
+  .df-card .df-card__main .df-card__description, .df-cardc .df-card__main .df-card__description{
+	  font-size: 11px;
+  }
+  .df-card__price{ /* Change CSS Doofinder tablet */
+	font-size: 12px;
+	display: inline-block;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-weight: 700;	  
+  }
+  
+	[data-layout=grid] .df-card__content {
+		text-align: left !important;
+		border-top: 1px solid #ddd;
+		padding-top: 5px;
+	}
+  
+  .clear-or-category .category {
+    margin: -1px -1px -1px 0px;
+    padding: 5px 5px 5px 10px;
+    height: auto;
+  }
+  .clear-or-category .category span{
+    display: none;
+  }
+  .clear-or-category .clear{
+    margin: 4px 20px 4px 0;
+  }
+  .clear-or-category img.lupa-gris{
+    width: 22px;
+    height: 22px;
+  }
+  .lupa-negra{
+   margin-right: 0px;
+   margin-top: 0px;
+   width: 40px;
+   height: 29px !important;
+	background: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/sprite-header.svg) -140px -65px;
+	background-size: 180px 200px;
+   display: block;
+ }
+}
+/* END Product */
+
+.inputtablet,.inputmobile{
+	font-size: 14px;
+        color: #777777 !important;	
+}
+
+/* Sidebar filters */
+.df-fullscreen[data-facets=left] .df-aside{
+  margin-right: 4px !important;
+  width: 270px !important;
+}
+#dffullscreen .df-aside.scroll{
+    margin-top: 0px;
+    border: 0px;
+    box-shadow: inset -1px 8px 10px -6px rgba(0, 0,0, 0.28);
+    /*box-shadow: inset -1px 6px 3px -2px rgba(0, 0,0, 0.28);*/
+}
+.df-aside.scroll.noresult {
+    box-shadow: none !important;
+}
+#df-aside__dffullscreen.noresult {
+    display: none;
+}
+.df-aside .df-term[data-facet="color"][data-value="azul celeste"], 
+[data-role=panel-content]:not([data-view-extra-content]) [data-facet="color"][data-value="azul celeste"][data-extra-content]:not([data-selected]),
+/*.df-aside .df-term[data-facet="color"][data-value="Multicolor"],
+[data-role=panel-content]:not([data-view-extra-content]) [data-facet="color"][data-value="Multicolor"][data-extra-content]:not([data-selected]),*/
+.df-aside .df-term[data-facet="color"][data-value="Marfil"],
+[data-role=panel-content]:not([data-view-extra-content]) [data-facet="color"][data-value="Marfil"][data-extra-content]:not([data-selected]),
+.df-aside .df-term[data-facet="color"][data-value="Beige"],
+[data-role=panel-content]:not([data-view-extra-content]) [data-facet="color"][data-value="Beige"][data-extra-content]:not([data-selected]),
+.df-aside .df-term[data-facet="color"][data-value="Metalizado"],
+[data-role=panel-content]:not([data-view-extra-content]) [data-facet="color"][data-value="Metalizado"][data-extra-content]:not([data-selected]){
+    display: none !important;
+}
+.df-panel__content__extra, [data-role=panel-content]:not([data-view-extra-content]) [data-extra-content]:not([data-selected]) {
+  display: flex !important;
+/*
+  display: -webkit-box !important;
+  -webkit-box-pack: justify;
+*/
+}
+.df-panel__content__extra[data-facet="color"], [data-role=panel-content]:not([data-view-extra-content]) [data-facet="color"][data-extra-content]:not([data-selected]) {
+    display: inline-block !important;
+}
+.df-panel__content__extra.hide, [data-role=panel-content]:not([data-view-extra-content]) .hide[data-extra-content]:not([data-selected]) {
+    display: none !important;
+}
+.df-panel[data-collapse=true] .df-panel__content .df-term:not([data-selected]) {
+  /*display: none !important;*/
+  display: block !important;
+}
+.df-fullscreen[data-wide=true] .df-layer__content {
+  padding-left: 10px;
+}
+.df-term{
+    /*display: block !important;*/
+}
+.df-term__count:after {
+    content: ")";
+}
+.df-term__count:before {
+    content: "(";
+}
+.df-aside .df-panel--collapse .df-panel__title{
+  color: #000 !important;
+  font-weight: 600;
+}
+.df-aside .df-panel--collapse .df-panel__title:hover{
+   background-color: #ccc;
+}
+.df-aside .df-panel--collapse .df-panel__title:after{
+    /*content: "";*/
+    background-image: url(//www.futbolmania.com/skin/frontend/rwd/futbolmania/images/sprite.svg) !important;
+    border-radius: 20px;
+    background-size: 283px 497px;
+    background-repeat: no-repeat;
+    right: 14px;
+    width: 25px;
+    height: 25px;
+    margin-top: 3px;
+    position: absolute;
+}
+.df-aside .df-panel--collapse .df-panel__title:hover:after{
+  background-color: #ccc;
+}
+/* Closed filter */
+.df-aside .df-panel--collapse[data-collapse=true] .df-panel__title:after{
+ background-position: -190px -250px;
+}
+/* Open filter */
+.df-aside .df-panel--collapse .df-panel__title:after{
+  background-position: -208.5px -244px;
+}
+/**/
+
+.df-panel__content::-webkit-scrollbar-track{
+  box-shadow: inset 1px 0px 0px rgba(0,0,0,.15);
+  background: rgba(0,0,0,.15);
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+.df-panel__content {
+  clear: both;
+  /*min-height: 20px;*/
+  padding: 0 !important;
+  /* Si se quieren ocultar a medias, descomentar
+  overflow-x: hidden;
+  max-height: 220px;
+  */
+}
+.df-panel--collapse[data-facet="color"] .df-panel__content:after{
+  /*display: block;*/
+  /*content: "";*/
+  /*clear: both;*/
+}
+.noresultsfilter .df-panel[data-collapse=true] .df-panel__content .df-term:not([data-selected]) {
+    display: flex;
+}
+.desc-search.Todo .desc-search-text{
+  color: #808080;
+}
+.desc-search.Hombre .desc-search-text,
+.desc-search.Mujer .desc-search-text,
+.desc-search.Adultos .desc-search-text,
+.desc-search.Infantil .desc-search-text{
+  color: #808080;
+}
+@media (min-width: 1024px){
+  .df-aside .df-panel--collapse[data-collapse=false] .df-panel__content {
+      padding-top: 30px !important;
+      margin-bottom: 20px !important;
+      clear: initial;
+  }
+  .df-aside .df-panel--collapse[data-facet="talla"] .df-panel__content {
+      /*padding-right: 20px !important;*/
+  }
+  .df-aside .df-panel--collapse[data-facet=price][data-collapse=false] .df-panel__content {
+      margin-bottom: 0px !important;
+  }
+}
+@media (min-width: 1025px){ /* PUNTO4 SHAREN */
+  #search::placeholder, #df-searchbox__dffullscreen::placeholder{
+      color: #FFF;
+  }  
+}
+
+@media (max-width: 1024px){ /* bug 7 sharen */
+	#search::placeholder, 
+	#search_r::placeholder, /* bug 11.1 sharen */	
+	#df-searchbox__dffullscreen::placeholder{
+		color: #a6a6a6;
+		font-size: 17px !important;
+		font-weight: 400;
+	}
+}
+#dffullscreen .df-panel__content.closed {
+  margin-bottom: 0px !important;
+  padding-top: 0px !important;
+  margin-top: -4px !important;
+}
+[data-layout=grid][data-browser-support~=cssgrid] .df-results {
+  min-width: 300px !important;
+  -ms-grid-columns: (minmax(300px,1fr)) [auto-fill] !important;
+  /*grid-template-columns: repeat(auto-fill,minmax(300px,1fr)) !important;*/
+
+  grid-template-columns: repeat(auto-fill,308px) !important;
+}
+.desc-search-text.Gen{
+ display: none;
+}
+.desc-search {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  padding: 0 10px;
+  /*position: absolute;*/
+  width: 100%;
+ /* display: none !important;*/
+}
+#dffullscreen[data-scrolling="true"] #df-subheader {
+    /*box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0), 0 6px 10px 0 rgba(0,0,0,0.3), 0 0px 0px 0px rgba(0, 0, 0, 0.1);*/
+    /*box-shadow: 4px 1px 6px 0 rgba(32, 33,36, 0.28);*/
+    box-shadow: -1px 8px 10px -6px rgba(0, 0,0, 0.28);
+    background-color: #FFFF;
+    z-index: 95;
+}
+#dffullscreen[data-scrolling="true"] .desc-search,#df-subheader.fixed #desc-search{
+    transform: scale(0.75);
+    transform-origin: left center;
+    width: max-content;
+}
+#dffullscreen[data-scrolling="true"] .header-filters{
+    display: none;
+}
+#dffullscreen[data-scrolling="true"] .desc-search-text .desc-search-category{
+    display: table-row;
+}
+div.desc-search{
+  color: #808080;
+}
+.desc-search.Todo .desc-search-into{
+  /*background-color: #f4eb84;*/
+  /*display: none;*/
+}
+.desc-search-text .desc-total,
+.desc-search-text .desc-search-word,
+.desc-search-text .desc-search-category{
+ color: #000;
+ padding: 0 5px;
+}
+/*
+.desc-search.Hombre .desc-search-into,
+.desc-search.Adultos .desc-search-into{
+  background-color: #666666;
+}
+.desc-search.Mujer .desc-search-into{
+  background-color: #dbc0dd;
+}
+.desc-search.Infantil .desc-search-into{
+  background-color: #f4bc7d;
+}
+.desc-search.Futsal .desc-search-into{
+  background-color: #8dc8f7;
+}
+*/
+.desc-search-into{
+  padding:  0px 10px 0px;
+}
+.df-fullscreen .df-layer__content .df-aside{
+  margin-top: 15px;
+}
+#filtros{
+  padding-bottom:  15px;
+  float: left;
+  /*width: 270px;*/
+}
+.filtros-titulo{
+  font-size: 20px;
+  font-weight: 600;
+  color: #808080;
+}
+.filtros-titulo.filtros {
+    width: 260px;
+    display: table;
+    border-bottom: 1px solid #DADADA;
+}
+.filtros-categorias-relacionadas {
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+.df-list-categories a.df-categories .link-gris {
+    display: block;
+}
+/*
+.df-list-categories .df-categoriessidebar .img.lupa.link-gris {
+    width: 15px;
+    height: 15px;
+    margin: 9px 0 0 4px;
+    background-size: 15px 15px;
+}*/
+.df-list-categories .df-categoriessidebar .img.lupa.link-gris {
+ 	width: 24px;
+ 	background-repeat: no-repeat;
+ 	height: 24px;
+ 	margin: 9px 0px 0px 0px;
+ 	background-image: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/doofinder/external-lg.svg);
+ 	background-size: 25px 25px;
+}
+.df-list-categories .df-categoriessidebar .img.lupa.link-gris:hover {
+    background-image: url("https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/doofinder/external-lg.svg");
+    background-color: #cccc;
+    border-radius: 20px;
+    width: 24px;
+    height: 24px;
+    margin: 9px 0px 0px 0px;
+    padding: 0px;
+    background-size: 25px 25px;
+    background-position: center;
+}
+.df-list-categories .df-categoriessidebar .img.lupa.link-gris:hover:before{
+   content: "Ir a";
+   position: absolute;
+   width: auto;
+   z-index: 2000000;
+   left: 0;
+   font-size: 11px;
+   font-weight: 400;
+   margin: 22px 0 0 0;
+   background-color: #efefef;
+   box-shadow: -1px 1px 3px 0px #9b9b9b;
+   border-radius: 3px;
+   padding: 8px 3px 8px 5px;
+   color: #000;
+}
+
+.df-list-categories a.df-categoriessidebar {
+    display: flex;
+    font-size: 13px;
+    font-weight: 400;
+    /*color:#1a73e8;*/
+    text-decoration: none;
+    /*padding: 0 0 0 10px;*/
+}
+.df-list-categories .df-categoriessidebar
+.img.lupa.link-gris {
+    width: 24px;
+    background-repeat: no-repeat;
+    height: 24px;
+    margin: 9px 0px 0px 0px;
+    background-image: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/doofinder/external-lg.svg);
+    background-size: 25px 25px;
+}
+.df-list-categories a.df-categoriessidebar:hover {
+    text-decoration: underline;
+    /*color: #1a73e8;*/
+    font-weight: 400;
+}
+/*
+#list-categories a:hover {
+    color: unset !important;
+}*/
+.df-list-categories .df-categoriessidebar-title {
+    margin: 10px 0px 0px 10px;
+}
+.list-categories-section a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a73e8;
+}
+.df-list-categories .section-title {
+    color: #808080;
+    font-weight: 400;
+}
+.df-list-categories .section-title:hover{
+    font-weight: 700;
+}
+.df-list-categories a.df-categoriessidebar.filtered, /* filtered categories */
+.df-list-categories a.df-categoriessidebar.hide,
+.df-term.hide {
+    display: none !important;
+}
+/*#list-categories .list-categories-more,
+#list-categories .list-categories-less,*/
+.list-categories-more,
+.list-categories-less{
+    font-size: 13px;
+    color: #000;
+    font-weight: 400;
+    display: inline-block;
+    text-decoration: underline;
+    padding: 10px 0px 0px 2px
+}
+.list-categories-less{
+    margin-left: 20px;
+}
+/*#list-categories .list-categories-more:hover,
+#list-categories .list-categories-less:hover,*/
+.list-categories-more:hover,
+.list-categories-less:hover,
+.list-categories-more:active,
+.list-categories-less:active,
+.list-categories-more:focus,
+.list-categories-less:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
+.desc-search-text .desc-total{
+  font-size: 36px;
+}
+.desc-search-text{
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+}
+.desc-search-text.Todo{
+  color: #FFF;
+}
+.desc-search-word:before, .desc-search-word:after{
+ content: '"';
+}
+.desc-search-word{
+  /*display: block;
+  font-size: 30px;
+  text-transform: uppercase;*/
+  padding-left: 10px;
+  padding-right: 10px;
+  display: none;
+}
+.desc-search-category,.desc-search-word{
+  /*font-weight: 700;*/
+}
+.suggestion .desc-search-category{
+   text-transform: uppercase;
+}
+.desc-search-text.Todo .desc-search-category,.desc-search-text.Todo .desc-search-word{
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.desc-search-text.suggestion{
+  display: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.total-results{
+  font-weight: 700;
+  float: left;
+  min-width: 305px;
+  padding: 5px 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #706F6F;
+  border-bottom: 2px solid #706F6F;
+  display:none;
+}
+/*.total-results span {
+  font-size: 20px;
+}
+.total-results span.total {
+  font-size: 20px;
+  font-weight: 700;
+}*/
+.df-term__value{
+  display: flex !important;
+}
+.df-term[data-selected]{
+  background: unset !important;
+  /*border: unset;*/
+  border: 1px solid transparent !important;
+  color: #000 !important;
+  /*padding: 9px 8px;*/
+  padding: 0px 8px;
+}
+.df-fullscreen .df-term[data-selected]:hover {
+    /*border: unset !important;*/
+}
+
+/* Age */
+.df-fullscreen .df-aside .df-term[data-facet="age"] .df-term__value{
+
+}
+.df-fullscreen .df-term{
+  /*font-size: 14px !important;*/
+  /*display: flex;
+  -webkit-box-pack: start;*/
+  padding: 4px 8px 0px 0px;
+  font-weight: 400;
+}
+.df-term:active, .df-fullscreen .df-term:focus, .df-fullscreen .df-term:hover {
+  border-radius: unset !important;
+  background-color: unset !important;
+  border-color: unset !important;
+  border: 1px solid transparent !important;
+  font-weight:bold;
+}
+.df-aside .df-panel--collapse[data-facet="talla"] .df-term[data-selected]:after{
+  margin-top: -20px;
+}
+.df-panel--collapse[data-facet="color"] .df-panel__content{
+  padding-left: 5px !important;
+}
+.df-aside .df-panel--collapse[data-facet="color"] .df-term[data-selected]:after{
+  position: absolute;
+  right: 25px;
+}
+/* END Age */
+/* Colors */
+.df-term .color {
+    width: 28px;
+    height: 28px !important;
+    display: inline-block;
+    border: 1px solid #e5e5e5;
+    border-radius: 33px;
+}
+/*Orden colors*/
+.df-aside .df-panel--collapse[data-facet=color][data-collapse=false] .df-panel__content {
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    grid-gap: 10px;
+}
+/*.df-fullscreen .df-term[data-value~="Negro"]*/
+.df-term[data-value="Negro"] .color,.df-term[data-value="Negro"][data-selected] .color{
+  background: url("https://www.futbolmania.com/media/wysiwyg/Colores/1negro-75x30.png") !important;
+  border-color: unset !important;
+}
+.df-term[data-value="Amarillo"] .color,.df-term[data-value="Amarillo"][data-selected] .color{
+  background: url("https://www.futbolmania.com/media/wysiwyg/Colores/amarillo.png") !important;
+  border-color: unset !important;
+}
+.df-term[data-value="Multicolor"] .color,.df-term[data-value="Multicolor"][data-selected] .color{
+  background: url("https://www.futbolmania.com/media/wysiwyg/Colores/Multicolor.png") !important;
+  border-color: unset !important;
+}
+.df-term[data-value="Azul"] .color,.df-term[data-value="Azul"][data-selected] .color{
+  background: url("https://www.futbolmania.com/media/wysiwyg/Colores/Azul.png") !important;
+  border-color: unset !important;
+}
+.df-term[data-value="Blanco"] .color,.df-term[data-value="Blanco"][data-selected] .color{
+  background: url("https://www.futbolmania.com/media/wysiwyg/Colores/1blanco-0001-75x30.png") !important;
+  border-color: unset !important;
+}
+.df-term[data-value="Gris"] .color,.df-term[data-value="Gris"][data-selected] .color{
+  background: url("https://www.futbolmania.com/media/wysiwyg/Colores/gris.png") !important;
+  border-color: unset !important;
+}
+.df-term[data-value="Lila"] .color,.df-term[data-value="Lila"][data-selected] .color,
+.df-term[data-value="Morado"] .color,.df-term[data-value="Morado"][data-selected] .color{
+  background: url("https://www.futbolmania.com/media/wysiwyg/Colores/morado.png") !important;
+  border-color: unset !important;
+}
+.df-term[data-value="Naranja"] .color,.df-term[data-value="Naranja"][data-selected] .color{
+  background: url("https://www.futbolmania.com/media/wysiwyg/Colores/1naranja-75x30.png") !important;
+  border-color: unset !important;
+}
+.df-term[data-value="Oro"] .color,.df-term[data-value="Oro"][data-selected] .color{
+  background: url("https://www.futbolmania.com/media/wysiwyg/Colores/dorado.png") !important;
+  border-color: unset !important;
+}
+.df-term[data-value="Dorado"] .color,.df-term[data-value="Dorado"][data-selected] .color{
+  background: url("https://www.futbolmania.com/media/wysiwyg/Colores/dorado.png") !important;
+  border-color: unset !important;
+}
+.df-term[data-value="Plata"] .color,.df-term[data-value="Plata"][data-selected] .color{
+  background: url("https://www.futbolmania.com/media/wysiwyg/Colores/1gris-plata-75x30.png") !important;
+  border-color: unset !important;
+}
+.df-term[data-value="Rojo"] .color,.df-term[data-value="Rojo"][data-selected] .color{
+  background: url("https://www.futbolmania.com/media/wysiwyg/Colores/1rojo-75x30.png") !important;
+  border-color: unset !important;
+}
+.df-term[data-value="Rosa"] .color,.df-term[data-value="Rosa"][data-selected] .color{
+  background: url("https://www.futbolmania.com/media/wysiwyg/Colores/1rosa-75x30.png") !important;
+  border-color: unset !important;
+}
+.df-term[data-value="Verde"] .color,.df-term[data-value="Verde"][data-selected] .color{
+  background: url("https://www.futbolmania.com/media/wysiwyg/Colores/1verde-75x30.png") !important;
+  border-color: unset !important;
+}
+.df-term[data-value="azul celeste"] .color,.df-term[data-value="azul celeste"][data-selected] .color{
+  background: url("https://www.futbolmania.com/media/wysiwyg/Colores/azul-celeste.png") !important;
+  border-color: unset !important;
+}
+.df-term[data-value="Marfil"] .color,.df-term[data-value="Marfil"][data-selected] .color{
+  background: url("https://www.futbolmania.com/media/wysiwyg/Colores/hueso.png") !important;
+  border-color: unset !important;
+}
+.df-term[data-value="Marrón"] .color,.df-term[data-value="Marrón"][data-selected] .color{
+  background: url("https://www.futbolmania.com/media/wysiwyg/Colores/marron.png") !important;
+  border-color: unset !important;
+}
+.df-term[data-value="Beige"] .color,.df-term[data-value="Beige"][data-selected] .color{
+  background: url("https://www.futbolmania.com/media/wysiwyg/Colores/beige.png") !important;
+  border-color: unset !important;
+}
+.df-term[data-value="Metalizado"] .color,.df-term[data-value="Metalizado"][data-selected] .color{
+  background: url("https://www.futbolmania.com/media/wysiwyg/Colores/metalico.png") !important;
+  border-color: unset !important;
+}
+.df-term[data-value="Púrpura"] .color,.df-term[data-value="Púrpura"][data-selected] .color{
+  background: url("https://www.futbolmania.com/media/wysiwyg/Colores/purpura.png") !important;
+  border-color: unset !important;
+}
+.df-term[data-value="Transparente"] .color,.df-term[data-value="Transparente"][data-selected] .color{
+  background: url("https://www.futbolmania.com/media/wysiwyg/Colores/transparente.png") !important;
+  border-color: unset !important;
+}
+/* END Colors */
+/* Sizes */
+.df-aside .df-term[data-facet="talla"]{
+  color: #000;
+  display: table-cell;
+  margin: 0 auto;
+  border: 0.5px solid #9D9D9C;
+  width: 33.3%;
+  height:34px;
+  float:left;
+  vertical-align: middle;
+  padding: 8px;
+  text-align: center;
+}
+.df-aside .df-term[data-facet="talla"]:nth-child(-1n+3){
+  border-top: 0.5px solid #9D9D9C;
+}
+.df-aside .df-term[data-facet="talla"]:nth-child(-1n+1),
+.df-aside .df-term[data-facet="talla"]:nth-child(3n+4){
+  border-left: 0.5px solid #9D9D9C;
+}
+/* END Sizes */
+/* Prices */
+.df-slider{padding-top:75px !important;}
+.df-slider .noUi-horizontal{height:18px !important;}
+.df-slider .noUi-horizontal .noUi-handle{width:34px;height:28px;left: -17px;top: -6px}
+.df-slider .noUi-horizontal .noUi-handle:after{left: 13px !important;}
+.df-slider .noUi-horizontal .noUi-handle:before{left: 18px !important;}
+.df-slider .noUi-horizontal .noUi-handle-lower .noUi-tooltip {
+  right: -50%;
+  left: 20px !important;
+}
+.df-slider .noUi-target {border: unset; border: 1px solid #000 !important;}
+.df-slider .noUi-vertical{width:18px !important;}
+.df-slider .noUi-vertical .noUi-handle{width:28px;height:34px;left: -6px;top: -17px}
+.df-slider .noUi-background{background:#FAFAFA !important;box-shadow:inset 0 1px 1px #f0f0f0 !important;}
+.df-slider .noUi-connect{background:#000 !important;box-shadow:inset 0 0 3px rgba(51,51,51,0.45);-webkit-transition:background 450ms;transition:background 450ms}
+.df-slider .noUi-handle{border:1px solid #D9D9D9;border-radius:3px;background:#FFF;cursor:default;box-shadow:inset 0 0 1px #FFF,inset 0 1px 7px #EBEBEB,0 3px 6px -3px #BBB}
+.df-slider .noUi-active{box-shadow:inset 0 0 1px #FFF,inset 0 1px 7px #DDD,0 3px 6px -3px #BBB;}
+.df-slider .noUi-tooltip{background:#000 !important;bottom:100% !important;color:#fff !important;display:block !important;margin-bottom:15px !important;padding:5px !important;text-align:center !important;width:60px !important;pointer-events:none !important;position:absolute !important;-webkit-transform:translateY(10px);-moz-transform:translateY(10px);-ms-transform:translateY(10px);-o-transform:translateY(10px);transform:translateY(10px);-webkit-transition:all .25s ease-out;-moz-transition:all .25s ease-out;-ms-transition:all .25s ease-out;-o-transition:all .25s ease-out;transition:all .25s ease-out;-webkit-box-shadow:2px 2px 6px rgba(0, 0, 0, 0.28);-moz-box-shadow:2px 2px 6px rgba(0, 0, 0, 0.28);-ms-box-shadow:2px 2px 6px rgba(0, 0, 0, 0.28);-o-box-shadow:2px 2px 6px rgba(0, 0, 0, 0.28);box-shadow:2px 2px 6px rgba(0,0,0,0.28);border:none !important;border-radius: 0px !important;}
+.df-slider .noUi-tooltip:after{border-left:solid transparent 10px;border-right:solid transparent 10px;border-top:solid #000 10px;bottom: -10px;content:" ";height:0;left:50%;margin-left: -13px;position:absolute;width:0}
+.df-slider .noUi-tooltip:before{bottom: -20px;content:" ";display:block;height:20px;left:0;position:absolute;width:100%}
+.df-slider .noUi-pips{color: #000000 !important;display:none !important;}
+.noUi-horizontal .noUi-handle{width: 34px !important;height: 28px !important;}
+/* END Prices */
+
+/* TABLET */
+@media (min-width: 768px) and (max-width: 1024px){
+	
+	.clear-or-category .buscar:active {	/* bug 7 sharen */
+		background-color: #ccc;
+	}
+	
+  [data-layout=grid][data-browser-support~=cssgrid] .df-results {
+    /*
+    min-width: calc((100% - 10px)  2) !important;
+    grid-template-columns: repeat(auto-fill,minmax(50%,10px)) !important;
+    */
+    grid-template-columns: repeat(auto-fill,49%) !important;
+    /*display: inherit !important;*/
+  }
+  #dffullscreen[data-scrolling=true] #df-results__wrapper__dffullscreen {
+     margin-top: 40px !important;
+  }
+  .df-fullscreen .df-searchbox{
+    margin: 0px 30px !important;
+    display: inline-flex;
+  }
+  .df-icon--close, .df-icon--close svg{
+    display: none !important;
+  }
+  .df-subheader .df-sort-select{
+    /*right: 0px;*/
+  }
+  .df-subheader .df-sort-select{
+    /*margin: 95px 33px 10px;*/
+    margin: 10px 0px 10px;
+  }
+  .df-sort-selected:active {
+    background: #CCC;
+    border-radius: 20px;
+  }
+  ul.df-sort-select-options {
+    /*width: 208px;*/
+  }
+  .total-results{
+    min-width: 290px;
+    padding: 5px 16px;
+  }
+  
+  #search_mini_form .input-search-container:after,#search_mini_form_responsive .search_r_wrapper:after{
+    /*content: "";*/
+    width: 35px !important;
+    height: 25px !important;
+    background: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/sprite-header.svg) -136px -53px / 172px no-repeat !important;
+    background-color: #ebe919 !important;
+    background-size: 172px;
+    margin-top: 0px;
+    right: 8px;
+    position: absolute;
+    display: inline-block;
+   }
+ 
+	 /* BUG34
+	 .no-results{
+		padding: 0px 0px 10px 0px !important;
+	 }
+	 */
+	  
+	.df-aside.noresult {
+		display: none !important;
+	}
+	.df-results.noresult {
+		position: relative !important;
+		margin-right: auto !important;
+		margin-left: auto !important;
+	}
+}
+@media (min-width: 768px) and (max-width: 938px){
+  .df-subheader .df-sort-select{
+    /*margin: 95px 33px 10px;*/
+  	margin: 10px 0px 10px;
+  }
+  [data-layout=grid][data-browser-support~=cssgrid] .df-card, 
+  [data-layout=grid][data-browser-support~=cssgrid] .df-cardc,
+  .df-fullscreen .df-card__image{
+	height: 98%;
+  }
+}
+@media (max-width: 1024px) and (min-width: 939px){
+	[data-layout=grid][data-browser-support~=cssgrid] .df-results {
+		grid-template-columns: repeat(auto-fill,308px) !important;
+	}
+	.df-subheader .df-sort-select {
+        /*margin: 95px 112px 10px 0px;*/
+        /*margin: 95px 0px 10px 0px;*/
+	}
+}
+/* END */
+@media (max-width: 938px) and (min-width: 768px){
+	.df-fullscreen .df-card__image{
+		width: 98%;
+	}
+}
+.df-aside .clear-filter{
+  margin: 3px 15px 0px;
+  display: none;
+}
+.df-aside .df-panel.active .clear-filter:hover{
+    background-color: #ccc;
+}
+.df-fullscreen.active .df-layer__content:after{
+  content: ".";
+  background: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/gif-loading-white-big.gif);
+  position: absolute;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  top: 0px;
+  left: 0;
+  background-color: #ffffffb8;
+  z-index: 3;
+}
+.df-fullscreen.active #df-subheader{
+  z-index: 20;
+}
+.df-fullscreen.active .df-layer__content{
+  z-index: 21;
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.df-panel.closed .df-panel__content .df-term:not([data-selected]){
+  display: none !important;
+}
+@media (min-width: 768px){
+  #dffullscreen .df-panel--collapse .df-panel__content{
+    /*max-height: 220px;
+    overflow-y: auto;*/
+    width: 100%;
+  }
+  
+  .df-fullscreen .df-searchbox { /* BUG 7.6 - Sharen */
+	font-size: 17px !important;
+	border-bottom: 1px solid #eee !important;
+	border: 1px solid #eee;
+	border-radius: 4px;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1 1 auto;
+	margin: 0 auto !important;
+    left: -85px !important;
+    position: relative;
+	background-color: #fff;
+  }  
+}
+#dffullscreen.df-fullscreen .df-aside__content{
+  bottom: 0px;
+}
+/*
+#dffullscreen.df-fullscreen .df-sort-select{
+  max-width:  1483px !important;
+  margin-right: 47px !important;
+  left: 330px;
+}
+*/
+.df-fullscreen .df-sort-select{
+  margin-left: 0px;
+  display: none;
+}
+
+.header-filters{
+    /*display: inline-flex;*/
+    margin: 0px 0px 0px 10px; /* BUG 25 */
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+}
+.header-filters .owl-item {
+    float: left;
+    width: auto !important;
+}
+.header-filters .owl-nav {
+    display:none;
+}
+.header-filter {
+    height: 20px;
+    background-color: #e0e0e0;
+    font-size: 13px;
+    color: #808080;
+    font-weight: 400;
+    margin: 0px 5px 5px 0px;
+    width: auto;
+    padding: 0px 10px 0px 0px;
+    display: inline-flex;
+}
+.header-filter:hover,.header-filter:active{
+    background-color: #060606;
+    color: #fff;
+}
+.header-filter .filter-close{
+    margin: 4px 10px 0px;
+    cursor: pointer;
+    content: "";
+    background: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/doofinder/borrar-filtro-gris.svg) 0px 0px no-repeat;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+}
+.header-filter:hover .filter-close,.header-filter:active .filter-close,.header-filter:focus .filter-close{
+    background: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/doofinder/borrar-filtro-blanco-hover.svg) 0px 0px no-repeat;
+}
+.header-filter .filter-close:hover:before{
+    content: "borrar filtro";
+    position: absolute;
+    width: auto;
+    z-index: 2000000;
+    font-size: 11px;
+    font-weight: 400;
+    margin: 25px 0;
+    background-color: #efefef;
+    box-shadow: -1px 1px 3px 0px #9b9b9b;
+    border-radius: 3px;
+    padding: 3px;
+    color: #000;
+}
+.header-filter .filter-name{
+
+}
+.header-filters-close {
+    color: #808080;
+    font-weight: 400;
+    font-size: 13px;
+    text-decoration: underline;
+    cursor: pointer;
+    /*margin-left: 5px;*/
+     padding-left: 10px;
+    display: inline-table;
+    min-width: 106px;
+}
+.header-filters-close:hover{
+     text-decoration: none;
+     background-color: #efefef;
+}
+.header-filters-close:active{
+      background-color: #efefef;
+}
+/*
+@media (min-width: 2207px){
+  #dffullscreen.df-fullscreen .df-sort-select{
+    max-width:  1795px !important;
+    margin-right: 47px !important;
+  }
+}
+@media (max-width: 1897px){
+  #dffullscreen.df-fullscreen .df-sort-select{
+    max-width:  1187px !important;
+    margin-right: 47px !important;
+  }
+}
+@media (max-width: 1588px){
+  #dffullscreen.df-fullscreen .df-sort-select{
+    max-width:  877px !important;
+    left: 327px;
+  }
+}
+@media (max-width: 1279px){
+  #dffullscreen.df-fullscreen .df-sort-select{
+    max-width:  590px !important;
+    left: 302px;
+  } 
+}
+*/
+#df-aside__dffullscreen, #df-aside__dffullscreen .df-panel__content, #df-results__wrapper__dffullscreen{
+  scrollbar-color: #000 #e7e7e7;
+  scrollbar-width: thin !important;
+}
+.df-noresults {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.5em;
+  border: 1px solid #9e9d9c;
+  text-align: center;
+  padding: 20px 0;
+  margin: 0 3px 20px 3px;
+  max-width: 70%;
+}
+.no-results:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.df-noresults .ups-face, .no-results .ups-face {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: url(//www.futbolmania.com/skin/frontend/rwd/futbolmania/images/icono-cara-UPS.svg) no-repeat transparent;
+  vertical-align: middle;
+}
+.no-results .adult-face{
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: url(//www.futbolmania.com/skin/frontend/rwd/futbolmania/images/icono-cara-adulto.svg) no-repeat transparent;
+  vertical-align: middle;
+}
+.no-results .frustrated-face{
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: url(//www.futbolmania.com/skin/frontend/rwd/futbolmania/images/icono-frustracion-problemas.svg) no-repeat transparent;
+  vertical-align: middle;
+}
+.noresult {
+  overflow-y: unset !important;
+  overflow-x: unset !important;
+}
+.no-results{
+  padding: 0px 10% 10px 0px;
+  max-width: 1038px;
+  margin: 0;
+  display: none;
+}
+.no-results-container{
+  text-align: center;
+  margin-bottom: 20px;
+  z-index: 2;
+}
+.no-results .no-results-container p{
+  color: #9e9d9c;
+  margin-bottom: 5px;
+}
+.no-results .no-results-container p.bold-paragraph{
+  font-weight: bold;
+  color: #000;
+  margin-top: 15px;
+}
+.no-results .no-results-container ul{
+  display: inline-block;
+  color: #9e9d9c;
+  margin-bottom: 8px;
+}
+.no-results .no-results-container ul.black-colour{
+  color: #000;
+}
+.no-results-box-container{
+  border: 1px solid #9e9d9c;
+  text-align: center;
+  padding: 20px 0;
+  margin: 0 3px 20px 3px;
+  z-index: 2;
+}
+.no-results-box-container p{
+  color: #9e9d9c;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.no-results-box-container p.bold-paragraph{
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.5em;
+  color: #000;
+}
+.no-results .no-results-container p.boldest-paragraph{
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+.no-results-box-container p:last-child{
+  margin-bottom: 0;
+}
+.df-fullscreen#dffullscreen .df-panel__title, .df-fullscreen#dffullscreen .df-selected-filters__title{
+  padding-left: 0px;
+}
+.df-fullscreen#dffullscreen .df-aside__content{
+  padding-right: 5px;
+}
+.cms-home .switch-home-links-container .switch-home-links .switch-home-link.selected a{
+  background-color: #EBE717 !important;
+  border: 1px solid #EBE717 !important;
+}
+#df-aside__dffullscreen .df-panel[data-facet=age] .df-panel__content{
+  /*display: grid;*/
+}
+#df-aside__dffullscreen .df-panel[data-facet=age] .df-panel__content .df-term{
+  order: 2;
+}
+#df-aside__dffullscreen .df-panel[data-facet=age] .df-panel__content .df-term[data-value="bebé"]{
+  order: 1;
+}
+/*
+.df-fullscreen .df-term{
+  padding-left: 3px;
+}*/
+
+.df-aside .df-panel--collapse .df-panel__title .but-open{
+  background-image: url(//www.futbolmania.com/skin/frontend/rwd/futbolmania/images/sprite.svg) !important;
+  background-position: -208.5px -244px;
+  border-radius: 20px;
+  background-size: 283px 497px;
+  background-repeat: no-repeat;
+  right: 14px;
+  width: 25px;
+  height: 25px;
+  margin-top: 3px;
+  position: absolute;
+
+  border-radius: 20px;
+}
+.df-aside .df-panel--collapse[data-collapse=true] .df-panel__title .but-open{
+  background-position: -187px -242px;
+ }
+ .df-aside .df-panel--collapse .df-panel__title .but-open:hover{
+  background-color: #ccc;
+}
+.df-panel__title .but-open:hover:before{
+ content: "ocultar filtros";
+ position: absolute;
+ width: 80px;
+ z-index: 2000000;
+ right: 0;
+ font-size: 11px;
+ font-weight: 400;
+ top: 30px;
+ background-color: #efefef;
+ box-shadow: -1px 1px 3px 0px #9b9b9b;
+ border-radius: 3px;
+ padding-left: 5px !important;
+ padding: 3px;
+}
+.df-panel--collapse[data-collapse=true] .df-panel__title .but-open:hover:before{
+  content: "mostrar filtros";
+  width: 85px;
+}
+@media (min-width: 1025px) {
+  #dffullscreen #df-subheader{
+    width: calc(100% - 300px);
+  }
+  .df-fullscreen .header-filters{
+    width: calc(100% - 210px);
+  }
+  #dffullscreen.df-fullscreen #df-sort-select.df-sort-select{
+/*
+    left: initial !important;
+    right: 55px;
+    width: auto !important;
+*/
+  }
+  ul.df-sort-select-options{
+    right: 0;
+  }
+ .df-fullscreen nav.box-hidden-menu {
+      display: block;
+      margin-left: 10px;
+      /*width: 10%;*/
+      width: 20px;
+      min-height: 40px;
+      padding-top: 10px;
+  }
+  #dffullscreen[data-scrolling=true] #df-results__wrapper__dffullscreen{
+   margin-top: 59px !important;
+  }
+}
+
+#dffullscreen[data-scrolling=true] #df-sort-select{
+  display: none !important;
+}
+
+/* BUG 32 */
+.df-fullscreen .df-panel__content .df-term figure {	 margin: 0; } 
+
+/* BUG 14 */
+.df-fullscreen .df-layer__content .df-aside.noresult { display: none; }
+.df-fullscreen .df-layer__content .df-results.noresult div.no-results { padding: 20px 10% 10px; margin: 0 auto; max-width: 1038px; } /* BUG34 */
+.df-fullscreen .df-layer__content .df-results.noresult div.no-results div.no-results-box-container {  padding: 20px; }
+
+/* BUG 15 - sharen */
+body #toplogin { float: right; display: table-cell; height: 30px; min-width: 90px; margin: 0 0 0 10px; padding-top: 7px; }
+body #toplogin .myaccountbutton .name { color: #ebe717; text-transform: uppercase; font-size: 11px; font-weight: 600; text-align: center; line-height: 1.1; }
+body #toplogin .myaccountbutton .name { color: #ebe717; text-transform: uppercase; font-size: 11px; font-weight: 600; text-align: center; line-height: 1.1; }
+body #toplogin span.wishlist-header-icon { background-image: url(//www.futbolmania.com/skin/frontend/rwd/futbolmania/images/sprite-header.svg); background-repeat: no-repeat; display: inline-block; width: 22px; height: 20px; vertical-align: middle; background-size: 172px; }
+body #toplogin .box-header.have-items a span.count { width: 15px; height: 15px; border-radius: 50%; background-color: #ebe717; position: absolute; bottom: 5px; right: 3px; color: #000; font-weight: 600; text-align: center; }
+body #toplogin .box-header.have-items a span { color: #ebe717; }
+body #toplogin .header-icon-sprite span.icon { background-position: -5px -53px; background-image: url(//www.futbolmania.com/skin/frontend/rwd/futbolmania/images/sprite-header.svg); background-repeat: no-repeat; width: 22px; height: 22px; background-size: 172px; display: inline-block; }
+
+/* ----------------------------------------------------------- */
+/* 			CSS TABLET Y MOBILE	 							   */
+/* ----------------------------------------------------------- */
+/* TABLET Y MOBILE */
+/* BUG 8 rev3.0 
+@media (min-width: 320px) and (max-width: 1024px){ // BUG 8.5 - 2021-06-11 
+	.df-card .df-card__main .df-card__description, .df-cardc .df-card__main .df-card__description:active {
+		background-color: #ccc;
+	}
+}
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #dffullscreen.df-fullscreen #df-subheader{
+    width: calc(100% - 300px);
+    position:absolute;
+  }
+  #dffullscreen.df-fullscreen #df-sort-select.df-sort-select{
+/*
+    left: initial !important;
+    right: 0;
+    width: auto !important;
+    margin: 0;
+*/
+  }
+  #dffullscreen.df-fullscreen .header-filters{
+    width: calc(100% - 120px);
+  }
+  #dffullscreen.df-fullscreen ul.df-sort-select-options{
+    right: 0;
+  }
+}
+
+@media (max-width: 1024px){	
+	
+	/* BUG 8.4 - 2021-06-11 */
+	.df-card .df-card__main .df-card__title, .df-cardc .df-card__main .df-card__title { 
+		/*color: #0066c0; bug ricard */
+	}
+	
+	/* PUNTO 11.2 SHAREN */
+	.btn.buscar { 
+		height: 32px;
+	}
+		
+	/* BUG34 */
+	/* TABLET */
+	.no-results-box-container p.bold-paragraph { font-size: 25px; }
+	.no-results-box-container p { font-size: 14px; }
+	.no-results-container { font-size: 14px; }	
+}
+
+/* ----------------------------------------------------------- */
+/* 			CSS MOBILE			 							   */
+/* ----------------------------------------------------------- */
+.df-mobile a div.df-suggestion:hover,
+.df-mobile a div.df-categories:hover {
+    background-color: #e5e5e5;
+}
+.df-mobile-order .df-sort-selected .selected {
+    padding-right: 0px;
+}
+.df-mobile #hideContent {
+  top: 35px;
+}
+.df-mobile .menuLogos {
+    margin-top: 20px;
+}
+.df-mobile .df-mobile__aside__content.noscroll {
+    overflow: hidden;
+    overflow-y: hidden;
+}
+.df-mobile .df-mobile__searchbox.opened{
+  /*border-radius: 14px 14px 0 0 !important;*/
+}
+.df-mobile__searchbox .lupa{
+	display: none !important;
+}
+.df-mobile a div.df-suggestion:hover,
+.df-mobile a div.df-categories:hover
+{
+	background-color: #ebe717;
+}
+.df-mobile__aside__content .df-term[data-facet="color"]{
+	margin: 10px 15px 0 0 !important;
+} 
+.df-mobile a div.df-suggestion,
+.df-mobile a div.df-categories
+{
+  padding: 10px 0 10px 30px;
+  font-size: 14px;
+}
+.df-mobile .btn.buscar {
+    position: relative;
+    width: 50px;	/* PUNT 7.1 SHAREN CSS */
+    height: 40px;
+    padding: 0px;
+	border-radius: 0px 4px 4px 0px; /* BUG 7 sharen */
+}
+.df-mobile .lupa-negra {
+	display: inline-block;
+	/*background-color: unset;*/
+	width: 40px;
+	margin-top: 5px;
+	height: 30px !important;
+	background: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/sprite-header.svg) -145px -65px no-repeat;
+	background-size: 180px 200px;
+}
+.df-mobile .df-topbar__content{
+	visibility: hidden;
+	height: 0px !important;
+}
+.df-mobile .clear-or-category .clear {
+	margin: 7px 15px 7px 0;	/* PUNT 7.4 SHAREN CSS */
+	/*display: none !important;*/
+	float: left;
+}
+.df-mobile #hideContent{
+	top: 90px;
+}
+.df-mobile .flecha-doofinder{
+	margin: 0px 0 0 5px !important; 
+	width: 17px;
+	display: block;
+}
+.df-mobile .flecha-doofinder:active{
+	background-color: #ccc;
+}	
+
+.df-mobile .desc-search .desc-total{
+	font-size: 22px;
+	color: #000;
+}
+
+.df-mobile .desc-search{
+	position: unset !important;
+	font-weight: 700 !important;
+	font-size: 16px;
+}
+
+.df-mobile .no-results { padding: 20px 10% 20px; }
+
+@media only screen and (max-width: 768px){
+	.clear-or-category .category{
+		margin-top: 0px;
+		height: auto;
+		padding: 6px 8px;
+	}
+	#search_mini_form_responsive .search_r_wrapper:after{ /* PUNT 11.5 SHAREN */ /* PUNT 11.3 SHAREN */ /* PUNT 11.3 SHAREN v2 */
+		margin-top: -4px;
+		right: 11px;
+	}
+}
+
+@media only screen and (max-width: 767px){
+	.lupa-negra { display:none; } /* punto3 sharen */
+	.desc-search-word{
+		padding-left: 5px !important;
+		padding-right: 5px !important;
+	}
+	img.link-suggestions {
+		width: 22px;
+		margin: -20px 2px 0 0;
+		position: absolute;
+		right: 6px;
+		/*display: none;*/
+	}
+	.btn.buscar{
+		float: left;
+	}
+	.clear-or-category .category span{
+		margin-top: -2px;
+	}
+	.clear-or-category{
+		margin: 0px;
+		position: initial;
+	}
+	.clear-or-category img.lupa-gris{
+		margin: 0px;
+		height: 25px;
+		width: 25px;
+		float: unset;
+	}
+	#search_mini_form .input-search-container:after,#search_mini_form_responsive .search_r_wrapper:after/*,.df-mobile__searchbox:after*/{ /* PUNT 11.3 SHAREN */
+		content: "";
+		width: 50px  !important;
+		height: 30px !important; /* bug 11.3 sharen */
+		background: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/sprite-header.svg) -129px -53px / 172px no-repeat !important; /* bug 11.3 sharen */
+		background-color: #ebe919 !important;
+		background-size: 172px;
+		margin-top: 6px; /* bug 11.3 sharen */
+		right: 8px;
+		position: absolute;
+		display: inline-block;
+		border-radius: 0px 4px 4px 0px;
+	}
+	body.is-responsive #header-search2 .input-box { /* PUNT 11.4 SHAREN */
+		height: 32px;
+	}
+	.btn.buscar{
+		/*display: none;*/
+		width: 50px;				/* bug 11.3 sharen */
+		height: 40px !important;	/* bug 11.3 sharen */
+	}
+}
+
+body.is-responsive #header-search2 .input-box:active,
+body.is-responsive #header-search2 .input-box:hover { outline: 2px solid #ebe717; }
+
+@media (min-width: 320px) {
+  .df-mobile .desc-search{
+    padding: 0px !important;
+  }
+}
+@media (max-width: 321px){
+  .df-mobile__aside_categories .title-filter {
+    width: max-content;
+  }
+  .df-mobile__aside_categories .title-filter .close{
+    position: absolute;
+    margin: 10px 15px;
+  }
+}
+/* BUG 30 */
+.df-mobile .df-panel__title, .df-mobile .df-selected-filters__title { line-height: 40px !important; }
+@media (max-width: 767px){
+	.df-aside .df-panel--collapse .df-panel__title:after, .df-mobile__aside .df-panel--collapse .df-panel__title:after{ background-size: 285px 490px; right: 17px; margin-top: 10px; }  
+}
+
+/* BUG 33 - sharen */ 
+@media only screen and (max-width: 767px){
+	.df-fullscreen .df-searchbox, 
+	.df-fullscreen .df-searchbox input,
+	.search-form .search-form-container {	
+		max-width: 767px !important; 
+	}
+}
+
+/* MOBILE */
+@media (max-width: 767px){
+	.no-results-box-container p { font-size: 12px; } /* bug34 */
+	.no-results-container { font-size: 12px; } /* bug34 */
+	.no-results-box-container { padding: 20px 5px; } /* bug34 */
+}
+@media screen and (max-width: 767px){
+	.no-results-box-container p.bold-paragraph { font-size: 18px; }
+	.df-mobile { font-size: 12px; }
+}
+/* CSS Change Mobile Doofinder*/
+/* review */
+/*
+.df-mobile[data-layout=grid] .df-card__main {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+*/
+
+@media (max-width: 767px){	/* PUNTO 11.2 SHAREN */
+	.search-form .search-form-container #search_mini_form .input-box .input-search-container #search, 
+	.search-form .search-form-container #search_mini_form_desktop .input-box .search_d_wrapper #search_d {
+		/* max-width: 329px; */
+		height: 32px;
+	}
+}
+
+.df-mobile .df-card .df-card__main .df-card__title, 
+.df-mobile .df-cardc .df-card__main .df-card__title:active { 
+	background-color: #ccc; 
+}
+.df-mobile .df-card .df-card__main .df-card__description, 
+.df-mobile .df-cardc .df-card__main .df-card__description:active { 
+	text-decoration: underline !important; 
+}
+
+@media only screen and (max-width: 767px){
+	body.iphone-detected #search_mini_form_responsive .search_r_wrapper:after { margin-top: -24px; right: 11px; }
+	body.iphone-detected #search_mini_form .input-search-container:after, 
+	body.iphone-detected #search_mini_form_responsive .search_r_wrapper:after { display: none; }
+	body.iphone-detected button.buscar .lupa-negra { display: initial; width: 26px; height: 26px; background: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/sprite-header.svg) -138px -53px no-repeat; background-size: 172px; /* margin-top: 4px; */ float: right; /* background-color: #ebe717; */ }
+}
+
+.df-mobile a.df-categories.last .df-categories {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 300px;
+  display: flex;
+  overflow: hidden;
+}
+.df-mobile__header a.df-categories .lupa {
+    margin-top: 10px;
+}
+#df-mobile__header__dffullscreen.fixed #desc-search {
+    display: none !important;
+}
+/* BUG 2 - 20210610 - no border */
+/* volvemos a poner el hover
+.df-mobile .df-card:hover, .df-mobile .df-cardc:hover { 
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}*/
+.df-mobile .df-panel[data-collapse=true]:active{
+   background-color: ccc;
+}
+.df-mobile .df-panel[data-collapse=true],
+.df-mobile .df-selected-filters[data-collapse=true]{
+  /* border-bottom: 1px solid #DADADA; */
+    border-top-color: #DADADA !important;
+}
+.df-mobile__aside .df-panel--collapse[data-collapse=false] .df-panel__title:after:active{
+   background-color: #ccc;
+}
+.df-mobile #df-subheader.fixed #desc-search {
+    /* width: 100% !important; BUG 5 - 2021-06-10 */
+    display: inline-block !important;
+    width: 100%;
+    transform: scale(1);
+    font-size: 0.75em;
+}
+.df-mobile #df-subheader.fixed #desc-search span { /* BUG 5 - 2021-06-10 */
+    font-size: 1.2em;
+}
+.df-mobile__aside .list-categories-more,
+.df-mobile__aside .list-categories-less {
+    /*padding: 0px 0px 10px 15px;*/
+    padding: 5px 10px 5px 10px;
+}
+.df-mobile__aside .list-categories-more:active,
+.df-mobile__aside .list-categories-less:active{
+    background-color: #ccc;
+}
+#df-mobile__aside__content__categories .df-list-categories img.link-suggestions,
+#df-mobile__aside__content__categories .list-categories-more, 
+#df-mobile__aside__content__categories .list-categories-less {
+    display: none;
+}
+#df-mobile__aside__content__categories .df-list-categories a.df-categoriessidebar.hide {
+    display: flex !important;
+}
+#df-mobile__aside__content__categories .df-list-categories a.df-categoriessidebar{
+    min-height: 40px;
+    padding: 0 0 0 10px;
+    border-bottom: 1px solid #ededed;
+    position: relative;
+}
+#df-mobile__aside__content__categories .df-list-categories a.df-categoriessidebar:active{
+   background-color: #ccc;
+   text-decoration: none;
+    color: #000;
+}
+#df-mobile__aside__content__categories .df-list-categories a.df-categoriessidebar:after {
+    content: "";
+    background-image: url(//www.futbolmania.com/skin/frontend/rwd/futbolmania/images/sprite.svg) !important;
+    background-size: 240px;
+    background-repeat: no-repeat;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-top: 10px;
+    background-position: -178px -208px;
+    transform: rotateZ(90deg);
+}
+#df-mobile__aside__content__categories .df-list-categories .df-categoriessidebar-title {
+    width: 75%;
+}
+
+.df-mobile__aside .df-panel--collapse[data-facet="talla"] .df-term[data-selected]:after {
+  margin: 15px 5px 0 0;
+}
+.df-mobile__aside .df-panel--collapse[data-facet="color"] .df-term[data-selected]:after {
+  position: absolute;
+  right: 15px;
+}
+.df-mobile__aside__content .df-panel--collapse[data-facet=color][data-collapse=false] .df-panel__content {
+    display: grid;	
+	grid-template-columns: repeat(auto-fill, 80px);
+	grid-gap: 4px;
+}
+.df-mobile__aside .df-term[data-facet="talla"]{
+  color: #000;
+  display: flex;
+  margin: 0 auto;
+  border: 1px solid #9D9D9C;
+  width: 33.3%;
+  height:34px;
+  float:left;
+  vertical-align: middle;
+  padding: 8px;
+}
+
+.df-mobile__aside .df-term[data-facet="talla"]:nth-child(-1n+3) {
+  border-top: 1px solid #9D9D9C;
+}
+.df-mobile__aside .df-term[data-facet="talla"]:nth-child(-1n+1),
+.df-mobile__aside .df-term[data-facet="talla"]:nth-child(3n+4) {
+  border-left: 1px solid #9D9D9C;
+}
+
+.df-mobile__aside .df-term[data-facet="talla"][data-selected] .df-term__value{
+  /*padding-top: 15px;*/
+  padding-left: 8px;
+}
+
+.df-mobile__aside .df-term[data-facet="talla"][data-selected]{
+    max-height: 30px !important;
+}
+
+.df-mobile__aside .df-panel.active .clear-filter{
+    margin: 15px 10px 0px;
+    background: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/doofinder/borrar-filtros-columna.svg) 14px 2px no-repeat !important;
+    background-size: 21px !important;
+    width: 50px !important;
+    height: 30px !important;
+}
+
+.df-mobile{
+	background-color: #FFF !important;
+}  
+.df-mobile .df-mobile__wrapper{
+	padding-bottom: unset;
+}
+.df-mobile .df-mobile__content {
+	background: #FFF !important;
+}
+
+/* cuando no hay resultados en mobile */
+.df-mobile .df-mobile__content.noresult .no-results:before { display:none; }
+.df-mobile .df-mobile__content.noresult { position:relative;display: block !important; }
+
+/* Header */
+.df-mobile .df-mobile__header{
+	background-color: #FFF !important;	/* BUG 4 - sharen */
+	padding: 0px !important;
+}
+.df-mobile .df-mobile__header .box-hidden-menu{
+	padding-top: 5px;
+/*display:none;*/
+} 
+.df-mobile__headertop{
+    background-color: #e5e5e5;
+    padding: 4px 10px 10px 10px;
+    display: grid;
+}
+
+.df-mobile__headertop.fixed{
+	position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
+	padding-bottom: 0px;
+}
+
+/*
+2022-11-23 vamos a mantener el todos hombre mujer y niños al hacer scroll down
+.df-mobile__headertop.fixed  .custom-categories{
+	display: none !important;
+}
+*/
+
+/* 2022-11-23 vamos a mostrar el todos hombre mujer y niños */
+.df-mobile__headertop.fixed .custom-categories div {
+    margin-top: 0px;
+}
+
+.df-mobile__headertop a.df-icon.df-icon--close{
+    position: absolute;
+    top: 6px;
+    right: 26px;
+    display:none;
+}
+.df-mobile__headertop a.df-icon.df-icon--close:active{
+      background-color: #cccccc;
+}
+.df-mobile[data-browser-support~=voicesearch] button[data-role=voicesearch]{
+    display: none !important;
+}
+.df-mobile__searchbox {
+    box-shadow: unset !important;
+    color: #000;
+    /*border-radius: 14px !important;*/
+    padding: 0px 0px 0px 3px !important;
+    vertical-align: middle;
+    height: 40px !important;
+    font-size: 17px !important;
+    margin: 0 auto !important;
+	border-radius: 4px !important;
+    -webkit-box-orient: unset !important;
+    -webkit-box-direction: unset !important;
+    flex-flow: unset !important;
+    -webkit-box-pack: unset !important;
+    justify-content: unset !important;
+}
+
+.df-mobile__headertop.fixed  .df-mobile__searchbox {
+	display: none;
+}
+
+.df-mobile .df-mobile__searchbox button{
+	height: auto !important;
+	padding: 0px !important;
+}
+.df-mobile .df-mobile__searchbox svg{
+	margin: -2px 2px 0 0;
+}
+.df-mobile .df-mobile__searchbox svg:active{
+	background: #ccc;
+}
+input#df-mobile__searchbox__dffullscreen {
+	border-radius: 14px !important;
+	padding: 8px 0 8px 8px;
+	vertical-align: middle;
+	/*height: auto !important;*/
+	height: 40px;
+	box-sizing: border-box;
+	font-size: 17px !important;
+	font-weight: 400;
+	color: #000;
+	/* width: auto;*/
+}
+.df-mobile .df-mobile__searchbox button[data-role=clear]{
+    display: none !important;
+    border-radius: 14px;
+}
+.df-mobile .df-mobile__searchbox[data-empty] button[data-role=close]{
+    display: none !important;
+}  
+.df-mobile__header a.df-icon.df-icon--close.header-button-clear {
+	display: none;
+}
+.df-mobile-buttons{
+		background: #FFF;
+		width: 100%;
+		z-index: 99;
+		margin: 0px;
+		display: inline-flex !important;
+		/*column-gap: 40px;*/
+		column-gap: 0px;
+		max-height: 30px;
+}
+.df-mobile-buttons.fixed{
+		position: fixed;
+		top: 0px;
+		margin: 0px;
+		box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.2);
+}
+.df-mobile .df-sort-select label{
+		display: none !important;
+}
+#df-mobile__header__actions__dffullscreen,#df-mobile__aside__sorting__dffullscreen{
+		/*width: 50%;
+		max-height: 35px;*/
+}
+
+#df-mobile__header__actions__dffullscreen{
+		float: left;
+		border-right: none !important;
+		border-left: none !important;
+}
+#df-mobile__aside__sorting__dffullscreen{
+	float:right;
+}
+.df-mobile .df-mobile__header__actions .df-header-title {
+	display: none !important;
+}
+.df-mobile__headertop .custom-categories {
+	display: none;
+}
+#df-mobile__aside__sorting__dffullscreen .df-sort-select select{
+	min-width: auto;
+	border-right: none !important;
+	max-height: 34px;
+}
+#df-mobile__header__actions__dffullscreen, #df-mobile__aside__sorting__dffullscreen .df-sort-select select{
+	padding: 3px;
+	line-height: 21px;
+	/*text-align: center;*/
+	display: block;
+	font-size: 14px;
+	font-weight: 400;
+	color: #000;
+	text-transform: capitalize;
+	/*border: 1px solid #1d1d1d;*/
+	background-color: #fff;
+	height: 40px;
+	width: calc(100% / 3);
+}
+#df-mobile__header__actions__dffullscreen:active, .df-mobile-order .df-sort-selected:active {
+	background: #ccc;
+}
+.df-mobile-column {
+	flex: 1 1 auto;
+}
+.df-mobile .df-mobile__header__actions{
+	margin-top: 0px;
+}
+.df-mobile .df-mobile__button:active,.df-mobile .df-mobile__button:focus, .df-mobile .df-mobile__button:hover{
+	background-color: unset !important;
+}
+.df-mobile-filters .df-header-title {
+	display: none;
+}
+.df-mobile-filters .df-mobile__button {
+	color: #000 !important;
+	line-height: 22px !important;
+	text-transform: capitalize !important;
+	font-size: 14px !important;
+	font-weight: 600 !important;
+	display: inline-flex !important;
+}
+.df-mobile-filters .df-mobile__button:before{
+	content: "";
+	background: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/doofinder/filtrar.svg) 0px 5px no-repeat;
+	/* background-size: 20px 20px; */
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+}
+.df-mobile-filters .df-mobile__button:after {
+	content: "Filtrar";
+	padding: 5px 0 0 0;
+}
+.df-mobile .df-mobile__button--switch-on{
+color: #000 !important;
+}
+
+/* Header custom categories */
+.df-mobile__header .custom-categories{
+	margin-right: auto;
+}
+.df-mobile__header .custom-category{
+	min-width:calc(24% - 4px);
+	width: calc(24% - 4px);
+	margin: 10px 3px;
+	font-weight: bold;
+	font-size: 14px;
+	height: 32px;
+	padding: 5px;
+}
+.df-mobile__header .custom-category.active:after{
+	margin: 0 auto;
+}
+.df-mobile__header .custom-category[data-category="Todo"] {
+	margin-left: 0px;
+}
+/* END */
+#df-mobile__content__dffullscreen{
+	display: none; 
+	-webkit-box-orient: unset;
+	-webkit-box-direction: unset;
+	grid-column-gap: unset;
+}
+.df-mobile #df-subheader {
+	width: 100%;
+	background: #FFF;
+}
+.df-mobile #df-subheader.fixed{
+	padding-bottom: 0px !important;
+}
+
+.df-mobile__close-filter span.view-results, 
+.df-mobile__close-filter span.apply-filters, 
+.df-mobile__close-filter span.remove-filters{
+	/*width: 50%;*/
+	width: 44%;
+	max-width: 50%;
+	text-decoration: none;
+	color: #1d1d1d;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	right: 5%;
+	line-height: 20px;
+	padding: 12px;
+	display: block;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #FFF;
+	background-color: #000;
+	text-align: center;
+	border: 1px solid #000;
+}
+.df-mobile__close-filter span.remove-filters {
+	left: 5%;
+	color: #000;
+	background-color: #FFF;
+}
+.df-mobile__close-filter span.remove-filters:active, .df-mobile__close-filter span.remove-filters:focus {
+	background-color: #CCC;
+}
+.df-mobile__close-filter .view-results:active {
+	background: #ccc !important;
+}
+.df-mobile .header-filters{
+	position: relative !important;
+	padding: 5px 0px;
+	display: flex;
+	overflow-x: scroll !important;
+}
+.df-mobile .header-filter {
+	margin: 0 10px 0 0;
+}
+
+.df-mobile .df-subheader .df-sort-select{
+	position: unset;
+	background-color: unset !important;
+	border-bottom: unset !important;
+	padding: 0px !important;
+}
+.df-mobile .df-term{
+	min-height: 30px !important;
+	padding: 0px 8px 0px 8px !important;
+	margin: 2px 8px 2px 8px !important;
+	font-weight: 400;
+	height: 35px !important;
+}
+
+.df-mobile .title-filter {
+	height: 40px;
+	background-color: #e6e6e6;
+	padding: 8px 15px;
+}
+.df-mobile .title-filter.fixed{
+	position: absolute;
+	top: 0px;
+	z-index: 90;
+	width: 100%;
+	box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+.df-mobile .title-filter .title{
+	 font-weight: 700;
+	 font-size: 14px;
+	 color: #000;
+	 padding: 0 50px 0 0;
+}
+.df-mobile .title-filter .close{
+	position: relative;
+	top: 0px;
+	right: 0px;
+	width: 25px;
+	height: 25px;
+	float: right;
+	color: #000;
+	margin: 0px;
+	padding: 0px;
+}
+.df-mobile .title-filter .close:active,
+.df-mobile .title-filter .close:focus{
+	background: #CCC;
+	border-radius: 10px;
+}
+
+/* Sidebar filters */
+.df-mobile .df-mobile__aside__actions{
+	display: none !important;
+}
+.df-mobile .df-mobile__aside_categories .df-mobile__aside__actions {
+	display: block !important;
+}
+.df-mobile .df-panel__title:active, 
+.df-mobile .df-panel__title:focus, 
+.df-mobile .df-panel__title:hover, 
+.df-mobile .df-selected-filters__title:active, 
+.df-mobile .df-selected-filters__title:focus, 
+.df-mobile .df-selected-filters__title:hover{
+	color: #000;
+}
+  /* END */
+
+.df-mobile .df-mobile__aside__content{
+	overflow-x: hidden;
+	/*height: calc(100% - 100px) !important;*/
+	height: 100% !important;
+}
+
+  /* Closed filter */
+.df-mobile__aside__content .df-panel__content {
+	min-height: auto !important;
+	max-height: unset;
+}
+.df-mobile .df-aside .df-panel--collapse[data-collapse=true] .df-panel__title:after, 
+.df-mobile__aside .df-panel--collapse[data-collapse=true] .df-panel__title:after {
+	background-position: -190px -240px;
+}
+  /* END */
+.df-mobile .df-aside .df-panel--collapse .df-panel__title:after, 
+.df-mobile__aside .df-panel--collapse .df-panel__title:after{
+	content: "";
+	background-image: url(//www.futbolmania.com/skin/frontend/rwd/futbolmania/images/sprite.svg) !important;
+	background-size: 283px 497px;
+	background-repeat: no-repeat;
+	right: 15px;
+	width: 20px;
+	height: 20px;
+	margin-top: 10px;
+	position: absolute;
+}
+  /* Open filter */
+.df-mobile .df-panel--collapse .df-panel__title, 
+.df-mobile .df-panel--collapse .df-selected-filters__title{
+	background: none !important;
+	font-family: 'Open Sans',sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: capitalize;
+	height: 40px;
+}
+.df-mobile .df-panel__title, 
+.df-mobile .df-selected-filters__title{
+	color: #000 !important;
+}
+.df-mobile .df-aside .df-panel--collapse[data-collapse=false] .df-panel__title:after, 
+.df-mobile__aside .df-panel--collapse[data-collapse=false] .df-panel__title:after{
+	margin-top: 15px;
+	background-position: -212px -245px;
+}
+.df-mobile__aside .df-term[data-facet="talla"] {
+	margin: 0px !important;
+	height: auto !important;
+}
+/* END */
+
+/* Images */ /* BUG no funciona las quitamos de mobile */
+/*.manage-hover-container {
+	display: inline-flex;
+	margin: 0 auto 5px;
+	max-width: 100%;
+}*/
+/* END */
+
+/*Iconos Marcas*/
+/* END */
+
+/* Age */
+/* END */
+/* Colors */
+.df-mobile__aside .df-panel--collapse[data-facet="color"][data-collapse=false] .df-panel__content {
+	margin: 0 0px 20px;
+}
+  /* BUG38 */
+.df-mobile__aside__content .df-term[data-facet="color"] figure { margin: 1em 0px; }
+.df-mobile__aside__content .df-term[data-facet="color"]{
+	margin: 10px 15px 0 0 !important;
+}
+  /* END BUG38 */
+  /* END */
+
+  /* Sizes */
+.df-mobile__aside .df-panel--collapse[data-facet="talla"][data-collapse=false] .df-panel__content {
+	margin: 0 20px;
+}
+  /* END */
+
+  /* Prices */
+.df-mobile__aside .df-panel--collapse[data-facet="price"][data-collapse=false] .df-panel__content {
+	margin: 0 20px;
+}
+  /* END */
+
+  /* Tipo Búsqueda */
+  /* END */
+
+  /* View results */
+.df-mobile__close-filter{
+	width: 100%;
+	/*position: fixed;*/
+	z-index: 90;
+	bottom: 0;
+	left: 0;
+	height: 96px;
+	background-color: #fff;
+	-webkit-transform: translateZ(0);
+	border-top: 1px solid #CCCCCC;
+}
+.df-mobile[data-layout=grid] .df-card__image {
+	height: auto !important;
+	min-height: 150px;
+}  
+
+.fixed #df-mobile__header__actions__dffullscreen, 
+#df-mobile__aside__sorting__dffullscreen .df-sort-select select{
+	border:none;
+}
+.fixed .df-mobile-order .df-sort-selected {
+	border: none;
+	/*border-left: 1px solid;*/
+}
+/*NO RESULTS MOBILE*/
+.df-mobile #df-results__wrapper__dffullscreen {
+	margin-top: 20px;
+	background: #FFF;
+}
+.df-mobile .df-topbar__form {
+	margin: 9px 0 0 0 !important;
+	min-height: 40px;
+}
+.df-mobile .df-topbar__logo img{
+	height: 22px;
+	max-width: 160px !important;
+	margin: 5px 0px 0px -5px;
+}
+
+/*END NO RESULTS*/
+/* MOBILE */
+@media (max-width: 767px){	
+		.doofinder-hidden-menu{
+			margin-left: 0px;
+		}
+		.custom-category { /* BUG 4 - sharen */
+			margin: 10px 3px 0px 3px;
+		}
+		img.lupa.link-gris.external {
+			margin-left: 8px;
+		}
+	  
+	  /* IPHONE */
+	  @supports (-webkit-overflow-scrolling: touch) {
+		#df-mobile__searchbox__dffullscreen{
+		  height: 25px !important;
+		  padding: 0px 3px 0px 10px !important;
+		}
+		#df-suggestions__dffullscreen, #df-categories__dffullscreen{
+		  top: 52px !important;
+		  margin-top: 0px;
+		}
+		.df-mobile__searchbox,#df-mobile__searchbox__dffullscreen{
+		  height: 40px !important;
+		  /*margin-right: 2px !important;*/
+		}
+		.clear-or-category .category{
+		  margin-top: 0px;
+		}
+		.lupa-negra{
+		  margin-top: 0px;
+		  margin-right: 0px !important;
+		  height: auto;
+		  padding: 10px;
+		  width: 35px;
+		}
+	  }
+	  /* END IPHONE */
+	  @media screen and (orientation:portrait) {
+		   .df-mobile-buttons{
+				display: inline-block;
+		  }
+	  }
+	  @media screen and (orientation:landscape) {
+		   .df-mobile-buttons{
+				display: -webkit-inline-flex;
+		  }
+	  }
+	  @media screen and (orientation:landscape) {
+			.df-mobile .df-mobile-order{
+				width: 50%;
+			}
+			.df-subheader .df-sort-select{
+				width: -webkit-fill-available;
+			}
+			.df-mobile-order .df-sort-selected{
+				width: -webkit-fill-available !important;
+			}
+	  }
+	  .total-results{
+		display: none !important;
+	  }
+
+	  /* Suggestions */
+	  #df-suggestions__dffullscreen,
+	  #df-categories__dffullscreen{
+		margin: 0px 9px 5px;
+		top: 52px;
+		border: 1px solid #EEE;
+	  }
+	  .suggestions-filters {
+		margin: 10px 0 6px 10px;
+	  }
+	  .suggestions-filters div{
+		padding: 10px 5px;
+		margin: 5px 8px 5px 0;
+		/*width: 30%;*/
+		width: 100px;
+		text-align: center;
+	  }
+	  span.suggestion-lupa{
+		width: 17px;
+		height: 17px;
+		margin-bottom: -4px;
+		background: url(http://pre-futbolmania.bumon-web.com/skin/frontend/rwd/futbolmania/images/sprite-header.svg) -122px -47px no-repeat;
+		background-size: 145px;
+	  }
+	  .suggestion-man{
+		font-size: 14px;
+	  }
+	  /* END */
+	  /* Product */
+	  [data-layout=grid][data-browser-support~=cssgrid] .df-card,
+	  [data-layout=grid][data-browser-support~=cssgrid] .df-cardc{
+		height: 100%;
+		background: #FFF;
+		margin: 0px !important;
+		border-left: 0px !important;
+		border-right: 0px !important;
+	  }
+	  .df-card .df-card__main .df-card__title, .df-cardc .df-card__main .df-card__title{
+		padding: 0px;
+	  }
+	  .df-card .df-card__main .df-card__description, 
+	  .df-cardc .df-card__main .df-card__description{
+		font-size: 11px; /* bug FONT-SIZE PRICES */
+		padding: 0px;
+		text-decoration: none !important;
+	  }
+	  span.df-card__price .currency { /* bug FONT-SIZE PRICES */
+		  font-size: 13px; 
+	  }
+	  span.df-card__price .currency span.decimal-part { /* bug FONT-SIZE PRICES */
+		  font-size: 12px; 
+	  }
+	  
+	  .manage-hover-box img{
+		max-width: 30px;
+	  }
+	  /* END */
+
+	/* END */
+}
+/* END MOBILE*/
+
+ .df-mobile-filters .products-count{
+	display: inline-block;
+	margin-right: 10px;
+	padding: 0px;
+	line-height: 4px;
+	font-size: 12px;
+	text-transform: lowercase;
+}
+.df-mobile-filters .products-count .grid-count{
+	padding: 0px;
+	line-height: 19px;
+	font-size: 12px;
+}
+.df-mobile-categories {
+	color: #000 !important;
+	text-transform: capitalize !important;
+	font-size: 14px !important;
+	font-weight: 600 !important;
+	display: inline-table;
+	width: calc(100% / 3);
+	float: left;
+	text-align: center;
+	text-align-last: center;
+	height: 40px;
+	margin: 6px 0px 0px 0px !important;
+	cursor: pointer;
+}
+.df-mobile-categories:active, .df-mobile-order:active{
+	background-color: #ccc;
+}
+.df-mobile-categories span:before {
+	content: "";
+	background: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/doofinder/categorias-relacionadas.svg) -2px 5px no-repeat;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+}
+.df-mobile .df-mobile__overlay-categories{
+	background-color: rgba(0, 0, 0, 0.6) !important;
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 98;
+}
+.df-mobile-order {
+	height: 40px;
+	/*max-width: calc(100% / 3); error align center categories
+	width: auto;*/
+	width: calc(100% / 3);
+	/*min-width: 110px;*/
+}
+.df-mobile .df-sort-select select{
+	border: unset  !important;
+	/*background: unset  !important;*/
+	background-image: url("https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/doofinder/filtro-ordenar.svg") !important;
+	background-size: 20px 20px !important;
+	background-repeat: no-repeat !important;
+	background-position: -4px 10px !important;
+	/*direction: rtl;*/
+	padding: 0px 10px 0 0 !important;
+	line-height: unset  !important;
+	/*display: none !important;*/
+	/*min-width: 135px;*/
+	font-size: 14px !important;
+	font-weight: 600;
+	color: #000;
+	float: right;
+	margin: 0 10px 0 0 !important;
+	position: absolute;
+	opacity: 0;
+	width: 100% !important;
+}
+.df-mobile .df-sort-select select option{
+	/*direction: ltr;*/
+}
+.df-mobile .df-sort-select select.opened{
+	display: block !important;
+}
+.df-mobile .df-sort-selected.opened{
+	box-shadow: unset;
+}
+.df-mobile-order .df-sort-selected{
+	/*width: 100%;*/
+	padding: 6px 10px 10px 10px;
+	border-right: 0px;
+	height: auto;
+	/*text-align: right;*/
+	/*display: none;*/
+}
+
+.df-mobile-order .df-sort-selected.mobile { /* BUG22 */
+	display: block;
+}
+.df-mobile-order .df-sort-selected:before{
+	content: "";
+	background: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/doofinder/filtro-ordenar.svg) 2px 5px;
+	/* background-size: 20px 20px; */
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+}
+.df-mobile-order ul.df-sort-select-options {
+	width: 50% !important;
+	/*top: auto !important;*/
+	top: 230px !important;
+	border-top: 0px !important;
+	border: 0px;
+	margin-left: 1px;
+}
+.df-mobile-order ul.df-sort-select-options.fixed {
+	top: 34px !important;
+}
+.df-mobile-order .filter-arrow{
+	width: 14px;
+	height: 8px;
+	background-size: 280px 494px;
+	display: none;
+}
+/* END */
+
+.df-mobile.active:not(.click_hover) .df-mobile__content:after{
+  content: ".";
+  background: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/gif-loading-white-big.gif);
+  position: absolute;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 35%;
+  /*top: -114px;
+  height: 800px; */
+  top: 0px;  
+  left: 0px;  
+  height: 100vh;
+  background-color: #ffffffb8;
+  z-index: 3;
+}
+.df-mobile.active[data-is-filtering="true"] .df-mobile__content:after {
+    z-index: 2147483642;
+    top: -235px;
+    left: 15%;
+    max-width: calc( 100% - 15%) !important;
+	min-height: calc(100vh + 120px);
+}
+.df-mobile.active .df-mobile__content.scroll:after {
+  position: fixed;
+}
+.df-mobile.active #df-mobile__content__dffullscreen{
+  position: relative;
+}
+#dffullscreen.df-mobile .df-mobile__aside,
+#dffullscreen.df-mobile .df-mobile__aside_categories{
+  left: 15%;
+  /*max-width: 370px !important;*/
+}
+.df-mobile__header .header-filter {
+    height: 24px;
+    font-size: 10px;
+    padding: 2px 10px 0px 0px;
+}
+.df-mobile__header .filter-name {
+    padding-top: 3px;
+    width: max-content;
+}
+.df-mobile__header .header-filter .filter-close{
+   margin: 2px 10px 0px;
+   width: 15px;
+   height: 15px;
+}
+.df-mobile .df-mobile__overlay{
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  position: fixed !important;
+ }
+.df-mobile-categories {
+    line-height: unset !important;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+	margin: 0px 0px 0px 0px;
+}
+#dffullscreen.df-mobile .df-mobile__aside_categories{
+	/*display: flex;*/
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: 0 10px 20px rgba(0,0,0,.19),0 6px 6px rgba(0,0,0,.23);
+	flex-flow: column nowrap;
+	background-color: #fff;
+	border-left: 1px solid #ddd;
+	z-index: 99;
+}
+
+
+.df-mobile #list-suggestions>.df-categories .copy-paste{
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  right: 0;
+  margin-top: -33px;
+}
+
+.df-mobile #df-subheader.active {
+	display: block !important;
+	/* z-index: 99; */
+	box-shadow: 0 1px 2px 0 rgb(177 177 177 / 11%);
+	margin-bottom: 5px; /* BUG 4 sharen */
+	/*margin-top:5px;*/
+	border-bottom: 1px solid #ddd;
+	transition: .2s linear;
+}
+
+.df-mobile #df-subheader.active.fixed{
+	box-shadow: 4px 1px 6px 0 rgb(32 33 36 / 28%); /* BUG 4 sharen */
+}
+
+.df-mobile  .df-cardc,
+.df-mobile [data-layout=grid][data-browser-support~=cssgrid] .df-card, 
+.df-mobile [data-layout=grid][data-browser-support~=cssgrid] .df-cardc{
+	 max-width: 100% !important; /* BUG20 */
+}
+
+.df-mobile .desc-search-into {
+	padding: 5px 10px 0px !important; /* BUG 4 sharen */
+}
+
+/*
+.df-mobile #list-suggestions>.df-categories{
+  position: relative;
+}*/
+
+/* PUNTO 11.1 SHAREN */
+.df-mobile .clear-or-category .clear img { /* PUNTO 7.3 SHAREN */
+	width: 21px !important;
+	padding: 5px 0px 0px 5px !important;
+}  
+
+.df-mobile .df-card .df-card__main .df-card__title, 
+.df-mobile .df-cardc .df-card__main .df-card__title{
+	font-size: 12px;
+}
+.df-mobile .df-card .df-card__main .df-card__description, 
+.df-mobile .df-cardc .df-card__main .df-card__description{
+	font-size: 11px;
+}
+
+/* precio socio */
+.df-mobile span.df-card__price.df-card__price--partner { font-size: 11px; }
+.df-mobile span.df-card__price.df-card__price--partner  .currency { font-size: 12px;	}
+.df-mobile span.df-card__price.df-card__price--partner .currency span.decimal-part {	font-size: 11px; }
+
+/* precio tachado */
+.df-mobile span.df-card__price.df-card__price--old .currency { font-size: 12px; }
+.df-mobile span.df-card__price.df-card__price--old .currency  span.decimal-part { font-size: 11px; }	
+
+/* precio oferta */
+.df-mobile span.df-card__price.df-card__price--new .currency { font-size: 13px; }
+.df-mobile span.df-card__price.df-card__price--new .currency   span.decimal-part { font-size: 12px; }	
+
+@media (max-width: 768px){
+  .btn.buscar.active .buscar:active {
+	background-color: #ccc;
+  }  
+}
+
+/* SOLO Mobile */
+@media (max-width: 767px){
+	.btn.buscar {	/* bug 11.3 sharen */
+		width: 50px;
+		height: 40px; 
+	}
+}
+
+@media only screen and (max-width: 400px){
+  .suggestion-all{
+    font-size: 13px;
+  }
+  .suggestion-man{
+    font-size: 13px;
+  }
+  .suggestion-women{
+    font-size: 13px;
+  }
+  .suggestion-infantil{
+    font-size: 13px;
+  }
+  .suggestion-futsal{
+    font-size: 13px;
+  }
+  .suggestions-filters div{
+    padding: 1px 4px;
+  }
+}
+
+@media (max-width: 370px){
+  .df-mobile__close-filter span.view-results, .df-mobile__close-filter span.apply-filters, .df-mobile__close-filter span.remove-filters{
+	font-size: 12px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 767px){
+	.df-cardc .df-card__main .df-card__price-offer { top: -42px }
+	[data-layout=grid] .df-card__main  .df-card__content { top: -38px }
+}
+@media (max-width: 320px){
+	.df-cardc .df-card__main .df-card__price-offer { top: -46px !important; }
+	[data-layout=grid] .df-card__main  .df-card__content { top: -41px !important; }
+}	
+
+

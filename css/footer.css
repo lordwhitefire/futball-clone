@@ -1,0 +1,601 @@
+@charset "UTF-8";
+/* FOOTER WRAPPER */
+.footer-container { position:relative; margin:0 auto; max-width:100%; background-color:white; }
+
+
+
+/* ============================================ *
+ * Custom   NEWSLETTER FOOTER
+ * ============================================ */
+.footer-container .newsletter { background-color:white; color:black; text-align:center; overflow:hidden;width: 100%;float:left; margin-left:0;}
+
+.footer-container .newsletter .block-subscribe {margin-left: auto;margin-right: auto; overflow: hidden; margin-bottom: 10px;}
+.footer-container .newsletter .block-subscribe .block-title{color:#000000}
+.footer-container .newsletter .block-subscribe .block-title label{font-weight: 600; font-family: 'Open Sans', sans-serif; color: #1d1d1b;font-size: 12px;width:100%;text-align:center;}
+.footer-container .newsletter .block-subscribe .block-title strong{font-size: 21px; text-transform: uppercase; color: #1d1d1b; font-family: 'Open Sans', sans-serif; font-weight: 600}
+/*.footer-container .newsletter .block-subscribe .input-box{margin-left: auto; margin-right: auto; display: table;}*/
+.footer-container .newsletter .block-subscribe .input-box { display: inline-block;}
+.footer-container .newsletter .block-subscribe .input-box div{width: auto; display: block; float: left;}
+.footer-container .newsletter .block-subscribe .input-box .footer-mail{width: 300px; background-color: #FFFFFF;color: #000000; font-size: 12px;}
+.footer-container .newsletter .block-subscribe .input-box .custom-validator{vertical-align: bottom;color: #000000}
+.footer-container .newsletter .block-subscribe .input-box .form-mail{vertical-align: bottom; display: block; float: left;min-width: 280px;}
+.footer-container .newsletter .block-subscribe .actions{margin: 0; width: auto; vertical-align: bottom;}
+.footer-container .newsletter .block-subscribe .actions button{background-color: #1d1d1b; color: white;width: 140px; height: 50px;float:none;}
+.footer-container .newsletter .block-subscribe input {height: 50px;}
+
+
+
+/* ============================================ *
+ * Custom MAIN ZONE
+ * ============================================ */
+.footer-container .footer { margin:0; overflow:hidden; clear:both; padding:0; max-width:inherit; padding-top:100px; position:relative; }
+
+/* Custom SOCIAL */
+.social { text-align: center; color:black;}
+.footer-container .footer .footer-social { margin: 30px 0 30px 0;display:  inline-block;}
+.footer-container .footer .footer-social span { float:left;}
+.footer-container .footer .footer-social ul  { float:left;}
+.footer-container .footer .footer-social ul li { float:left; width:40px; }
+.footer-container .footer .footer-social ul li a { display:block; text-decoration:none; }
+.footer-container .footer .footer-social .social-media-icons.fb-icon { background-position:-2px -2px; }
+.footer-container .footer .footer-social .social-media-icons.fb-icon:hover { background-position:-2px -37px; }
+.footer-container .footer .footer-social .social-media-icons.twitter-icon {     background-position: -40px 0px; }
+.footer-container .footer .footer-social .social-media-icons.twitter-icon:hover { background-position: -40px -35px; }
+.footer-container .footer .footer-social .social-media-icons.instagram-icon { background-position:-77px 0px; }
+.footer-container .footer .footer-social .social-media-icons.instagram-icon:hover { background-position:-77px -35px; }
+.footer-container .footer .footer-social .social-media-icons.youtube-icon { background-position:-111px 0px; }
+.footer-container .footer .footer-social .social-media-icons.youtube-icon:hover { background-position:-111px -35px; }
+.footer-container .footer .footer-social .social-media-icons.googleplus-icon { background-position:-145px 0px; }
+.footer-container .footer .footer-social .social-media-icons.googleplus-icon:hover { background-position:-145px -35px; }
+.footer-container .footer .footer-social .social-media-icons.snapchat-icon { background-position:-182px 0px; }
+.footer-container .footer .footer-social .social-media-icons.snapchat-icon:hover { background-position:-182px -35px; }
+
+
+/* NUESTRAS TIENDAS Custom LINKS */
+.footer-container .footer .footer-main-col {background-color:white; position:relative; color:black;float:left;width:100%;border-bottom: 0px solid #EFEFEF; text-align: center;}
+.footer-container .footer .footer-main-col .custom-links-footer {padding-top: 30px;display: inline-block;width: auto; float:none; text-align: left;}
+.footer-container .footer .footer-main-col .custom-links-footer ul  {float:left; }
+.footer-container .footer .footer-main-col .custom-links-footer ul .empresa{ margin-top: 20px; }
+.footer-container .footer .footer-main-col .custom-links-footer ul li { float:none; margin:0 50px; display:block; position:relative; }
+.footer-container .footer .footer-main-col .custom-links-footer ul li.footer-list-header { font-size:14px; text-transform:uppercase; color:black; font-family:'Open Sans', sans-serif; font-weight: 600; }
+.footer-container .footer .footer-main-col .custom-links-footer ul li img { width:auto; max-width:16px; height:16px; display:inline-block; left:-20px; position: absolute; background-size:16px; top:4px; }
+.footer-container .footer .footer-main-col .custom-links-footer ul li a {text-decoration:none; color:black; font-family:'Open Sans', sans-serif; margin:0; font-size:12px; font-weight:400; line-height:2; }
+
+/* ============================================ *
+ * Custom STATIC CONTENT
+ * ============================================ */
+.footer-container .static-links-footer{ overflow:hidden;float: left;text-align: center;width:100%; padding-top:30px;}
+
+body .footer-container .footer .footer-main-col .custom-links-footer ul li {float: none; margin: 0 21px; display: block; position: relative;}
+.footer-container .static-links-footer div.logos-payment img { display:inline; }
+.footer-container .static-links-footer div.logos-confianza { width:50px;}
+.footer-container .static-links-footer div.logos-payment { margin-bottom: 30px;}
+.footer-container .static-links-footer div.logo-futbolmania { margin-bottom: 10px;}
+.footer-container .static-links-footer div.logo-futbolmania img {display:inline-block;}
+.footer-container .static-links-footer div.conditions { margin-bottom: 30px;display: inline-block;}
+.footer-container .static-links-footer div.logos-payment .img-logos-payment { margin:0 5px; }
+.footer-container .static-links-footer div.conditions address { float:left; color:black; }
+.footer-container .static-links-footer div.conditions span { color:black;}
+.footer-container .static-links-footer div.conditions span a { color:black;}
+.footer-container .static-links-footer .static-icons {  }
+
+
+/* ============================================ *
+ * Custom FOR HOME VIEW ONLY
+ * ============================================ */
+.cms-index-index .footer-container .footer-menu { display:block; }
+
+/* ============================================ *
+ * Custom FOR KIDS HOME VIEW ONLY
+ * ============================================ */
+.cms-homekids .footer-container .footer-menu { display:block; }
+
+
+/* ============================================ *
+ * Custom FOR PRODUCT VIEW ONLY
+ * ============================================ */
+/*.catalog-product-view .footer-container { width:calc(100% - 291px); float:left; }*/
+/*.catalog-product-view .footer-container { width:100%; float:left; }
+.catalog-product-view .footer-container.custom-view-menu-opened { width:calc(100% - 616px); margin-left:325px; }*/
+.catalog-product-view .footer-container .footer-menu { display:block }
+
+/* ============================================ *
+ * Custom FOR CUSTOMER AREA ONLY
+ * ============================================ */
+.customer-account:not(.wishlist-index-index) .footer-container { z-index:3; width: calc(100% - 265px); float: right; }
+.customer-account:not(.wishlist-index-index) .footer-container .footer-menu { display:none }
+
+/* ============================================ *
+ * Custom FOR COMPARE PRODUCTS ONLY
+ * ============================================ */
+.catalog-product-compare-index .footer-container { z-index:4; }
+.catalog-product-compare-index .footer-container .footer-menu { display:none }
+
+/*
+/* Corrects `block` display not defined in IE 8/9. */
+
+.footer-container{background-color: #555;width: auto;margin:0px 0px;font-family: 'Open Sans';position: relative;width: 100%;}
+.footer-container .footer-menu .iconos{ margin-right:10px; float:left;}
+.footer-container a{ color:#FFFFFF !important; text-decoration:none !important;}
+.footer-container a:hover{ color:#ede813 !important; }
+
+.footer-container .footer-menu{ padding-top:16px;display:none; }
+.footer-container .footer-menu .one-column{ clear:both; width:100%;}
+.footer-container .footer-menu header{ padding-bottom:15px; /*padding-left:290px;*/ }
+.footer-container .footer-menu .pheader{font-size:14px;padding:0px 10px;padding-bottom: 30px;color: #bbb;max-width: 800px;margin: 0 auto; text-align:center; }
+.footer-container .footer-menu h1 {color:#FFFFFF;font-family: 'Open Sans', sans-serif;font-size:30px;text-transform:none;line-height: 1.2;padding-top:10px;text-align:center;}
+.footer-container .footer-menu h1 span { color: #fff; font-weight:bold;display: inline-block; }
+.footer-container .footer-menu h2 {color:#FFFFFF;font-family: 'Open Sans', sans-serif;font-size:30px;text-transform:none;line-height: 1.2;padding-top:10px;text-align:center;}
+.footer-container .footer-menu h2 a { color: #fff; }
+.footer-container .footer-menu h3 { font-family: 'Open Sans', sans-serif; font-size:17px; text-transform:none; line-height: 1.4; clear: both; margin-top:15px; color: #ddd; padding-left:4px;}
+.footer-container .footer-menu h3 a { color: #ddd; }
+.footer-container .footer-menu .withMenu { margin-bottom: -2px; }
+.footer-container .footer-menu p{ color:#FFFFFF; font-family: 'Open Sans', sans-serif; font-size:12px;}
+.footer-container .footer-menu article{ margin-left:55px; margin-right:55px; width:auto; padding-bottom:15px; }
+.footer-container .footer-menu section { float:left;width:14%; min-height:460px;font-size:12px; padding: 5px; }
+.footer-container .footer-menu section .twoCols { width:50%;float:left; }
+.footer-container .footer-menu section.nav-7,.footer-container .footer-menu section.nav-8{ display: none}
+.footer-container .footer-menu section.nav-5 { border-left: 1px solid #444; width:28%; }
+.footer-container .footer-menu section.nav-1 { width:28%; }
+.footer-container .footer-menu section.nav-3 { border-right: 1px solid #444; }
+.footer-container .footer-menu section.nav-9 { width:14%; }
+.footer-container .footer-menu section.nav-10  { width:2%; }
+.footer-container .footer-menu section.nav-2,.footer-container .footer-menu section.nav-3,.footer-container .footer-menu section.nav-6  { padding-top:45px; }
+.footer-container .footer-menu section ul{list-style:none;font-family: 'Open Sans', sans-serif;padding-left: 45px;}
+.footer-container .footer-menu section ul li { text-justify:auto; padding-top:4px; }
+.footer-container .footer-menu li a { color:#FFFFFF; margin-left:10px;}
+.footer-container .footer-menu section ul li a{ text-decoration:none; font-size:15px; color:#aaa; }
+.footer-container .footer-menu section a span { ;background-position: -2px -2px !important;width: 30px;height: 30px;display: inline-block;padding-right:4px;margin-right: 6px;vertical-align: middle; }
+.footer-container .footer-menu section a:hover{ color:#ede813; }
+.footer-container .footer-menu section a:hover span { background-position: -36px -2px !important; }
+.footer-container .footer-menu section h2 span, .footer-container .footer-menu section h3 span {background-position: -2px -2px !important;width: 30px;height: 30px;display: inline-block;padding-right:4px;margin-right: 6px;vertical-align: middle; }
+
+/* KIDS */
+/*.footer-container.footer-kids { background-color:#fff; }
+.footer-container.footer-kids .footer-menu .pheader a { color: #000 !important; }
+.footer-container.footer-kids .footer-menu h1 span,.footer-container.footer-kids .footer-menu h1 { color:#000; }
+.footer-container.footer-kids .footer-menu h2 { color:#000 !important; }*/
+.footer-container.footer-kids .footer-menu h2 a { color: #000 !important; }
+.footer-container.footer-kids .footer-menu h3  { color:#333 !important; }
+.footer-container.footer-kids .footer-menu h3 a { color: #333 !important; }
+.footer-container.footer-kids .footer-menu li a  { color: #666 !important; }
+.footer-container.footer-kids .footer-menu h2 a:hover,
+.footer-container.footer-kids .footer-menu h3 a:hover,
+.footer-container.footer-kids .footer-menu li a:hover { color: #3d51c8 !important; font-weight: 400; }
+.footer-container.footer-kids .footer-menu .pheader a:hover { color: #3d51c8 !important; }
+.footer-container.footer-kids .footer-menu section.nav-3 { border-right: 1px solid #ddd; }
+.footer-container.footer-kids .footer-menu section.nav-5 { border-left: 1px solid #ddd; }
+
+.footer-container .futbolmania {display:table;width: 100%;margin: 0 auto;padding: 14px 16px 20px 16px;/* border-top: 1px solid #999; */background-color: #191919;}
+.footer-container .futbolmania.newsletterDiv { background-color: #2E2D2C; }
+.footer-container .futbolmania .footerDiv {display: table;width: 90%;max-width: 800px;min-width: 740px;margin: 0 auto;}
+.footer-container .futbolmania .firstRow { clear: both; padding-top: 15px; }
+.footer-container .futbolmania .secondRow { display: table; width: 100%; padding-top: 20px; }
+.footer-container .futbolmania .divcol {float:right;display:table-cell;color: #fff;/* width: 50%; */}
+.footer-container .futbolmania .footerSectionCol {/* width:50%; */padding-top:10px; padding-right:10px; float: left;text-align: right;}
+.footer-container .futbolmania .footerSectionCol.kids { float: right; }
+.footer-container .futbolmania .footerSectionCol .futbolmaniaHome {display:block;text-align: left;font-size:12px;}
+.footer-container .futbolmania .footerSectionCol .futbolmaniaKids {display:block;text-align: left;font-size:12px;}
+.footer-container .futbolmania .footerSectionCol .futbolmaniaHome  img { display:inline-block; }
+.footer-container .futbolmania .footerSectionCol .futbolmaniaKids  img { display:inline-block; }
+.footer-container .futbolmania .footermaincol{width: 50%;float: left;/* padding-left:30px; *//* padding-right: 40px; */}
+.footer-container .futbolmania .footermaincol .iconos{ /*margin-right:10px;*/ float:left; background: 0 0px no-repeat; width: 26px; height: 26px;}
+.footer-container .futbolmania .footermaincol .iconos.christimasdelivery { background-image:url(https://www.futbolmania.com/media/wysiwyg/ImagenesFooter/blanco/icon-envios-navidad.svg) }
+.footer-container .futbolmania .footermaincol .iconos.contact { background-image:url(https://www.futbolmania.com/media/wysiwyg/ImagenesFooter/blanco/icon-contactar-carta.svg) }
+.footer-container .futbolmania .footermaincol .iconos.help { background-image:url(https://www.futbolmania.com/media/wysiwyg/ImagenesFooter/blanco/icon-ayuda.svg) }
+.footer-container .futbolmania .footermaincol .iconos.shops { background-image:url(https://www.futbolmania.com/media/wysiwyg/ImagenesFooter/blanco/icon-nuestras-tiendas.svg) }
+.footer-container .futbolmania .footermaincol .iconos.jobs { background-image:url(https://www.futbolmania.com/media/wysiwyg/ImagenesFooter/blanco/icono-trabaja-con-futbolmania.svg) }
+.footer-container .futbolmania .footermaincol .iconos.call { background-image:url(https://www.futbolmania.com/media/wysiwyg/ImagenesFooter/blanco/icon-contactar-llamada.svg) }
+.footer-container .futbolmania .footermaincol p{margin:10px 0px;color: #fff;font-size: 15px;}
+.footer-container .futbolmania .footermaincol p span { padding-left:40px }
+.footer-container .futbolmania .footermaincol p.telf  {font-size:14px;font-weight: 400;}
+.footer-container .futbolmania .footermaincol p.telf a span { padding-left:0px;color:#ECE816; }
+.footer-container .futbolmania .footermaincol p.telf i { font-size: 11px; }
+.footer-container .futbolmania .footermaincol a{color: #fff;font-size: 14px;font-weight: 400;}
+.footer-container .futbolmania .footermaincol a:hover{ color: #ede813; }
+.footer-container .futbolmania .newsletter{text-align:center;width: 100%;background-color: #2E2D2C;float:left;}
+.footer-container .divfooter .futbolmania .divcol.newsletter {background-color: #fff;width: 53%;}
+.footer-container .futbolmania .newsletter .formmaildiv { text-align:left; font-size:12px; }
+.footer-container .futbolmania .newsletter .formmaildiv .blocklittle {font-size: 14px;font-weight: 400;text-align:left;width:100%;color: #FFF;padding-bottom:8px;}
+.footer-container .futbolmania .newsletter .formmaildiv .blocklittle2 { font-size:12px; text-align:left; width:100%; color: #FFF; padding-top: 10px }
+.footer-container .futbolmania .newsletter .formmaildiv .blocklittle2 p {max-width:340px;font-size: 12px;font-weight: 400;}
+.footer-container .futbolmania .newsletter .formmaildiv .blocklittle2 a { font-size: 12px; font-weight: 700; color: #EDE813 !important; }
+.footer-container .futbolmania .newsletter .formmaildiv .formail1{border: 1px solid #c0c0c0;height:48px;text-align: left;width:250px;float:left;font-size: 16px;}
+.footer-container .futbolmania .newsletter .formmaildiv .formail{margin-top:10px;height:44px;text-align: center;width: 120px;float:left;background-color:#ECE816;}
+.footer-container .futbolmania .newsletter .formmaildiv .formail span span {color: #000 !important;font-size: 14px;font-weight: 700;}
+.footer-container .futbolmania .footermaincol .social {text-align:left;margin-top:10px;clear:both;color:#fff;font-size: 14px;}
+.footer-container .futbolmania .footermaincol .social div {display:table-cell;vertical-align:middle;padding-right: 20px;font-size: 14px;font-weight: 400;}
+.footer-container .futbolmania .footermaincol .social img { display: inline-block; }
+.footer-container .futbolmania .logo-footer { /*margin-top: 20px;*/ width:22%; text-align:left; padding-left:20px;}
+.footer-container .futbolmania .logo-footer img{  display: inline-block; width:207px;  }
+.footer-container .futbolmania .logo-footer .imgfooter { width:100%;display:table-cell;text-align:center;font-size:14px }
+.footer-container .futbolmania .footerSpace { display:none; }
+.footer-container .futbolmania .confianzaonline {float: right;text-align: right;padding-bottom:14px; /* width: 50%; */ }
+.footer-container .futbolmania .confianzaonline img { display:inline;padding-right:14px; }
+.footer-container .futbolmania .confianzaonline img.confianza { width:180px;}
+.footer-container .futbolmania .confianzaonline img.norton { width:130px;}
+.footer-container .futbolmania .confianzaonline img.trustwave { width:110px;}
+.footer-container .futbolmania .confianzaonline div { display: inline-block; text-align: left; vertical-align: middle; }
+.footer-container .futbolmania .confianzaonline div.breakline { display: block;}
+.footer-container .futbolmania div.trustpilot-widget { background-color: #fff; margin-bottom: 30px; padding: 10px 20px; }
+
+/* pie del footer */
+.footer-container .lastfooter{background-color: #191919;width:100%;display:table;}
+.footer-container .divfooter   {display:table-row;line-height:1;/* background-color: #191919; */}
+.footer-container .divfooter .futbolmania { padding:0 0;padding-top:6px; }
+.footer-container .divfooter .newsletter .footer {width:100%;padding: 3px 0px;text-align: right;}
+.footer-container .divfooter .footerSectionCol {padding-top:0px !important;background-color: #fff;}
+.footer-container .divfooter .footerSectionCol .footer {width:100%;padding: 3px 0px;text-align:left;}
+.footer-container .divfooter .footer  { color:#999; padding:0px 4px; }
+.footer-container .divfooter .footer a { color:#999;font-size:12px;font-weight: 400; }
+.footer-container .divfooter .footer img { display: inline; height:30px;}
+.footer-container .divfooter .footer div {/* width:24%; */display:inline-block;text-align: right;vertical-align: middle;padding: 0 14px;}
+/*.footer-container .divfooter .footer div.paypal { display: none; }*/
+/*.footer-container .divfooter  .footerleft { display:table-cell; width:80%; padding-left:20px; } */
+.footer-container .divfooter .footerright{display:table-cell;width:100%;color:#fff;text-align:right;padding: 2px 0px;}
+.footer-container .divfooter .footer{ display:inline-block; padding-left:2px;}
+.footer-container .divfooter .footer  img.icon {/* position: relative; *//* top: -4px; */}
+.footer-container .divfooter .futbolmania .divcol {float:left;width: 50%;}
+.footer-container .divfooter .futbolmania .divcol.footerSectionCol  {padding-left: 0px;width: 47%;}
+.footer-container .divfooter .futbolmania .divcol.logo-footer {width: 100%;text-align:center;/* border-top: 1px solid #999; */margin-top: 5px;padding: 8px 0px;background-color: #191919;}
+.footer-container .divfooter .futbolmania .divcol  a.icon { display:block; position:relative; width:50px; height:30px; overflow:hidden; }
+.footer-container .divfooter .futbolmania .divcol img { display: inline-block; /*padding-right: 4px;*/ margin-right: 6px; vertical-align: middle; background-position: center center; }
+.footer-container .divfooter .futbolmania .divcol img.imagen { width: 46px; height: 36px; } 
+.footer-container .divfooter .futbolmania .divcol  a.icon-contra { display:block; position:relative; width:105px; height:30px; overflow:hidden; }
+.footer-container .divfooter .futbolmania .divcol img.ico-contra { /*position:absolute;top:0;left:0;*/ width: 100%; }
+/*.footer-container .divfooter .futbolmania .divcol a:hover img.ico-contra { left: -105px; }*/
+.footer-container .divfooter .futbolmania .divcol  a.icon-transfer { display:block; position:relative; width:81px; height:30px; overflow:hidden; }
+.footer-container .divfooter .futbolmania .divcol img.ico-transfer {  /*position:absolute;top:0;left:0;*/  width: 100%; }
+/*.footer-container .divfooter .futbolmania .divcol a:hover img.ico-transfer { left: -81px; }*/
+.footer-container .divfooter .futbolmania .divcol  a.icon-click { display:block; position:relative; width:116px; height:30px; overflow:hidden; }
+.footer-container .divfooter .futbolmania .divcol img.ico-click {  /*position:absolute;top:0;left:0;*/  width: 100%; }
+/*.footer-container .divfooter .futbolmania .divcol a:hover img.ico-click { left: -88px; }*/
+.footer-container .divfooter .futbolmania .divcol  a.icon-visa { display:block; position:relative; width:41px; height:30px; overflow:hidden; }
+.footer-container .divfooter .futbolmania .divcol img.ico-visa {/* position:absolute; *//* top:0; *//* left:0; */width: 100%;/* height: 30px; */}
+/*.footer-container .divfooter .futbolmania .divcol a:hover img.ico-visa { width: 92px;  height: 30px; }*/
+.footer-container .divfooter .futbolmania .divcol  a.icon-mastercard { display:block; position:relative; width:45px; height:30px; overflow:hidden; }
+.footer-container .divfooter .futbolmania .divcol img.ico-mastercard {/* position:absolute; *//* top:0; *//* left:0; */width: 100%;}
+/*.footer-container .divfooter .futbolmania .divcol a:hover img.ico-mastercard { left: -45px; }*/
+.footer-container .divfooter .futbolmania .divcol  a.icon-union-pay { display:block; position:relative; width:45px; height:30px; overflow:hidden; }
+.footer-container .divfooter .futbolmania .divcol img.ico-union-pay {/* position:absolute; *//* top:0; *//* left:0; */width: 100%;}
+/*.footer-container .divfooter .futbolmania .divcol a:hover img.ico-union-pay { left: -45px; }*/
+.footer-container .divfooter .futbolmania .divcol  a.icon-jcb { display:block; position:relative; width:45px; height:30px; overflow:hidden; }
+.footer-container .divfooter .futbolmania .divcol img.ico-jcb {/* position:absolute; *//* top:0; *//* left:0; */width: 100%;}
+/*.footer-container .divfooter .futbolmania .divcol a:hover img.ico-jcb { left: -45px; }*/
+.footer-container .divfooter .futbolmania .divcol  a.icon-american { display:block; position:relative; width:54px; height:30px; overflow:hidden; }
+.footer-container .divfooter .futbolmania .divcol img.ico-american {/* position:absolute; *//* top:0; *//* left:0; */width: 100%;}
+.footer-container .divfooter .futbolmania .divcol  a.icon-google-pay { display:block; position:relative; width:61px; height:30px; overflow:hidden; }
+.footer-container .divfooter .futbolmania .divcol img.ico-google-pay {/* position:absolute; *//* top:0; *//* left:0; */width: 100%;}
+/*.footer-container .divfooter .futbolmania .divcol a:hover img.ico-american { left: -54px; }*/
+.footer-container .divfooter .futbolmania .divcol  a.icon-paypal,
+.footer-container .divfooter .futbolmania .divcol  a.icon-bizum {display:block;position:relative;width:52px;height:30px;overflow:hidden;}
+.footer-container .divfooter .futbolmania .divcol img.ico-paypal,
+.footer-container .divfooter .futbolmania .divcol img.ico-bizum {/* position:absolute; top:0; left:0; */width: 100%;}
+/*.footer-container .divfooter .futbolmania .divcol a:hover img.ico-paypal { left: -52px; } */
+.footer-container .divfooter div.footer {line-height: 30px;font-size: 12px;}
+
+/* pie footer  - customer-account */
+body.customer-account .footer-container .divfooter .futbolmania .footermaincol,
+body.catalog-product-compare-index .footer-container .divfooter .futbolmania .footermaincol { display:none; }
+body.customer-account .footer-container .divfooter .futbolmania .newsletter,
+body.catalog-product-compare-index .footer-container .divfooter .futbolmania .newsletter {/* width: 35%; */}
+body.customer-account .footer-container .divfooter .futbolmania .footerSectionCol,
+body.catalog-product-compare-index .footer-container .divfooter .futbolmania .newsletter {/* width: 35%; *//* clear:none; */}
+body.customer-account .footer-container .divfooter .futbolmania .logo-footer,
+body.catalog-product-compare-index .footer-container .divfooter .futbolmania .logo-footer	{/* width: 30%; *//* padding-left: 0px; */}
+
+
+.mobile { display: none; }
+
+/* ============================================ *
+ * MEDIA QUERIES
+ * ============================================ */
+
+/* CSS Document */
+@media (max-width:1826px){
+	.footer-container .footer-menu section{ width:25%;}
+	.footer-container .footer-menu section.nav-9{ width:25%;}
+	.footer-container .footer-menu section.nav-10,.footer-container .footer-menu section.nav-8{ display:none; }
+	.footer-container .footer-menu section.nav-7{ display:block; }
+	.footer-container .footer-menu section.nav-5{ width:50%; }
+	.footer-container .footer-menu section.nav-1 { width: 50%; }
+	.footer-container .footer-menu section.nav-3 { border-right: 0px !important; }
+}
+
+@media (max-width:1720px){
+	/*.footer-container{ height:1000px;}
+	.footer-container .futbolmania .newsletter { width:60%; text-align:left; margin-top:10px !important; }
+	.footer-container .futbolmania .footermaincol { width:40%; text-align:left; margin-top:0px; }
+	.footer-container .futbolmania .logo-footer { width:100%; text-align:center; }	*/
+	/*.footer-container .futbolmania { padding:10px 0px; }*/
+
+	/* Paso a 2 columnas del footer futbolmania */
+	.footer-container .futbolmania .formmaildiv { margin-top: 0px; /*padding-left:50px;*/ }
+	.footer-container .futbolmania .footermaincol { /*padding-left:50px; width:calc(40% - 100px);*/ }
+	.footer-container .futbolmania .newsletter { padding-left:0px; /*width:calc(60% - 190px);*/ }
+	/*.footer-container .futbolmania .footerSectionCol { padding-left:50px;width:calc(40% - 100px); clear: both;padding-top:30px;  }
+	.footer-container .futbolmania .logo-footer { padding-left:50px;width: calc(60% - 190px);padding-top:20px; }*/
+	.footer-container .futbolmania .footerSpace { display:block; width:290px; }
+
+	/* customer account - footer */
+	/* compare - footer */
+	/* catalog product view - footer */
+	body.customer-account .footer-container .divfooter .futbolmania .logo-footer,
+	body.catalog-product-compare-index  .footer-container .divfooter .futbolmania .logo-footer { padding-top: 0px; }
+	body.customer-account .footer-container .futbolmania .footermaincol,
+	body.catalog-product-compare-index .footer-container .futbolmania .footermaincol { padding-left:50px;width:45%;  }
+	body.customer-account .footer-container .futbolmania .newsletter,
+	body.catalog-product-compare-index .footer-container .futbolmania .newsletter { padding-left:0px;width:55%; }
+	body.customer-account .footer-container .futbolmania .footerSectionCol,
+	body.catalog-product-compare-index .footer-container .futbolmania .footerSectionCol { padding-left:50px;width:45%; padding-top:40px; }
+	body.customer-account .footer-container .futbolmania .logo-footer	,
+	body.catalog-product-compare-index .footer-container .futbolmania .logo-footer { padding-left:50px;width:55%; }
+	body.customer-account .footer-container .futbolmania .formmaildiv,
+	body.catalog-product-compare-index .footer-container .futbolmania .formmaildiv { margin-top: 0px; padding-left:50px; }
+	body.customer-account .footer-container .futbolmania .footerSpace,
+	body.catalog-product-compare-index .footer-container .futbolmania .footerSpace { display:none; }
+	body.customer-account .footer-container .futbolmania .newsletter .formmaildiv .formail1,
+	body.catalog-product-compare-index .footer-container .futbolmania .newsletter .formmaildiv .formail1,
+	/*body.catalog-product-view .footer-container .futbolmania .newsletter .formmaildiv .formail1 { width:190px; } */
+
+	/* pie del footer */
+	.footer-container .divfooter .futbolmania .footermaincol { width:270px; }
+	/*.footer-container .divfooter .futbolmania .newsletter { width: calc(50% - 140px); }
+	.footer-container .divfooter .futbolmania .footerSectionCol { width: calc(50% - 140px); clear:none; }*/
+	.footer-container .divfooter .futbolmania .logo-footer { width:100%; text-align:center; }
+
+	body.catalog-product-compare-index .footer-container .divfooter .futbolmania .footermaincol { display:none; }
+	body.catalog-product-compare-index .footer-container .divfooter .futbolmania .newsletter { width: 50%; }
+	body.catalog-product-compare-index .footer-container .divfooter .futbolmania .footerSectionCol { width: 50%; clear:none; }
+	body.catalog-product-compare-index .footer-container .divfooter .futbolmania .logo-footer	{  width: 100%; padding-left: 0px; }
+	body.catalog-product-compare-index .footer-container .divfooter  .footerSectionCol .footer  div	{ width: 32%; }
+}
+
+@media (max-width:1480px){
+/* ficha de producto */
+	/* footer */
+	/*body.catalog-product-view .footer-container .futbolmania .footermaincol,*/
+	body.customer-account .footer-container .futbolmania .footermaincol	{ padding-left:50px;width:45%;  }
+	/*body.catalog-product-view .footer-container .futbolmania .newsletter,*/
+	body.customer-account .footer-container .futbolmania .newsletter	{ padding-left:0px;width:55%; }
+	/*body.catalog-product-view .footer-container .futbolmania .footerSectionCol,*/
+	body.customer-account .footer-container .futbolmania .footerSectionCol { padding-left:50px;width:45%;clear: both;padding-top:40px; }
+	/*body.catalog-product-view .footer-container .futbolmania .logo-footer,*/
+	body.customer-account .footer-container .futbolmania .logo-footer	{ padding-left:50px;width:55%; }
+	/*body.catalog-product-view .footer-container .futbolmania .formmaildiv,*/
+	body.customer-account .footer-container .futbolmania .formmaildiv { margin-top: 0px; padding-left:50px; }
+	/*body.catalog-product-view .footer-container .futbolmania .footerSpace,*/
+	body.customer-account .footer-container .futbolmania .footerSpace	{ display:none; }
+	/*body.catalog-product-view .footer-container .futbolmania .newsletter .formmaildiv .formail1,*/
+	body.customer-account .footer-container .futbolmania .newsletter .formmaildiv .formail1	{ width:190px; }
+
+	/* pie de footer */
+	body.customer-account .footer-container .divfooter .futbolmania .footermaincol { display:none; }
+	body.customer-account .footer-container .divfooter .futbolmania .newsletter { width: 50%; }
+	body.customer-account .footer-container .divfooter .futbolmania .footerSectionCol { width: 50%; clear:none; }
+	body.customer-account .footer-container .divfooter .futbolmania .logo-footer	{  width: 100%; padding-left: 0px; }
+	body.customer-account .footer-container .divfooter  .footerSectionCol .footer  div	{ width: 32%; }
+}
+
+/* Cambio a version mobile - landscape */
+@media (max-width:1024px){
+	.footer-container .divfooter .futbolmania .divcol.newsletter { background-color: #fff;width: 57%; }
+	.footer-container .divfooter .futbolmania .divcol.footerSectionCol { padding-left: 0px;width: 43%; }
+	.footer-container .divfooter .footer div { width: 16%; display: inline-block; text-align: right; vertical-align: middle; padding: 0 14px; }	
+	.footer-container .divfooter  .footerSectionCol .footer  div.transferencia  { width: 28%; }
+	.footer-container .footer-menu section{ width:50%; padding-left: 50px; }
+	.footer-container .footer-menu section.nav-7,.footer-container .footer-menu section.nav-8,.footer-container .footer-menu section.nav-9,.footer-container .footer-menu section.nav-10{ display:none; }
+	.footer-container .pheader{ margin-left:10px; margin-right:10px;}
+	.footer-container .footer-menu section.nav-1,.footer-container .footer-menu section.nav-2 {min-height: 344px;}
+	.footer-container .footer-menu section.nav-5 { width: 100%; border-left: 0px !important; padding-top:40px; }
+	.footer-container .footer-menu section.nav-1 {width: 100%;}
+	.footer-container .footer-menu section.nav-3 { border-right: 1px solid #444 !important; }
+	.footer-container.footer-kids .footer-menu section.nav-3 { border-right: 1px solid #ddd !important; }
+
+	.footer-container{width: 100%;background-color: #555;}
+	.footer-container .footer-menu header{ padding-left:0px !important; }
+
+	/* footer futbolmania - Eliminamos el espacio de la barra de menu */
+	/*.footer-container .futbolmania .footermaincol { padding-left:50px;width:45%;  }*/
+	.footer-container .futbolmania { padding-left: 16px;  }
+	.footer-container .futbolmania .footerDiv { max-width: 800px; min-width: 600px; }
+	.footer-container .futbolmania .newsletter { padding-left:0px; /*width:50%;*/ }
+	/*.footer-container .futbolmania .footerSectionCol { padding-left:50px;width:45%;clear: both;padding-top:40px; }*/
+	.footer-container .futbolmania .logo-footer { padding-left:50px;width:55%; }
+	/*.footer-container .futbolmania .formmaildiv { margin-top: 0px; padding-left:50px; }*/
+	.footer-container .futbolmania .footerSpace { display:none; }
+
+	/* pie footer futbolmania - Eliminamos el espacio de la barra de menu */
+	.footer-container .divfooter .futbolmania .footermaincol { display:none; }
+	.footer-container .divfooter .futbolmania .newsletter { width: 50%; }
+	.footer-container .divfooter .futbolmania .footerSectionCol { width: 50%; clear:none; }
+	.footer-container .divfooter .futbolmania .logo-footer { }
+}
+
+@media (max-width:941px){
+	.footer-container .divfooter{ margin-left:20px; margin-right:-90px;}
+	.footer-container .futbolmania .newsletter .formmaildiv .formail1 { /* width:198px; */ }
+}
+
+@media (max-width:800px){
+	.footer-container .footer-menu section{padding-left: 0px;}
+	.footer-container .futbolmania .footermaincol { padding-left:0px; }
+	/*.footer-container .futbolmania .newsletter .formmaildiv { padding-left:20px;}*/
+	/*.footer-container .futbolmania .footerSectionCol { padding-left:20px;}*/
+	.footer-container .futbolmania .logo-footer { padding-left:20px;}
+	/*.footer-container .futbolmania .logo-footer .imgfooter { display:block; } */
+	.footer-container .divfooter  .footerright{ text-align:left !important; }
+	.footer-container .divfooter .footer  div { padding: 0 6px; }
+	.footer-container .divfooter .footerSectionCol .footer  div { width: 18%; }
+	.footer-container .divfooter  .footerSectionCol .footer  div.transferencia { width: 24%; /* margin: 0px 4%; */ } 	
+	.footer-container .divfooter  .footerSectionCol .footer  div.click-collect { width: 30%; } 	
+	.footer-container .divfooter   { display:table-row;line-height:1.4; }
+
+
+/* ficha de producto */
+	/*body.catalog-product-view .footer-container .futbolmania .divcol { clear:both; width:100%; text-align:left; padding-left:40px;padding-top:30px; padding-bottom: 40px;}
+	body.catalog-product-view .footer-container .futbolmania .footermaincol { padding-top: 0px !important; }
+	body.catalog-product-view .footer-container .futbolmania .logo-footer { width:100%; text-align:center; padding-left:40px; }
+	body.catalog-product-view .footer-container .futbolmania .logo-footer img { display: block; width: 207px; }
+	body.catalog-product-view .footer-container .futbolmania .newsletter { width:100%; text-align:left; margin:0px; }
+	body.catalog-product-view .footer-container .futbolmania .footerSectionCol { width:100%;padding-top:45px !important; padding-bottom: 60px !important; }
+	body.catalog-product-view .footer-container .futbolmania .newsletter .formmaildiv { padding-left:10px;}
+	body.catalog-product-view .footer-container .divfooter  .footerleft, .footer-container .divfooter  .footerright{ display:table-cell; width:100%; padding-left:10px; padding-right:10px; text-align:right; }
+	body.catalog-product-view .footer-container .divfooter .futbolmania .footermaincol { display:none; padding:0 0; }
+	body.catalog-product-view .footer-container .divfooter .futbolmania .newsletter { width: 100%; padding:0 0; }
+	body.catalog-product-view .footer-container .divfooter .futbolmania .footerSectionCol { width: 100%; padding:0 0 !important; }
+	body.catalog-product-view .footer-container .divfooter .futbolmania .footerSectionCol  .footer { text-align:center !important; }
+	body.catalog-product-view .footer-container .divfooter .futbolmania .logo-footer { width: 100%; padding:0 0; text-align:center; }	*/
+}
+
+@media (max-width:767px){
+	.footer-container .footer-menu h1 span {display: block;padding-bottom: 10px;}
+	.footer-container .divfooter .futbolmania .divcol.newsletter,
+	.footer-container .divfooter .futbolmania .divcol.footerSectionCol {width: 100%;}
+	.footer-container .divfooter .futbolmania .divcol.footerSectionCol { border-top: 1px solid #999; }
+	.footer-container .divfooter .futbolmania .divcol.newsletter .footer .googlepay { width: 20%}
+	.footer-container .divfooter  .footerSectionCol .footer  div.paypal { width: 18%; }
+	.footer-container .divfooter  .footerSectionCol .footer  div.transferencia { width: 24%; /* margin: 0px 4%; */ } 	
+	.footer-container .divfooter  .footerSectionCol .footer  div.click-collect { width: 30%; } 	
+	.footer-container .divfooter .footerSectionCol .footer,
+	.footer-container .divfooter .newsletter .footer	{ padding: 1px 0px; }
+	.footer-container .divfooter .futbolmania .divcol.logo-footer {padding: 0px;padding-top: 6px; height: 53px; }
+	.footer-container .futbolmania .firstRow, .footer-container .futbolmania .secondRow {padding-top: 0px;padding-bottom: 25px;}
+	.footer-container .futbolmania .newsletter .formmaildiv .blocklittle { font-size: 13px; }
+	.footer-container .futbolmania .newsletter .formmaildiv .formail1,
+	.footer-container .futbolmania .newsletter .formmaildiv .formail span span { font-size: 14px; }
+	.footer-container .futbolmania .footermaincol p { font-size:12px; line-height: 24px; }
+	.footer-container .futbolmania .newsletter .formmaildiv .blocklittle2 p {font-size: 11px;}
+	.footer-container .futbolmania .newsletter .formmaildiv .blocklittle2 a { font-size: 10px; }
+	.footer-container .futbolmania .footermaincol .social div,
+	.footer-container .futbolmania .footermaincol a	{ font-size: 12px; }
+	.footer-container .futbolmania .footermaincol .social div.xxss { padding-right: 0px; }
+	.footer-container .futbolmania .footerDiv {min-width: 0px;width: 100%;}
+	/* footer */
+	.footer-container .futbolmania .confianzaonline {width: 100%;text-align:left;padding-left: 40px; padding-top:30px; padding-bottom: 40px;}	
+	.footer-container .divfooter .footer  div { width: 15%; }
+	.footer-container .futbolmania .divcol,
+	body.catalog-product-compare-index .footer-container .futbolmania .divcol	{ clear:both; width:100%; text-align:left; padding-left:40px; padding-right:40px; padding-top:30px; padding-bottom: 40px;}
+	.footer-container .futbolmania .footermaincol,
+	body.catalog-product-compare-index .footer-container .futbolmania .footermaincol {/* padding-top: 0px !important; *//* padding-bottom: 20px; */}
+	.footer-container .futbolmania .logo-footer,
+	body.catalog-product-compare-index .footer-container .futbolmania .logo-footer { width:100%; text-align:center; padding-left: 0px; }
+	.footer-container .futbolmania .logo-footer .imgfooter,
+	body.catalog-product-compare-index .footer-container .futbolmania .logo-footer .imgfooter	{ display:inline; }
+	.footer-container .futbolmania .imagen { width:100%; }
+	.footer-container .futbolmania .newsletter,
+	body.catalog-product-compare-index .footer-container .futbolmania .newsletter { width:100%; text-align:left; margin:0px; }
+	.footer-container .futbolmania .footerSectionCol,
+	body.catalog-product-compare-index .footer-container .futbolmania .footerSectionCol	{width:100%;padding-top: 30px;padding-bottom: 15px;padding-left: 0px;}
+	.footer-container .futbolmania .footerSectionCol .futbolmaniaHome,
+	body.catalog-product-compare-index .footer-container .futbolmania .footerSectionCol .futbolmaniaHome { /*text-align:center; */ padding-left:40px; }
+	.footer-container .futbolmania .footerSectionCol .futbolmaniaKids,
+	body.catalog-product-compare-index .footer-container .futbolmania .footerSectionCol .futbolmaniaKids { /*text-align:center; */ padding-left:40px; }
+	.footer-container .futbolmania .newsletter .formmaildiv,
+	body.catalog-product-compare-index .footer-container .futbolmania .newsletter .formmaildiv { padding-left:0px;}
+	.footer-container .divfooter  .footerleft, .footer-container .divfooter  .footerright,
+	body.catalog-product-compare-index .footer-container .divfooter  .footerleft, .footer-container .divfooter  .footerright { display:table-cell; width:100%; padding-left:0px; padding-right:0px; text-align:right; }
+
+	/* pie footer futbolmania - 3 filas */
+	.footer-container .divfooter .futbolmania .footermaincol,
+	body.catalog-product-compare-index .footer-container .divfooter .futbolmania .footermaincol { display:none; padding:0 0; }
+	.footer-container .divfooter .futbolmania .newsletter,
+    body.catalog-product-compare-index .footer-container  .divfooter .futbolmania .newsletter { width: 100%; padding:0 0; }
+	.footer-container .divfooter .futbolmania .footerSectionCol,
+	body.catalog-product-compare-index  .footer-container  .divfooter .futbolmania .footerSectionCol{ width: 100%; padding:0 0 !important; }
+	.footer-container .divfooter .futbolmania .footerSectionCol  .footer,
+	body.catalog-product-compare-index .footer-container  .divfooter .futbolmania .footerSectionCol  .footer { text-align:center !important; }
+	.footer-container .divfooter .futbolmania .logo-footer,
+	body.catalog-product-compare-index .footer-container  .divfooter .futbolmania .logo-footer{ width: 100%; padding:0 0; }
+	
+	/* logged */
+	body.customer-account .footer-container .futbolmania .footermaincol { padding-left: 50px; width: 100%; }
+	body.customer-account .footer-container .futbolmania .footerSectionCol { padding-left: 50px; width: 100%; clear: both; padding-top: 40px; }
+	body.customer-account .footer-container .futbolmania .confianzaonline { padding-left: 50px; }
+	body.customer-account .footer-container .futbolmania .newsletter,
+	body.customer-account .footer-container .divfooter .futbolmania .newsletter { width: 100%; padding-right: 50px; }
+	body.customer-account .footer-container .divfooter .footerright .futbolmania .newsletter { padding-right: 0px; }	
+	body.customer-account .footer-container .divfooter .footerright .futbolmania .footerSectionCol { width: 100%; }
+	body.customer-account .footer-container .futbolmania .footerSectionCol { width: 100%; clear: none; }
+	body.customer-account .footer-container .futbolmania .footerSectionCol .futbolmaniaHome,
+	body.customer-account .footer-container .futbolmania .footerSectionCol .futbolmaniaKids { padding-left: 0px; }
+}
+
+@media (max-width:580px){
+	/*.footer-container .footer-menu section { width:100%; min-height:100px; padding:10px 10px;}*/
+	.footer-container .footer-menu article { margin:0 15px; }
+	.footer-container .footer-menu section {min-height: 420px;text-align: center;}
+}
+
+
+/* Moviles en vertical - portrait */
+@media (max-width:480px){
+	.mobile { display: block; }
+	.footer-container .divfooter span.hsline { color: #000; }
+	
+	.footer-container .divfooter .logo-footer .footer.logofooter{width: 25%;float: left;line-height: 40px;}
+	.footer-container .divfooter .logo-footer .footer.conditionsfooter {width: 75%;/* float: right; */text-align: left;line-height: 22px;}
+	
+	.footer-container .futbolmania .confianzaonline img.confianza { width:160px;}
+	.footer-container .futbolmania .confianzaonline img.norton { width:120px;}
+	.footer-container .futbolmania .confianzaonline img.trustwave { width:100px;}
+
+	.footer-container .futbolmania .newsletter .formmaildiv .blocklittle2 p { /*width:80%;*/}
+	.footer-container .futbolmania .confianzaonline img { text-align:center !important; }
+	.footer-container .footer-menu h2 {font-size:16px;border-bottom: 1px solid #777;padding-bottom: 4px; }
+	.footer-container.footer-kids .footer-menu h2 {font-size:16px;border-bottom: 1px solid #aaa;padding-bottom: 4px; }
+	.footer-container .footer-menu h3 {font-size: 13px;padding-left: 0px !important; font-weight:400; color: #fff; }
+	.footer-container .footer-menu section { text-align:center; }
+	.footer-container .footer-menu section ul li a { font-size: 12px; margin-left:0px !important; }
+	.footer-container .footer-menu .pheader{ margin-left:10px; margin-right:10px; }
+	.footer-container .footer-menu section h2 span, .footer-container .footer-menu section h3 span { display: none; }
+	.footer-container .footer-menu section ul{ padding-left: 0px !important; }
+	.footer-container .futbolmania { padding: 14px 0px 6px 0px; }
+
+	/*.footer-container .footer-menu section{ width:100%; padding-left: 10px; }
+	.footer-container .footer-menu section.nav-7,.footer-container .footer-menu section.nav-8,.footer-container .footer-menu section.nav-9,.footer-container .footer-menu section.nav-10{ display:none; }
+	.footer-container .footer-menu section .twoCols { width:100% !important; }
+	.footer-container .footer-menu section.nav-1,.footer-container .footer-menu section.nav-2 { min-height: 480px }
+	.footer-container .footer-menu section.nav-5 { width: 100%; border-left: 0px; padding-top:40px; }
+	.footer-container .footer-menu section.nav-1 { width: 100%; }
+	.footer-container .footer-menu section.nav-3 { border-right: 0px; }
+	.footer-container .footer-menu section.nav-4 { min-height:0px !important; }
+	.footer-container .footer-menu section.nav-4 .nav-4Content { display:none; }
+	.footer-container .footer-menu section .toggleButton { cursor:pointer;float: right;color: #fff;margin-top: -22px; }*/
+}
+@media (max-width:420px){
+	.footer-container .footer-menu article { margin-left:10px; margin-right: 10px; }
+	.footer-container .footer-menu section.nav-3,.footer-container .footer-menu section.nav-4 {min-height: 360px;}
+	.footer-container .futbolmania .newsletter .formmaildiv .formail1 { width: 170px; }
+} 
+
+@media (max-width:380px){
+	.footer-container .futbolmania .newsletter .formmaildiv .formail1 {width: 100%;}
+	
+	.footer-container .futbolmania .newsletter .formmaildiv .formail	{width: 100%; margin-left: 0px; }
+	 
+	.footer-container .futbolmania .confianzaonline img.confianza { width:130px;}
+	.footer-container .futbolmania .confianzaonline img.norton { width:110px;}
+	.footer-container .futbolmania .confianzaonline img.trustwave { width:98px;}	
+	.footer-container .futbolmania .footerSectionCol .futbolmaniaHome, .footer-container .futbolmania .footerSectionCol .futbolmaniaKids { padding-left: 0px; }
+	
+	.footer-container .futbolmania .divcol, .footer-container .futbolmania .confianzaonline {padding-left: 50px;padding-right: 20px;padding-bottom: 30px;padding-top: 20px;}
+	.footer-container .futbolmania .confianzaonline {/* padding-top: 30px; */}
+		
+}
+
+@media (max-width:320px){
+	.footer-container .divfooter .futbolmania .divcol  a.icon-contra { width: 86px; }
+	.footer-container .divfooter .futbolmania .divcol  a.icon-transfer { width: 72px; }
+	.footer-container .divfooter .futbolmania .divcol  a.icon-click { width: 104px; }
+}
+
+/* slide */
+.fadein { position:relative; height:332px; width:500px; }
+.fadein img { position:absolute; left:0; top:0; }
+
+.fadelinks, .faderandom { position:relative; height:332px; width:500px; }
+.fadelinks > *, .faderandom > * { position:absolute; left:0; top:0; display:block; }
+
+.multipleslides { position:relative; height:332px; width:500px; float:left; }
+.multipleslides > * { position:absolute; left:0; top:0; display:block; }

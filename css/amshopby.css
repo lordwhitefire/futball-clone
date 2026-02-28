@@ -1,0 +1,274 @@
+
+div.amshopby-column {
+    float:left; width:83px;
+}
+
+select.amshopby-select {
+    width:170px;
+}
+
+.amshopby-logo{
+padding: 0pt 10px 10px 0pt; float: left;
+}
+
+.amshopby-featured {
+    padding: 5px 5px 5px 5px; 
+}
+
+.amshopby-link{
+    float:left;
+    padding-left:5px; 
+    padding-top:5px;
+}
+
+.amshopby-clearer {
+	display:block; 
+	clear:both;
+	overflow: hidden;
+}
+div.block-layered-nav dd a {padding:0px 5px 0px 0px; display:block; float: left;}  
+div.block-layered-nav dd a.amshopby-attr {padding-left:15px; background-image:url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/amshopby-cb1.gif); background-repeat: no-repeat; background-position: left center;}
+div.block-layered-nav dd a.amshopby-attr-selected {font-weight: bold; padding-left:15px; background-image:url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/amshopby-cb2.gif); background-repeat: no-repeat; background-position: left center;}
+div.block-layered-nav dd a.amshopby-attr-inactive {pointer-events: none; color: #666666}
+div.block-layered-nav dd a img {padding: 0px 4px 5px; float:left;}
+
+div.block-layered-nav dd li.amshopby-cat-level-1 {text-transform: uppercase; font-size: 14px;}
+div.block-layered-nav dd li.amshopby-cat-level-2 {padding-left:10px;}
+div.block-layered-nav dd li.amshopby-cat-level-3 {padding-left:20px;}
+
+div.block-layered-nav dd a.amshopby-cat-selected {font-weight: bold;
+text-decoration: none; cursor:text;}
+
+div.block-layered-nav dd li span.amshopby-plusminus {float:left;
+display:block; width:15px; height:15px; cursor:pointer;
+background:transparent url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/amshopby-plus.gif)  no-repeat;}
+div.block-layered-nav dd li span.minus {background:transparent
+url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/amshopby-minus.gif) no-repeat;}
+/*div.block-layered-nav dd li:after {display:block; content:"."; clear:both; font-size:0; line-height:0; height:0; overflow:hidden; }*/
+
+
+
+div.block-layered-nav.amshopby-collapse-enabled dt {
+ cursor:pointer; 
+ padding-left:15px;
+ background:url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/amshopby-expanded.gif) center left no-repeat;
+}
+div.block-layered-nav.amshopby-collapse-enabled dt.amshopby-collapsed {background:url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/amshopby-collapsed.gif) center left no-repeat}
+
+
+div.block-layered-nav div.amshopby-slider {
+	 position:relative; margin:10px 4px 5px 4px; z-index:9; height:18px;  background: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/amshopby-slider-bg.gif) repeat-x 0 50%; cursor:pointer; width: 155px;
+}
+div.block-layered-nav div.amshopby-slider div.handle {margin-left:-4px; width:22px; top:3px; height:22px; background: #FFFFFF; position: absolute; cursor:move; z-index: 3; border: 1px solid #878787; border-radius: 50%; }
+
+/*
+ * Slider labels
+ */
+.amshopby-slider-price {
+	color: #798794;
+}
+.amshopby-slider-price-from {
+	float: left;
+    
+}
+.amshopby-slider-price-to {
+	float: right;
+}
+
+.amshopby-slider-handle-right {
+	position: absolute;
+	top: 14px;
+	right: 0px;
+}
+
+.amshopby-slider-handle-left {
+	position: absolute;
+	top: 14px;
+	left: 0px;
+}
+
+.amshopby-tooltip {
+    padding:2px 5px;
+    background:#FEC;
+    border:1px solid #FAA819;
+    color:#1F5070;
+    text-align:left;
+    width:200px;
+    position:absolute;
+}
+
+.amshopby-slider-price-range 
+{
+	text-align: center;
+	font-size: 0.9em;
+}
+
+.amshopby-tooltip-img {
+    cursor:help;
+    display: inline;
+}
+
+/*div.amshopby-filters-top {*/
+    /*position: relative;*/
+    /*top: -52px;*/
+/*}*/
+
+div.amshopby-page-container {
+    position: relative;
+    top: -50px;
+}
+
+div.amshopby-page-container h2 {
+    padding-left: 10px;
+    font-size: 18px;
+    color: #636363;
+}
+
+div.amshopby-page-container h2 a {
+    color: #3351c8;
+}
+
+div.amshopby-page-container h2 a:hover {
+    opacity: 0.7;
+    color: #3D51C8;
+}
+
+div.amshopby-overlay {
+    background-color: #FFFFFF;
+    height: calc(100% + 50px);
+    left: 0;
+    opacity: 0.5;
+    filter: alpha(opacity = 50);
+    position: absolute;
+    top: -50px;
+    width: 100%;
+    z-index: 555;
+}
+div.amshopby-overlay img {
+    top: 100px;
+    left: 45%;
+    display: block;
+    position: absolute;
+}
+
+div.amshopby-overlay div {
+    margin: 0 auto;
+    display: block;
+	width: 300px;
+	height: 200px;
+	background:  url('https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/amshopby-overlay.gif') 50% 50% no-repeat;
+}
+
+/*
+ * Advanced Categories
+ */
+.amshopby-advanced li {
+	/*clear: both;*/
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 600;
+}
+
+/*.amshopby-advanced li.level0 .menu-father,*/
+/*.amshopby-advanced li.level0 .menu-child{*/
+    /*border-bottom: 1px solid #333333;*/
+/*}*/
+
+/*.amshopby-advanced li.level1 .menu-father,*/
+/*.amshopby-advanced li.level1 .menu-child{*/
+    /*padding-left: 15px;*/
+    /*border-bottom: 1px dashed #333333;*/
+/*}*/
+
+/*.amshopby-advanced li.level1:last-child .menu-father,*/
+/*.amshopby-advanced li.level1:last-child .menu-child{*/
+    /*border-bottom: 1px solid #333333;*/
+/*}*/
+
+/*.amshopby-advanced li.level2 .menu-father,*/
+/*.amshopby-advanced li.level2 .menu-child{*/
+	/*padding-left: 30px;*/
+    /*border-bottom: none !important;*/
+/*}*/
+
+/*.amshopby-advanced li.level3 .menu-father,*/
+/*.amshopby-advanced li.level3 .menu-child{*/
+	/*padding-left: 45px;*/
+    /*border-bottom: none !important;*/
+/*}*/
+
+/*.amshopby-advanced li.level4 .menu-father,*/
+/*.amshopby-advanced li.level4 .menu-child{*/
+	/*padding-left: 15px;*/
+    /*border-bottom: none !important;*/
+/*}*/
+
+
+
+.amshopby-advanced li.active > a {
+	font-weight: bold;
+}
+
+/*
+ * Slider Bar
+ */
+.amshopby-slider-bar {
+	position:absolute; 
+	background: #3F54A1;
+	height: 16px;
+	top: 6px; 
+	z-index: 2;
+}
+
+.amshopby-slider-bar-grey {
+    position: absolute;
+    left: 0;
+    top: 6px;
+    height: 16px;
+    z-index: 1;
+    width: 170px;
+    background: #E8E8E8;
+    border: 1px solid #C6C6C6;
+    border-radius: 10px;
+}
+
+/*
+ * Subcategories block
+ */
+.amshopby-subcategory-image {
+	overflow: auto; 
+}
+
+.btn-remove-inline { background-image: url('https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/am_btn_remove.gif'); background-repeat: no-repeat; width:13px; height:12px; margin-left: 4px; }
+.btn-remove-inline:hover { /* background-position: center bottom; */ }
+.amshopby-hightlighted { background: yellow;}
+
+.btn-remove-inline img {display: inline;}
+
+div.block-layered-nav div.amshopby-slider div.handle.active { z-index: 4; }
+
+.amshopby-slider-ui { background: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/amshopby-slider-bg.gif) repeat-x 0 50%; margin: 10px .4em; }
+.amshopby-slider-ui .ui-slider-handle { background-color: #f18200; border: 1px solid #de5400; box-sizing: border-box; outline: none; }
+.amshopby-slider-ui .ui-slider-range { background-color: #999999; }
+
+.ui-widget-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; }
+.ui-slider { position: relative; text-align: left; top: 12px; /* top: 30px; Para cajas dobles*/ }
+.ui-slider .ui-slider-handle { position: absolute; z-index: 2; cursor: pointer; -ms-touch-action: none; touch-action: none; border-radius: 50%;}
+.ui-slider .ui-slider-range { position: absolute; z-index: 1; font-size: .7em; display: block; border: 0; background-position: 0 0; }
+
+/* support: IE8 - See #6727 */
+.ui-slider.ui-state-disabled .ui-slider-handle,
+.ui-slider.ui-state-disabled .ui-slider-range { filter: inherit; }
+
+.ui-slider-horizontal { height: .8em; }
+.ui-slider-horizontal .ui-slider-handle { top: -.2em; margin-left: -.4em; }
+.ui-slider-horizontal .ui-slider-range { top: 0.2em; height: 8px; }
+.ui-slider-horizontal .ui-slider-range-min { left: 0; }
+.ui-slider-horizontal .ui-slider-range-max { right: 0; }
+
+.ui-slider-vertical { width: 2px; height: 100px; position: absolute; margin-left: 20px; }
+.ui-slider-vertical .ui-slider-handle { left: -0.4em; margin-left: 0; margin-bottom: -.6em; }
+.ui-slider-vertical .ui-slider-range { left: 0; width: 100%; }
+.ui-slider-vertical .ui-slider-range-min { bottom: 0; }
+.ui-slider-vertical .ui-slider-range-max { top: 0; }
+
+.amshopby-narrow-by-list table td { vertical-align: top; }

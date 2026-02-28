@@ -1,0 +1,563 @@
+
+/* POP UPS */
+
+a.fancybox { text-decoration: none; }
+
+.backdrop {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    display: none;
+}
+
+
+.backdrop .dialog,
+#toplogin #wishlist .info-wishlist-not-logged {
+    margin:0 auto;
+    padding: 0;
+    position:relative;
+    overflow:hidden;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    /* min-height: 25%; */
+    max-height: 80%;
+    width: 650px;
+    -moz-box-shadow: 0 0 8px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 0 8px rgba(0,0,0,0.6);
+    box-shadow: 0 0 8px rgba(0,0,0,0.6);
+    color:#000;
+}
+
+.backdrop#compare-empty,
+.backdrop#wishlist-empty,
+.backdrop.messages-not-logged {color: black;}
+
+.backdrop#compare-empty .compare-header-icon,
+.backdrop#wishlist-empty .wishlist-header-icon  { line-height: 30px; }
+
+.backdrop#compare-empty .compare-header-icon,
+.backdrop#wishlist-empty .wishlist-header-icon { margin:0 5px; display:inline-block; width:26px; height:26px; vertical-align:middle; background-image: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/sprite-header.svg); background-repeat: no-repeat; background-size: 200px; background-position: -4px -117px; }
+
+.backdrop.messages-not-logged p { line-height: 1.5; }
+.backdrop.messages-not-logged .dialog .title-popup { font-size: 18px !important; text-transform: none; }
+.backdrop.messages-not-logged .dialog div.buttons-container { background-color: #eee; width: 100%; float: left; padding: 15px; }
+.backdrop.messages-not-logged .dialog div.buttons-container button { display: block; font-size: 16px; font-weight: 700; margin: 0; width: calc( 50% - 10px); float: left; margin-right: 10px; }
+.backdrop.messages-not-logged .dialog div.buttons-container button + button { margin-right: 0px; width: 50%; }
+
+.backdrop#wishlist-empty .wishlist-header-icon { background-position:  -39px -119px }
+.backdrop#compare-empty .compare-header-icon { background-position: -68px -117px; }
+
+.backdrop#wishlist-empty p,
+.backdrop#compare-empty p { display: inline; }
+
+.backdrop#size-related .dialog { width: 95%; max-width: 95%; height: 95%; max-height: 95%; }
+
+.backdrop#christmas-shipping-dialog a:active,
+.backdrop#presale-dialog a:active,
+.backdrop#free-shipping-dialog a:active,
+.backdrop#return-policy-dialog a:active { background-color: #CCCCCC; }
+
+/*Fancybox*//*
+.customer-account  #compare-empty.not-display,
+.customer-account  #wishlist-empty.not-display{display: none;}
+.customer-account  #wishlist-empty,
+.customer-account  #compare-empty{display: flex; color: black;}
+.customer-account  #compare-empty .compare-empty-text p,
+.customer-account  #wishlist-empty .wishlist-empty-text p,
+.customer-account  #compare-empty .compare-empty-text span,
+.customer-account  #wishlist-empty .wishlist-empty-text span{float: left; padding: 0 5px;}
+.customer-account  #compare-empty .compare-empty-text .compare-empty-icon{
+    background-position: -71px -2px;
+    background-image: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/icon_header.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 19px;
+    height: 16px;
+    vertical-align: middle;
+}
+.customer-account  #wishlist-empty .wishlist-empty-text .wishlist-empty-icon{
+    background-position: -48px -2px;
+    background-image: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/icon_header.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 19px;
+    height: 16px;
+    vertical-align: middle;
+}
+.customer-account .wishlist-empty-text,.customer-account .compare-empty-text{padding: 30px 40px; overflow: hidden;}
+.customer-account .info-empty{
+    margin: auto;
+    position: relative;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    overflow-y: auto;
+    max-height: 750px;
+    width: 720px;
+    -moz-box-shadow: 0 0 8px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 0 8px rgba(0,0,0,0.6);
+    box-shadow: 0 0 8px rgba(0,0,0,0.6);
+}
+.customer-account .close_button{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    line-height: 1;
+    padding: 9px;
+    margin-right: 20px;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+*/
+
+.backdrop .dialog .dialog-content { padding: 20px 20px 20px; width:100%; min-height: 80px; float:left; line-height: 1.5; font-weight: 400; }
+.dialog-content-only-text {
+    padding: 30px 20px !important;
+}
+.dialog-icon-alert-columns{
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    width: 100%;
+}
+.dialog-icon-alert-column-icon{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.backdrop .dialog.box-without-padding .dialog-content { padding: 0; }
+body.is-responsive .backdrop .dialog div.dialog-content * { font-size: 13px !important; }
+.backdrop .dialog .dialog-content p.nota-al-pie,
+body.is-responsive .backdrop .dialog div.dialog-content p.nota-al-pie { font-size: 11px !important; padding-top: 10px; }
+.backdrop .dialog .dialog-content p.nota-al-pie *,
+body.is-responsive .backdrop .dialog div.dialog-content p.nota-al-pie * { font-size: 11px !important; }
+.backdrop .dialog p,
+.backdrop .dialog span,
+.backdrop .dialog a { color:#000!important; font-size:14px!important; }
+.backdrop .dialog p.close { font-size:16px!important; text-transform:uppercase; font-weight:bold; position:absolute; cursor:pointer; padding-top: 4px;  padding-right: 18px;}
+.backdrop .dialog p.highlight-text { font-weight: 600; margin-bottom: 10px; }
+.backdrop .dialog div.close-container { position: absolute; right: 20px; top: 12px; cursor:pointer; z-index: 1; }
+.backdrop .dialog div.close-container:hover { opacity: 0.5; cursor: pointer; }
+.backdrop .dialog div.close-container div.close { width: 25px; height: 25px; position:relative; top: initial; right: initial; background: url('https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/aspa-cerrar-pop-up.svg'); z-index: 1; margin: 0; }
+.backdrop .dialog a#close_link { position: absolute; top: 0; right: 0; font-size: 16px!important; text-transform: uppercase; text-decoration: none; font-weight: bold; padding: 9px; line-height: 30px; margin-right: 20px; }
+.backdrop .dialog .title-popup {
+    /*background: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/onestepcheckout/login_title.png) no-repeat left center;*/
+    padding: 15px 40px 15px 15px;
+    float: left;
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px !important;
+    color: #000000;
+    text-transform: none;
+    margin: 0;
+    border-bottom: 1px solid #c0c0c0;
+    background-color: #eee !important;
+    font-style: normal;
+    line-height: 1.2;
+    text-rendering: optimizeLegibility;
+}
+.backdrop .dialog .title-popup.dialog-info-icon { text-indent: 30px; background: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/onestepcheckout/term_title.png) no-repeat left 0px; }
+.backdrop.messages-not-logged .dialog .title-popup.dialog-info-icon { background: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/wishlist-dialog.svg) no-repeat 16px 14px; background-size: 22px; }
+.backdrop .dialog .title-popup.dialog-no-icon { background-image:none; }
+
+.backdrop .dialog h1 { font-size:24px; margin:0; font-weight:600; text-transform:uppercase; padding-bottom: 3px; }
+
+.backdrop .dialog .buttons-set { border:none; }
+.backdrop .dialog button span { color:#FFF!important;}
+
+.backdrop .dialog .edit-product .cart-delete a { font-weight: normal; }
+
+.backdrop .dialog .hide-column {
+
+    display: none !important;
+}
+
+
+.backdrop .dialog .size-filter{
+    padding-left: 20px;
+    /*margin-bottom: 20px;*/
+}
+
+.backdrop .dialog .size-label{
+    float: left;
+    margin: 0 5px;
+    text-transform: none;
+}
+
+.backdrop .dialog .size-title{
+    display: table;
+    height: 29px;
+    background-color: #2A2B30;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    float: left;
+    margin-right: 5px;
+}
+
+.backdrop .dialog .size-opt{
+    display: table;
+    cursor: pointer;
+    height: 29px;
+    width: 29px;
+    background-color: #1F2025;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    float: left;
+    margin-left: 2px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.backdrop .dialog .size-opt:hover{
+    background-color: #3f54a1;
+}
+
+.backdrop .dialog .size-opt.selected{
+    background-color: #3f54a1;
+}
+
+.backdrop .dialog .size-type-option{
+    font-weight: normal;
+    color: #3f54a1;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.backdrop .dialog .size-type-option:hover{
+    text-decoration: none;
+    color: #007ED1;
+}
+
+.backdrop .dialog .offer-filter{
+    padding-left: 20px;
+}
+
+.backdrop .dialog .offer-title{
+    display: table;
+    width: 104px;
+    height: 29px;
+    background-color: #2A2B30;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    float: left;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.backdrop .dialog .offer-opt{
+    display: table;
+    width: 104px;
+    height: 29px;
+    cursor: pointer;
+    vertical-align: middle;
+    background-color: #1F2025;
+    margin-left: 1px;
+    float: left;
+}
+
+.backdrop .dialog .offer-opt:hover{
+    background-color: #3f54a1;
+}
+
+.backdrop .dialog .offer-opt.selected{
+    background-color: #3f54a1;
+}
+
+.backdrop .dialog .offer-opt img {
+    max-width: 26px;
+    margin-top: 2px;
+    margin-left: 2px;
+    float: left;
+}
+
+.backdrop .dialog .offer-opt-label{
+    float: left;
+    width: 67px;
+    font-size: 11px;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.backdrop .dialog .offer-opt-label #Oferta{
+    color: #EAE325;
+}
+
+.backdrop .dialog  .offer-opt-label#Oportunidad{
+    color: #DF01A5;
+}
+
+.dialog-product {
+    position:relative;
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 35px;
+}
+
+.dialog-img{
+    max-width: 365px;
+    float: left;
+    margin-right: 22px;
+}
+
+.dialog-text{
+    float: left;
+    max-width: 370px;
+}
+
+.backdrop .mCSB_scrollTools{width: 10px;}
+.backdrop .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{background-color: #5e5e5e; margin-right: 1px; width: 8px;}
+.backdrop .mCSB_inside>.mCSB_container{margin-right: 4px;}
+.backdrop .mCSB_inside>.mCSB_container.mCS_y_hidden{margin-right: 0px;}
+.backdrop .mCSB_scrollTools .mCSB_draggerRail{margin-right: 4px; width: 2px;}
+.backdrop .mCSB_container,
+.backdrop .mCustomScrollBox{}
+
+/*********************************************/
+/***** DIALOG CHECKOUT & ONESTEPCHECKOUT *****/
+/*********************************************/
+
+
+.product-cart-info .backdrop .dialog .edit-product p { margin-bottom: 10px; }
+.product-cart-info .backdrop .dialog .edit-product .edit-product-left { width: 48%; float: left; }
+.product-cart-info .backdrop .dialog .edit-product .edit-product-right { width: 48%; float: right; position: relative; }
+.product-cart-info .backdrop .dialog .edit-product .edit-product-left .continue-member,
+.product-cart-info .backdrop .dialog .edit-product .edit-product-right .cart-delete { background-color: black; color: #ffffff; text-align: center; }
+.product-cart-info .backdrop .dialog .edit-product .edit-product-left .continue-member { padding: 5px;}
+.product-cart-info .backdrop .dialog .edit-product .edit-product-left .continue-member:hover,
+.product-cart-info .backdrop .dialog .edit-product .edit-product-right .cart-delete:hover { opacity: 0.7; cursor: pointer; }
+.product-cart-info .backdrop .dialog .edit-product .edit-product-right .cart-delete a { color: #FFFFFF !important; font-size: 14px !important; padding: 5px; display: block; }
+
+
+
+/*onestep only*/
+.onestepcheckout-popup-footer{ background:url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/onestepcheckout/onestepcheckout-popup-footer.png) no-repeat; height:13px; }
+.onestepcheckout-popup-wrapper { position:relative; z-index:10000; }
+.onestepcheckout-popup-wrapper .input-text { width:100% !important; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; -moz-background-clip:padding-box !important; -webkit-background-clip:padding-box !important; background-clip:padding-box !important; }
+.onestepcheckout-popup-wrapper h1 { background:url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/onestepcheckout/login_title.png) no-repeat left center; text-indent:85px; padding:15px 0px; float:left; width:100%; font-weight:bold; font-size:16px; color:#000000; text-transform:uppercase;margin:0; }
+#onestepcheckout-toc-popup,
+#onestepcheckout-privacy-popup{ -moz-border-radius:15px 15px / 15px 15px; border-radius:15px 15px / 15px 15px; z-index:999999!important; }
+#onestepcheckout-toc-popup h1,
+#onestepcheckout-privacy-popup h1 { background:url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/onestepcheckout/term_title.png) no-repeat left center; text-indent:85px; padding:15px 0px; float:left; width:100%; font-weight:bold; font-size:14px; color:#000; text-transform:uppercase; margin:0; box-sizing:content-box; border-bottom:1px solid#c0c0c0; }
+div#onestepcheckout-login-popup-contents-login h1,
+#onestepcheckout-login-popup h1{ border-bottom:1px solid #c0c0c0; background-color:inherit !important; }
+form#onestepcheckout-login-form label,
+form#onestepcheckout-forgot-form label,
+#onestepcheckout-login-popup p { color:#000000; }
+#onestepcheckout-toc-popup .onestepcheckout-toc-terms,
+#onestepcheckout-privacy-popup .onestepcheckout-privacy { float:left; width:92%; padding:0 4%; background:#FFF; overflow-y:auto; box-sizing:content-box; }
+#onestepcheckout-toc-popup .onestepcheckout-popup-wrapper2,
+#onestepcheckout-privacy-popup .onestepcheckout-popup-wrapper2 { background:#fff; }
+#onestepcheckout-login-popup .input-text { height:29px!important; border:1px solid #C0C0C0; background-color:#FFF!important; color:#000!important; }
+/* Chrome autofill - this code does not really fix the overwrite */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+input:-webkit-autofill:after { background-color:#26282D!important; color:#FFFFFF!important; }
+
+#onestepcheckout-toc-popup .onestepcheckout-toc-terms .onestepcheckout-toc-terms-content,
+#onestepcheckout-toc-popup .onestepcheckout-toc-terms .onestepcheckout-toc-terms-content a,
+#onestepcheckout-toc-popup .onestepcheckout-toc-terms .onestepcheckout-toc-terms-content p,
+#onestepcheckout-privacy-popup .onestepcheckout-privacy .onestepcheckout-privacy-content,
+#onestepcheckout-privacy-popup .onestepcheckout-privacy .onestepcheckout-privacy-content a,
+#onestepcheckout-privacy-popup .onestepcheckout-privacy .onestepcheckout-privacy-content p { color:#000; }
+.onestepcheckout-formpopup .page-title { text-align:left; }
+.onestepcheckout-formpopup .page-title h1 { color:#F18200; font-size:16px; font-weight:bold; }
+.onestepcheckout-formpopup .login-fields ul li { margin-bottom:3px; float:left; width:100%; text-align:left; }
+.onestepcheckout-formpopup .login-fields span.require { color:#EB340A; float:right; }
+.onestepcheckout-formpopup .login-fields .input-field input.input-text { width:200px; }
+.onestepcheckout-formpopup .login-button { float:left; width:100%; }
+#onestepcheckout-login-popup,
+#onestepcheckout-toc-popup,
+#onestepcheckout-privacy-popup { text-align:left !important; position:relative; }
+#onestepcheckout-forgot-success { float:left; width:90%; padding:10px 5%; box-sizing:content-box; color:#0F8620; font-size:13px; }
+#onestepcheckout-login-popup { width: 500px; z-index:999999!important; background:#fff; }
+#onestepcheckout-login-popup table { width:99%; }
+#onestepcheckout-login-popup table td { padding-top:3px; padding-bottom:3px; }
+#onestepcheckout-login-popup button.button { background:#000000; color:#ffffff; float:right; }
+#onestepcheckout-login-popup p.close,
+#onestepcheckout-toc-popup p.close,
+#onestepcheckout-privacy-popup p.close { font-size:16px; text-transform:uppercase; font-weight:bold; position:absolute; }
+#onestepcheckout-login-popup-contents-login { float:left; width:100%; }
+#onestepcheckout-login-popup p.close a,
+#onestepcheckout-login-popup p.close a:link,
+#onestepcheckout-login-popup p.close a:visited,
+#onestepcheckout-toc-popup p.close a,
+#onestepcheckout-toc-popup p.close a:link,
+#onestepcheckout-toc-popup p.close a:visited,
+#onestepcheckout-privacy-popup p.close a,
+#onestepcheckout-privacy-popup p.close a:link,
+#onestepcheckout-privacy-popup p.close a:visited { text-decoration:none; color:#000000; }
+#onestepcheckout-login-popup p.close a:hover,
+#onestepcheckout-toc-popup p.close a:hover,
+#onestepcheckout-privacy-popup p.close a:hover { text-decoration:none; }
+#onestepcheckout-login-popup div.close-container,
+#onestepcheckout-toc-popup div.close-container,
+#onestepcheckout-privacy-popup div.close-container { position: absolute; right: 20px; top: 8px; }
+#onestepcheckout-login-popup div.close-container:hover,
+#onestepcheckout-toc-popup div.close-container:hover,
+#onestepcheckout-privacy-popup div.close-container:hover { opacity: 0.7; cursor: pointer; }
+#onestepcheckout-login-popup div.close-container div.close,
+#onestepcheckout-toc-popup div.close-container div.close,
+#onestepcheckout-privacy-popup div.close-container div.close { width: 25px; height: 25px; position:relative; top: initial; right: initial; background: url('https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/aspa-cerrar-pop-up.svg'); z-index: 1; margin: 0; }
+.onestepcheckout-popup-wrapper-inner{ height: 100%!important; }
+#onestepcheckout-toc-popup, #onestepcheckout-privacy-popup { width:850px; height:80vh; position:fixed; z-index:1000001; background-color: #fff; }
+#onestepcheckout-login-popup-contents-forgot { float:left; width:100%; }
+#onestepcheckout-login-popup-contents-forgot p.title-forgot { font-size:14px; font-weight:600; float:left; width:90%; margin:0 5%; padding:20px 0 5px; }
+
+/* Privacy policy */
+.backdrop#privacy-box .dialog .title-privacy-policy-section{
+    margin: 0;
+    font-size: 18px !important;
+    font-style: normal;
+    line-height: 1.4;
+    text-rendering: optimizeSpeed;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.backdrop .dialog::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.backdrop .dialog::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+.backdrop .dialog::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+	border: 2px solid #555555;
+}
+
+/* Customization Dialog */
+/* general */
+.backdrop .dialog-content div.customization-img{max-width:400px;margin:auto; margin-bottom: 24px;}
+.backdrop .dialog-content div.customization-img2{max-width:300px;margin:auto; margin-bottom: 24px;}
+.backdrop .dialog-content  h3 { text-transform: none; padding-bottom: 10px; font-size: 18px; font-weight: 700; color:#000}
+.backdrop .dialog-content  h3.underline { text-decoration: underline; } 
+.backdrop .dialog-content  h3 span { font-size: 24px !important; }
+.backdrop .dialog .dialog-content ul { padding-left: 20px; }
+.backdrop .dialog .dialog-content ul li { margin-bottom: 10px; display: inline-block; }
+.backdrop .dialog .dialog-content ul li img { margin-left: 15px; margin-right: 10px; }
+.backdrop .dialog .dialog-content ul li  .icon-text { float: left; width: calc(100% - 45px); }
+.backdrop .dialog .dialog-content .icon-1-fancy-box { float:left; }
+.backdrop .dialog .dialog-content a { color:#0000ff !important; font-weight: 700; text-decoration: none; }
+.backdrop .dialog .dialog-content a:hover { text-decoration: underline; }
+.backdrop .dialog .dialog-content .related-dialog-button { display: block; text-align: center; margin: 5px 0; background-color: #000000; width: 100%; border: none; height: 50px; }
+.backdrop .dialog .dialog-content .related-dialog-button span { padding: 5px; font-weight: bold; display: inline-block; color: #FFFFFF !important; font-size: 18px !important; }
+
+/* Add to cart Dialog */
+.backdrop#add-to-cart-info .dialog .dialog-content ul { padding-left: 0px; }
+.backdrop#add-to-cart-info .dialog { width: 450px; height: initial; min-height: initial; background-color: #EEEEEE; }
+.backdrop#add-to-cart-info .dialog .dialog-content { padding: 10px; float: none; display: table; min-height: 300px; }
+.backdrop#add-to-cart-info .dialog .dialog-content a { color: #000 !important; }
+.backdrop#add-to-cart-info .dialog .dialog-content .cart-dialog-header { padding-bottom: 1px; }
+.backdrop#add-to-cart-info .dialog .dialog-content .cart-dialog-header div.added-product-status { width: 50px; height: 50px; margin: 0 auto; background: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/producto-cesta-ok.svg); }
+.backdrop#add-to-cart-info .dialog .dialog-content .cart-dialog-header div.added-product-status.error { background: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/producto-no-cesta.svg); }
+.backdrop#add-to-cart-info .dialog .dialog-content .cart-dialog-header p.block-subtitle { text-align: center; font-size: 16px !important; }
+.backdrop#add-to-cart-info .dialog .dialog-content .cart-dialog-message { display: none; vertical-align: middle; }
+.backdrop#add-to-cart-info .dialog .dialog-content .cart-dialog-message p.error-message { text-align: center; font-weight: 600; }
+.backdrop#add-to-cart-info .dialog .dialog-content .cart-dialog-wrapper { display: table-cell; vertical-align: middle; }
+.backdrop#add-to-cart-info .dialog .dialog-content .cart-dialog-wrapper #dialog-product-list-container { background-color: #FFFFFF; margin: 0 -10px; }
+.backdrop#add-to-cart-info .dialog .dialog-content .cart-dialog-wrapper #dialog-product-list-container ul.cart-dialog-products-list li { display: block; margin-bottom: 0; }
+.backdrop#add-to-cart-info .dialog .dialog-content .cart-dialog-wrapper #dialog-product-list-container ul.cart-dialog-products-list li div div.cart-dialog-title { border-bottom: 1px #E2E3E1 solid; margin-bottom: 10px; padding: 10px 10px 0; font-weight: 700; }
+.backdrop#add-to-cart-info .dialog .dialog-content .cart-dialog-wrapper #dialog-product-list-container ul.cart-dialog-products-list li div div.cart-dialog-info { overflow: hidden; width: 100%; color: #000000; padding: 0 10px 10px;}
+.backdrop#add-to-cart-info .dialog .dialog-content .cart-dialog-wrapper #dialog-product-list-container ul.cart-dialog-products-list li div div.cart-dialog-info > div { overflow: hidden; width: 40%; float: left; }
+.backdrop#add-to-cart-info .dialog .dialog-content .cart-dialog-wrapper #dialog-product-list-container ul.cart-dialog-products-list li div div.cart-dialog-info .cart-dialog-extrainfo { text-align: right; padding-right: 5px; width: 60%; cursor: default; line-height: 1.5; }
+.backdrop#add-to-cart-info .dialog .dialog-content .cart-dialog-wrapper #dialog-product-list-container ul.cart-dialog-products-list li div div.cart-dialog-info .cart-dialog-extrainfo .price-info .price_A,
+.backdrop#add-to-cart-info .dialog .dialog-content .cart-dialog-wrapper #dialog-product-list-container ul.cart-dialog-products-list li div div.cart-dialog-info .cart-dialog-extrainfo .price-info .price_B { float: none; }
+.backdrop#add-to-cart-info .dialog .dialog-content .cart-dialog-wrapper #dialog-product-list-container ul.cart-dialog-products-list li div div.cart-dialog-info .cart-dialog-extrainfo .price-info .price_B { font-size: 12px !important; }
+.backdrop#add-to-cart-info .dialog .dialog-content .cart-dialog-wrapper .block-content { margin: 0; padding: 5px 0 0; }
+.backdrop#add-to-cart-info .dialog .dialog-content .cart-dialog-wrapper .block-content .cart-dialog-subtotal p.subtotal { max-width: inherit; margin-bottom: 10px; }
+.backdrop#add-to-cart-info .dialog .dialog-content .cart-dialog-wrapper .block-content .cart-dialog-subtotal p.subtotal span { line-height: 1.5; }
+.backdrop#add-to-cart-info .dialog .dialog-content .cart-dialog-wrapper .block-content .cart-dialog-subtotal p.subtotal span.label { font-weight: initial; }
+.backdrop#add-to-cart-info .dialog .dialog-content .cart-dialog-wrapper .block-content .cart-dialog-subtotal p.subtotal span.member-price { font-weight: initial; }
+.backdrop#add-to-cart-info .dialog .dialog-content .cart-dialog-wrapper .block-content .cart-dialog-subtotal p.subtotal span.member-price span { font-size: 12px !important; }
+.backdrop#add-to-cart-info .dialog .dialog-content .cart-dialog-wrapper .block-content .cart-dialog-subtotal p.subtotal span.member-price span.label { font-weight: initial; }
+.backdrop#add-to-cart-info .dialog .dialog-content .cart-dialog-wrapper .cart-dialog-actions { margin: 0 -10px; }
+.backdrop#add-to-cart-info .dialog .dialog-content .cart-dialog-wrapper .cart-dialog-actions ul.cart-dialog-actions-list { display: table; width: 100%; border-spacing: 10px 0; table-layout: fixed; }
+.backdrop#add-to-cart-info .dialog .dialog-content .cart-dialog-wrapper .cart-dialog-actions ul.cart-dialog-actions-list li { display: table-cell; }
+.backdrop#add-to-cart-info .dialog .dialog-content .cart-dialog-wrapper .cart-dialog-actions ul.cart-dialog-actions-list li a { display: block; width: 100%; line-height: 30px; padding: 7px 15px; text-decoration: none; font-size: 16px !important; }
+.backdrop#add-to-cart-info .dialog .dialog-content .cart-dialog-wrapper .cart-dialog-actions ul.cart-dialog-actions-list li a.cart-link { border: 1px solid #000000; text-align: center; background-color: #FFFFFF; }
+.backdrop#add-to-cart-info .dialog .dialog-content .cart-dialog-wrapper .cart-dialog-actions ul.cart-dialog-actions-list li a.cart-link:hover { opacity: 0.7; }
+.backdrop#add-to-cart-info .dialog .dialog-content .cart-dialog-wrapper .cart-dialog-actions ul.cart-dialog-actions-list li a.cart-link .minicart-view .sprite_carrito.carrito { float: none; display: inline-block; vertical-align: middle; }
+.backdrop#add-to-cart-info .dialog .dialog-content .cart-dialog-wrapper .cart-dialog-actions ul.cart-dialog-actions-list li a.button.checkout-button { color: #FFF !important; }
+
+.dialog-content.warning p.block-subtitle,
+.dialog-content.error p.block-subtitle,
+.dialog-content.success p.block-subtitle{
+    padding-left: 30px;
+}
+
+
+.dialog-content.warning p.block-subtitle:before,
+.dialog-content.error p.block-subtitle:before,
+.dialog-content.success p.block-subtitle:before {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url(https://futbolmania.com/skin/frontend/rwd/futbolmania/images/sprite-header.svg);
+    background-repeat: no-repeat;
+    background-size: 475px;
+    background-position: -318px -356px;
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 13px;
+}
+
+.dialog-content.success p.block-subtitle:before{
+    background-position: -239px -356px;
+}
+
+.dialog-content.error p.block-subtitle:before{
+    background-position: -279px -356px;
+}
+
+/* dialog shipping method y free shipping  */
+.backdrop#shipping-method-dialog .dialog .dialog-content ul,
+.backdrop#free-shipping-dialog .dialog .dialog-content ul { list-style: disc; }
+.backdrop#shipping-method-dialog .dialog .dialog-content ul li,
+.backdrop#free-shipping-dialog .dialog .dialog-content ul li { display: list-item; } 
+
+
+.backdrop .dialog p.button_p{
+    text-align: center;
+    padding-top: 14px;
+}
+
+
+
+@media (max-width:1024px){
+	body.is-responsive .backdrop.messages-not-logged .dialog .title-popup { font-size: 16px !important; }
+    body.is-responsive .backdrop.messages-not-logged .dialog .title-popup.dialog-info-icon { padding: 5px 10px 10px 16px; background-position: 16px 4px; }
+}
+
+@media (max-width:767px){
+	.backdrop .dialog .dialog-content ul li img { margin-left: 0px; }
+	.backdrop .dialog .dialog-content ul li  .icon-text { width: calc(100% - 30px); }
+
+    body.is-responsive .backdrop.messages-not-logged .dialog .title-popup { font-size: 14px !important; }
+    body.is-responsive .backdrop.messages-not-logged .dialog .title-popup.dialog-info-icon { padding: 2px 10px 10px 10px; background-position: 10px 0; }
+    body.is-responsive .backdrop.messages-not-logged .dialog .dialog-content { padding: 10px 10px 20px 10px; font-size: 13px; }
+    body.is-responsive .backdrop.messages-not-logged .dialog div.buttons-container button { font-size: 13px; }
+}

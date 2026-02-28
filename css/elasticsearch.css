@@ -1,0 +1,128 @@
+.search-autocomplete ul.bubble-elasticsearch {
+    background-color: #fff;
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+}
+
+.search-autocomplete ul.bubble-elasticsearch:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    display: block;
+    border-right: 8px solid transparent;
+    border-left: 7px solid transparent;
+    border-bottom: 8px solid #dadada;
+    border-top: none;
+    left: calc(50% - 7px);
+    top: -8px;
+}
+
+.search-autocomplete ul.bubble-elasticsearch:after {
+    content: '';
+    position: absolute;
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+    border-bottom: 7px solid #FFFFFF;
+    border-top: none;
+    left: calc(50% - 7px);
+    top: -7px;
+}
+
+.search-autocomplete ul.bubble-elasticsearch li.title,
+.search-autocomplete ul.bubble-elasticsearch li.title a {
+    padding: 6px;
+    background-color: #dadada;
+    color: #000000;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.search-autocomplete ul.bubble-elasticsearch li {
+    padding: 0 3px;
+}
+
+body.is-responsive .search-autocomplete { width: 95% !important; margin: 0 auto; }
+
+body.is-responsive .search-autocomplete ul.bubble-elasticsearch li {
+    padding: 5px 0;
+}
+
+body.is-responsive .search-autocomplete ul.bubble-elasticsearch li.autocomplete-results {
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.search-autocomplete ul.bubble-elasticsearch li .image {
+    float: left;
+    margin-right: 6px;
+    background-color: #fff;
+}
+
+.search-autocomplete ul.bubble-elasticsearch li a {
+    color: #000000;
+    /*font-size: 13px;*/
+    font-weight: 400;
+    display: block;
+    padding: 4px;
+    text-decoration: none;
+}
+
+body.is-responsive .search-autocomplete ul.bubble-elasticsearch li a {
+    padding: 0 4px;
+}
+
+.search-autocomplete ul.bubble-elasticsearch li p {
+    color: #000000;
+    font-size: 13px;
+    font-weight: 400;
+    display: block;
+    padding: 4px;
+    text-decoration: none;
+    margin: 0 3px;
+}
+
+.search-autocomplete ul.bubble-elasticsearch li.autocomplete-results.selected a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.search-autocomplete ul.bubble-elasticsearch li.all-results {
+    padding: 0;
+    cursor: inherit;
+    margin-top: 30px;
+    border-top: 1px solid #E6E6E6;
+}
+
+.search-autocomplete ul.bubble-elasticsearch li.all-results.no-results { border: none; margin-top: 5px; }
+
+body.is-responsive .search-autocomplete ul.bubble-elasticsearch li.all-results {
+    border: none;
+    margin-top: 10px;
+    padding: 0;
+}
+
+body.is-responsive .search-autocomplete ul.bubble-elasticsearch li.all-results.no-results { margin-top: 5px; }
+
+.search-autocomplete ul.bubble-elasticsearch li div.all-results-buttons { display: table; width: 100%; border-spacing: 8px 5px; margin-bottom: 5px; }
+body.is-responsive .search-autocomplete ul.bubble-elasticsearch li div.all-results-buttons { border-spacing: 5px; }
+.search-autocomplete ul.bubble-elasticsearch li div.all-results-buttons a { display: table-cell; text-align: center; width: 50%; background-color: #000000; height: 40px; vertical-align: middle; box-shadow: 1px 1px 0px 0px rgba(210, 210, 210, 0.64); color: #FFFFFF; font-weight: bold; font-size: 13px; }
+.search-autocomplete ul.bubble-elasticsearch li div.all-results-buttons a:hover { opacity: 0.7; }
+.search-autocomplete ul.bubble-elasticsearch li div.all-results-buttons a .search-icon { width: 15px; height: 15px; background: url(https://www.futbolmania.com/skin/frontend/rwd/futbolmania/images/sprite-header.svg) -109px -6px no-repeat; background-size: 130px; display: inline-block; vertical-align: sub; margin-right: 5px; }
+
+.search-autocomplete ul.bubble-elasticsearch li .price-box {
+    margin: 0;
+}
+
+.search-autocomplete ul.bubble-elasticsearch li.selected a .price-box .price,
+.search-autocomplete ul.bubble-elasticsearch li.selected a .price-box .minimal-price-link .label,
+.search-autocomplete ul.bubble-elasticsearch li.selected a .price-box .price-label {
+    color: #fff;
+}
+
+.search-autocomplete ul.bubble-elasticsearch li a .price-box .minimal-price-link {
+    padding: 0;
+}
+
+.search-autocomplete ul.bubble-elasticsearch li .clearer {
+    clear: both;
+}
